@@ -57,6 +57,6 @@ All known errors cause the resource to return HTTP error code header together wi
 **Return**
 
 ``` javascript
-[collections]
+[collection]
 ``` 
 
