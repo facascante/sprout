@@ -9,7 +9,7 @@
 ***
 
 ## Requires authentication
-
+JWT
 
 ***
 
@@ -44,7 +44,7 @@ All known errors cause the resource to return HTTP error code header together wi
 **Header**
 
 ``` json
-   { "Content Type" : "application/json" } 
+   { "Authorisation" : "<JWT>" } 
 ``` 
 
 **Return**
