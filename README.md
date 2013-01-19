@@ -31,7 +31,7 @@ Request Query - appended to url, i.e. <url>?cnd={"<field>":1}
 
 ## Endpoints
 
-#### Object Provisioning Resources
+#### Collection Provisioning Resources
 
 - **[<code>GET http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_all.md)**
 - **[<code>GET http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
