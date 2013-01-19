@@ -1,10 +1,10 @@
 # Collection Provisioning Resources
 
-  **[<code>GET http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_all.md)**
+  **[<code>GET http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
 
 
 ## Description
-   Get array of collection record
+   Get Document by id
 
 ***
 
@@ -46,7 +46,7 @@ All known errors cause the resource to return HTTP error code header together wi
 
 **Request**
 
- **[<code>GET http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_all.md)**
+  **[<code>GET http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
 
 **Header**
 
@@ -57,6 +57,6 @@ All known errors cause the resource to return HTTP error code header together wi
 **Return**
 
 ``` javascript
-   [{Dcoumen1},{Document2},...]
+   {Docoument}
 ``` 
 
