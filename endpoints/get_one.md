@@ -17,13 +17,13 @@ JWT
 
 Essential information:
 
-- **collection** _(required)_ — collection containing the documents.
-- **id** _(required)_ — id of the document to be find.
+- **collection**
+- **id**
 
 Optional information:
 
-- **cnd** _(required)_ — condition for searching.
-- **fmt** _(required)_ — return column format.
+- **cnd**
+- **fmt**
 
 ***
 
