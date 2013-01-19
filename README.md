@@ -8,7 +8,7 @@ Currently, return format for all endpoints is [JSON](http://json.org/ "JSON").
 
 ***
 
-## Endpoints
+## Parameters
 
 URL Parameter - part of the url, i.e. <url>/:collection/:id
 
