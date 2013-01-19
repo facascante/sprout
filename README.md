@@ -12,4 +12,4 @@ Currently, return format for all endpoints is [JSON](http://json.org/ "JSON").
 
 #### Object Provisioning Resources
 
-- **[<code>GET</code> http://api.sprout.ph/photos](https://github.com/facascante/sprout/blob/master/endpoints/getall.md)**
+- **[<code>GET</code> http://api.sprout.ph/:table](https://github.com/facascante/sprout/blob/master/endpoints/getall.md)**
