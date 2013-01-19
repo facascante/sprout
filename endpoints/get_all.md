@@ -19,7 +19,14 @@ Essential information:
 
 - **collection** _(required)_ — collection containing the documents.
 
+
 Optional information:
+
+- **cnd** _(required)_ — condition for searching.
+- **fmt** _(required)_ — return column format.
+- **srt** _(required)_ — sorting.
+- **skp** _(required)_ — paging, default no limit.
+- **lmt** _(required)_ — limit, default 100 rows.
 
 ***
 
