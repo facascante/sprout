@@ -27,6 +27,11 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+app.get('/:collection',api.findAll);
+app.get('/:collection/:id',api.findOne);
+app.put('/:collection/:id',api.updateOne);
+app.del('/:collection/:id',api.removeOne);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
