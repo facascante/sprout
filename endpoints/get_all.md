@@ -17,7 +17,7 @@ JWT
 
 Essential information:
 
-- **collection** _(required)_ — collection containing the documents.
+- **collection**
 
 
 Optional information:
