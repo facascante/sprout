@@ -29,6 +29,7 @@ app.configure('development', function(){
 
 app.get('/:collection',api.findAll);
 app.get('/:collection/:id',api.findOne);
+app.post('/:collection',api.insertOne);
 app.put('/:collection/:id',api.updateOne);
 app.del('/:collection/:id',api.removeOne);
 

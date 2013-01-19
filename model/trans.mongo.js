@@ -5,6 +5,7 @@ var trans = mongoq(cfg.MONGO_TRANS_URL);
 var UNSET = 'undefined';
 
 module.exports = {	
+	ObjectID : mongoq.mongodb.BSONPure.ObjectID,
 	findAll : function(callback, clt, cnd, fmt, srt, skp, lmt){				
 		if (typeof cnd == UNSET){ cnd = {};};
 		if (typeof fmt == UNSET){ fmt = {};};
@@ -35,7 +36,18 @@ module.exports = {
 		}).fail( function( err ){ 
 			callback(err);	
 		});			
-		},
+	},
+	insertOne : function(callback, clt, cnt){			
+		
+		trans.collection(clt)
+	    .insert(cnt, {safe: true})
+	    .done(function(data) {   
+	    	callback(null,data);
+	    })
+		.fail( function( err ) { 
+			callback(err);	
+		});
+	},
 	updateOne : function(callback, clt, cnt, cnd){			
 			
 		trans.collection(clt)
