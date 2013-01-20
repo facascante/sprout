@@ -17,7 +17,7 @@ body {
 }
 
 #header { 
-   /* background: url("/images/blpilogo.jpg") no-repeat 0 center transparent; */
+    /* background: url("/images/blpilogo.jpg") no-repeat 0 center transparent; */
     background-size: contain;
     height: 67px;
     margin: 0 auto 10px 10%;
@@ -67,20 +67,29 @@ body {
 		padding: 1%;
     margin: 0 auto;
     width: 95%;
+    min-width:1000px;
     min-height:530px;
+    height:auto;
     background: url("/images/textbox2bg.gif") repeat-x scroll 0 0 transparent;
     
 }
 
 #menu {
+		border: 1px solid #b5b9b1;
     float: left;
-    padding: 1%;
-    width: 25%;
-    height:auto;
+    padding: 5px;
+    width: 20%;
+    height:510px;
+    min-width:200px;
+    min-height:500px;
 }
 #page {
+		border: 1px solid #b5b9b1;
     float: right;
-    padding: 1%;
-    width: 68%;
-    height:auto;
+    padding: 5px;
+    min-width:700px;
+    min-height:500px;
+    width: 77%;
+    height:510px;
+    overflow:auto;
 }

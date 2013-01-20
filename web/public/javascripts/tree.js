@@ -22,7 +22,7 @@ $(document).ready(function () {
 					caption: "Choose Your Transaction",
 					ExpandColumn: "elementName",
 					rowNum: 10000,
-					width:248,
+					width:250,
 					treeIcons: {leaf:'ui-icon-document-b'},
 					jsonReader: {
 							repeatitems: false,
