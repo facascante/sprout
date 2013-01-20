@@ -4,7 +4,7 @@
  */
 
 var express = require('express')
-  , api = require('./routes/api')
+  , page = require('./routes/page')
   , http = require('http')
   , path = require('path');
 
@@ -27,10 +27,6 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/:collection',api.findAll);
-app.get('/:collection/:id',api.findOne);
-app.post('/:collection',api.insertOne);
-app.put('/:collection/:id',api.updateOne);
-app.del('/:collection/:id',api.removeOne);
+console.log("Web Module Loaded");
 
-console.log("Api Module Loaded");
+

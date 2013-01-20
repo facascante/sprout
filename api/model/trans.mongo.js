@@ -1,5 +1,5 @@
 var mongoq = require('mongoq');
-var cfg = require('../config/sprout.js');
+var cfg = require('../../config/sprout.js');
 
 var trans = mongoq(cfg.MONGO_TRANS_URL);
 var UNSET = 'undefined';
