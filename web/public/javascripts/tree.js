@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	'use strict';
 	var grid, nav_menu={
-					"response": {}
+					"response": $.cookie("menu") || {}
 	};
 
 	$('<table id="nav_menu"></table>').appendTo('#menu');
