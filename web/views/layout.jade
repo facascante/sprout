@@ -4,4 +4,12 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    #header_wrapper
+      #header
+        #search_section
+          form(method='GET', action='#')
+            input#searchfield(type='text', size=10, name='q')
+            input#searchbutton(type='submit', size=10, title='Search', value='', name='Search')
+      #content
+        #menu
+        #page

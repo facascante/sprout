@@ -1,8 +1,84 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: none repeat scroll 0 0 #b5b9b1;
+    border: 0 none;
+    color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    height:100%;
 }
 
-a {
-  color: #00B7FF;
+#header_wrapper {
+    background: url("/images/template_header_bg.jpg") repeat-x scroll 0 0 transparent;
+    height: 70px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top:13px;
+}
+
+#header { 
+   /* background: url("/images/blpilogo.jpg") no-repeat 0 center transparent; */
+    background-size: contain;
+    height: 67px;
+    margin: 0 auto 10px 10%;
+    width: 90%;
+}
+
+#header #search_section {
+    float: right;
+    margin-right: 20%;
+    margin-top: 25px;
+}
+
+#search_section form {
+    margin: 0;
+    padding: 0;
+}
+
+#searchfield {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #b5b9b1;
+    color: #000000;
+    font-size: 13px;
+    font-variant: normal;
+    height: 20px;
+    line-height: normal;
+    padding: 5px;
+    width: 200px;
+}
+
+#searchbutton {
+    background: url("/images/search_button.png") repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    margin: 0 0 0 7px;
+    padding: 0 6px;
+    text-align: center;
+    vertical-align: bottom;
+    white-space: pre;
+    width: 106px;
+}
+#content {
+		padding: 1%;
+    margin: 0 auto;
+    width: 90%;
+    min-height:530px;
+    background: url("/images/textbox2bg.gif") repeat-x scroll 0 0 transparent;
+    
+}
+
+#menu {
+    float: left;
+    padding: 1%;
+    width: 30%;
+    height:auto;
+}
+#page {
+    float: right;
+    padding: 1%;
+    width: 65%;
+    height:auto;
 }

@@ -8,7 +8,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
-var app = express();
+var app = module.exports = express();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
@@ -26,6 +26,8 @@ app.configure(function(){
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
+
+app.get('/',page.home);
 
 console.log("Web Module Loaded");
 
