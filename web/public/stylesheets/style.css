@@ -1,5 +1,5 @@
 body {
-    background: none repeat scroll 0 0 #b5b9b1;
+    background: none repeat scroll 0 0 #9ea8ad;
     border: 0 none;
     color: #666666;
     font-family: Arial,Helvetica,sans-serif;
@@ -26,45 +26,47 @@ body {
 
 #header #search_section {
     float: right;
-    margin-right: 20%;
-    margin-top: 25px;
+    margin-right: 1%;
+    margin-top: 37px;
 }
 
 #search_section form {
     margin: 0;
     padding: 0;
+    min-width:300px;
 }
 
 #searchfield {
     background: none repeat scroll 0 0 white;
     border: 1px solid #b5b9b1;
     color: #000000;
-    font-size: 13px;
+    font-size: 11px;
     font-variant: normal;
-    height: 20px;
+    height: 12px;
     line-height: normal;
     padding: 5px;
-    width: 200px;
+    width: 150px;
 }
 
 #searchbutton {
     background: url("/images/search_button.png") repeat scroll 0 0 transparent;
+    background-size: contain;
     border: medium none;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
-    height: 35px;
+    height: 25px;
     margin: 0 0 0 7px;
-    padding: 0 6px;
+    padding: 0 16px;
     text-align: center;
     vertical-align: bottom;
     white-space: pre;
-    width: 106px;
+    width: 74px;
 }
 #content {
 		padding: 1%;
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     min-height:530px;
     background: url("/images/textbox2bg.gif") repeat-x scroll 0 0 transparent;
     
