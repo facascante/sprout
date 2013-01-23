@@ -1,11 +1,7 @@
 body {
-    background: none repeat scroll 0 0 #9ea8ad;
-    border: 0 none;
-    color: #666666;
-    font-family: Arial,Helvetica,sans-serif;
+    background: url("/images/gen-bg.jpg") repeat scroll 0 0 #EEEEEE;
     margin: 0;
     padding: 0;
-    height:100%;
 }
 
 #header_wrapper {
@@ -65,31 +61,20 @@ body {
 }
 #content {
 		padding: 1%;
-    margin: 0 auto;
-    width: 95%;
-    min-width:1000px;
-    min-height:530px;
-    height:auto;
-    background: url("/images/textbox2bg.gif") repeat-x scroll 0 0 transparent;
-    
+		height: auto;
+		width: auto;
 }
 
 #menu {
-		border: 1px solid #b5b9b1;
-    float: left;
-    padding: 5px;
-    width: 20%;
-    height:510px;
-    min-width:200px;
-    min-height:500px;
+	float : left;
+	padding-right:20px;
+	padding-bottom:20px;
+	width:auto;
+	height:auto;
 }
 #page {
-		border: 1px solid #b5b9b1;
-    float: right;
-    padding: 5px;
-    min-width:700px;
-    min-height:500px;
-    width: 77%;
-    height:510px;
-    overflow:auto;
+  float : left;
+  width:auto;
+  height:auto;
+  
 }

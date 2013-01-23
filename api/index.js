@@ -5,6 +5,7 @@
 
 var express = require('express')
   , api = require('./routes/api')
+  , gridapi = require('./routes/jqgrid.api')
   , http = require('http')
   , path = require('path');
 
@@ -26,6 +27,8 @@ app.configure(function(){
 app.configure('development', function(){
   app.use(express.errorHandler());
 });
+
+app.post('/grid/:collection',gridapi.findAll);
 
 app.get('/:collection',api.findAll);
 app.get('/:collection/:id',api.findOne);

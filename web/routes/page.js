@@ -2,6 +2,6 @@
 module.exports = {	
 
 	home : function(req,res){
-		res.render('index',{title:"Hello Node"});
+		res.render('page',{title:"Hello Node"});
 	}
 };

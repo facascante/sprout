@@ -68,5 +68,16 @@ module.exports = {
 		.fail( function( err ) { 
 			callback(err);	
 		});
-	}
+	},
+	countActive : function(callback,clt,cnd){
+		trans.collection(clt)
+	    .find(cnd, {safe: true})
+	    .count()
+	    .done(function(data) {   
+	    	callback(null,data);
+	    })
+		.fail( function( err ) { 
+			callback(err);	
+		});
+	},
 };

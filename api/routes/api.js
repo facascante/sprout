@@ -1,7 +1,16 @@
 var trans = require('../model/trans.mongo.js');
 
 var EMPTY_OBJECT = "{}";
-	
+
+function isEmpty(obj) {
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            return false;
+    }
+
+    return true;
+}
+
 module.exports = {	
 		
 		findAll : function(req,res){
@@ -32,11 +41,15 @@ module.exports = {
 		insertOne : function(req,res){
 			var clt = req.params.collection;
 			var cnt = req.body || {};
-			
+			if(!isEmpty(cnt)){
 			trans.insertOne(function(err,data){
 				if(err){ res.json(err,400); }
 				else{ res.json(data,200); }	
 			}, clt, cnt);
+			}
+			else{
+				res.json('Nothing to insert',400);
+			}
 		},
 		updateOne : function(req,res){
 			var clt = req.params.collection;
