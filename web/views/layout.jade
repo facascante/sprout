@@ -6,7 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/jquery-ui-1.10.0.custom.min.css')
     link(rel='stylesheet', href='/stylesheets/ui.jqgrid.css')
     script(src="/javascripts/jquery/jquery-1.9.0.min.js")
-    script(src="http://code.jquery.com/jquery-migrate-1.0.0.js")
+    script(src="/javascripts/jquery/jquery-migrate-1.0.0.js")
     script(src="/javascripts/jquery/jquery-ui-1.10.0.custom.min.js")
     script(src="/javascripts/jquery/jquery.chainedSelects.js")
     script(src="/javascripts/jquery/grid.locale-en.js")
@@ -14,8 +14,6 @@ html
     script(src="/javascripts/jquery/jquery.jqGrid.min.js")
     script(src="/javascripts/jquery/ajaxfileupload.js")
     script(src="/javascripts/jquery/jquery.cookie.js")
-    script(src="/javascripts/tree.js")
-    script(src="/javascripts/grid.js")
     script(src="/javascripts/layout.js")
   body
     #header_wrapper
@@ -25,8 +23,4 @@ html
             input#searchfield(type='text', size=10, name='q')
             input#searchbutton(type='submit', size=10, title='Search', value='', name='Search')
       #content
-        #menu
-         table#nav_menu
-         #nav_pager
-        #page
-          block content-page
+        block content-page

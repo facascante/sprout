@@ -1,6 +1,6 @@
 # Collection Provisioning Resources
 
-  **[<code>GET http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
+  **[<code>GET http://sprout.ph/api/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
 
 
 ## Description
@@ -43,7 +43,7 @@ All known errors cause the resource to return HTTP error code header together wi
 
 **Request**
 
-  **[<code>GET http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
+  **[<code>GET http://sprout.ph/api/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
 
 **Header**
 

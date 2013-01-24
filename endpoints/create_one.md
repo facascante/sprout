@@ -1,6 +1,6 @@
 # Collection Provisioning Resources
 
-  **[<code>POST http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/create_one.md)**
+  **[<code>POST http://sprout.ph/api/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/create_one.md)**
 
 
 ## Description
@@ -41,7 +41,7 @@ All known errors cause the resource to return HTTP error code header together wi
 
 **Request**
 
-  **[<code>POST http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/create_one.md)**
+  **[<code>POST http://sprout.ph/api/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/create_one.md)**
 
 **Header**
 

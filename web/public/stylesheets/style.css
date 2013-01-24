@@ -65,16 +65,18 @@ body {
 		width: auto;
 }
 
-#menu {
+#menu-sub {
 	float : left;
 	padding-right:20px;
 	padding-bottom:20px;
 	width:auto;
 	height:auto;
 }
-#page {
+#page-sub {
   float : left;
   width:auto;
   height:auto;
   
 }
+
+#menu-sub .ui-jqgrid tr.jqgrow td { border-right: 0px none; border-bottom: 0px none; font-size: 13; font-family: Verdana, Arial, Helvetica, sans-serif;}

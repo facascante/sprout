@@ -33,8 +33,8 @@ Request Query - appended to url, i.e. <url>?cnd={"<field>":1}
 
 #### Collection Provisioning Resources
 
-- **[<code>GET http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_all.md)**
-- **[<code>GET http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
-- **[<code>POST http://api.sprout.ph/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/create_one.md)**
-- **[<code>PUT http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/update_one.md)**
-- **[<code>DELETE http://api.sprout.ph/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/delete_one.md)**
+- **[<code>GET http://sprout.ph/api/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_all.md)**
+- **[<code>GET http://sprout.ph/api/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/get_one.md)**
+- **[<code>POST http://sprout.ph/api/:collection</code>](https://github.com/facascante/sprout/blob/master/endpoints/create_one.md)**
+- **[<code>PUT http://sprout.ph/api/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/update_one.md)**
+- **[<code>DELETE http://sprout.ph/api/:collection/:id</code>](https://github.com/facascante/sprout/blob/master/endpoints/delete_one.md)**
