@@ -1,0 +1,42 @@
+| <script type='text/javascript'>
+|  $(document).ready(function () {
+|    'use strict';
+|    function ac(elem, url) {
+|     setTimeout(function () {
+|         $(elem).autocomplete({
+|             source: url+'?param='+ $(elem).attr('id'),
+|             minLength: 2,
+|             focus: function( event, ui ) {
+|                  $(elem).val(ui.item.value);
+|                  return false;
+|             },
+|             select: function (event, ui) {
+|                 $(elem).val(ui.item.id);
+|                 $(elem).trigger('change');
+|                 return false;
+|             }
+|         }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+|                return $( "<li>" )
+|                .append( "<a>Id:" + item.id + "<br>Value:" + item.value + "</a>" )
+|                .appendTo( ul );
+|         };
+|     }, 50);
+|    }
+|    function cs(elem,target,url){
+|       $(elem).chainSelect("#"+target,url);
+|       $(elem).trigger('change');
+|    }
+|    var _wac = function(elem){ac(elem,'/api/ac/!{version}');};
+|    var _wcs = function(elem,target,url){ cs(elem,target,url);};
+|    $("#grid_table").jqGrid(!{collection.replace(/"_wac"/g,"_wac")});
+|    $("#grid_table").jqGrid('gridResize', { minWidth: 200, minHeight: 500, maxHeight:800, maxWidth:1150 });
+|    $("#grid_table").jqGrid('setFrozenColumns');
+|    $("#grid_table").jqGrid('navGrid','#grid_pager',{edit:true,add:true,del:true},{width:'auto',height:'auto'},{width:'auto',height:'auto'});
+|    jQuery("#grid_table").jqGrid('filterToolbar',{stringResult: true});
+|    $('input:text, input:file, input:password, input[type=email]')
+|       .button().addClass('ui-textfield'); 
+|  });
+| </script>
+#page_holder
+table#grid_table
+#grid_pager
