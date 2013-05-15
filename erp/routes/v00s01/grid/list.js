@@ -3,9 +3,18 @@ module.exports = function(req,res){
 	async.auto({
 		
 		filter : function(cb){
-			req.body.condition = JSON.parse(req.body.condition || "{}");
+			req.body.condition = req.body.fcond || {};
+			if(req.query){
+				for(var i in req.query){
+					if(i == 'id'){
+						req.body.condition._id = req.model.ObjectID.createFromHexString(req.query[i]);
+					}
+					else{
+						req.body.condition[i] = req.query[i];
+					}
+				}
+			}
 			if(req.body._search == "true"){
-				
 				if(!req.body.filters){
 					var field = req.body.searchField;
 					var oper = req.body.searchOper;
@@ -87,9 +96,30 @@ module.exports = function(req,res){
 				}
 			});
 		}],
-		transform : ['list',function(cb,result){
+		menuFilter :['list',function(cb,result){
+			if(req.params.table == 'menu'){
+				var list = result.list;
+				var new_list = new Array();
+				for(var i in list){
+					if(list[i].table && list[i].process){
+						if(req.user.permission['view_'+list[i].table+'_'+list[i].process]){
+							new_list.push(list[i]);
+						}
+					}
+					else{
+						new_list.push(list[i]);
+					}
+				}
+				cb(null,new_list);
+			}
+			else{
+				cb(null,result.list);
+			}
 			
-			var list = result.list;
+		}],
+		transform : ['menuFilter',function(cb,result){
+			
+			var list = result.menuFilter;
 			var collection = {};
 			collection.page = result.paging.page;
 			collection.total = result.paging.total;
@@ -106,8 +136,6 @@ module.exports = function(req,res){
 			});
 			cb(null,collection);
 		}]
-		        
-		
 	},function(err,result){
 		if(result){
 			res.json(200,result.transform);

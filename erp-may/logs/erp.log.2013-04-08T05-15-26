@@ -1,0 +1,131 @@
+Mon Apr  8 11:14:59 [initandlisten] MongoDB starting : pid=392 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Mon Apr  8 11:14:59 [initandlisten] 
+Mon Apr  8 11:14:59 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Apr  8 11:14:59 [initandlisten] db version v2.2.0, pdfile version 4.5
+Mon Apr  8 11:14:59 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Mon Apr  8 11:14:59 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Mon Apr  8 11:14:59 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Mon Apr  8 11:14:59 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Mon Apr  8 11:14:59 [initandlisten] recover begin
+Mon Apr  8 11:14:59 [initandlisten] recover lsn: 10055186
+Mon Apr  8 11:14:59 [initandlisten] recover /Users/chito/Google Drive/db/erp/data/journal/j._0
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:109465 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:1261715 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:1316670 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:1371675 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:1426670 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:1756236 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:2031056 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:2086111 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section seq:3129516 < lsn:10055186
+Mon Apr  8 11:14:59 [initandlisten] recover skipping application of section more...
+Mon Apr  8 11:14:59 [initandlisten] recover cleaning up
+Mon Apr  8 11:14:59 [initandlisten] removeJournalFiles
+Mon Apr  8 11:14:59 [initandlisten] recover done
+Mon Apr  8 11:14:59 [websvr] admin web console waiting for connections on port 28017
+Mon Apr  8 11:14:59 [initandlisten] waiting for connections on port 27017
+Mon Apr  8 11:15:32 [initandlisten] connection accepted from 127.0.0.1:53720 #1 (1 connection now open)
+Mon Apr  8 11:15:32 [initandlisten] connection accepted from 127.0.0.1:53721 #2 (2 connections now open)
+Mon Apr  8 11:15:32 [initandlisten] connection accepted from 127.0.0.1:53722 #3 (3 connections now open)
+Mon Apr  8 11:15:32 [initandlisten] connection accepted from 127.0.0.1:53723 #4 (4 connections now open)
+Mon Apr  8 11:15:32 [initandlisten] connection accepted from 127.0.0.1:53724 #5 (5 connections now open)
+Mon Apr  8 11:18:19 [conn3] end connection 127.0.0.1:53722 (4 connections now open)
+Mon Apr  8 11:18:19 [conn5] end connection 127.0.0.1:53724 (4 connections now open)
+Mon Apr  8 11:18:19 [conn1] end connection 127.0.0.1:53720 (4 connections now open)
+Mon Apr  8 11:18:19 [conn4] end connection 127.0.0.1:53723 (4 connections now open)
+Mon Apr  8 11:18:19 [conn2] end connection 127.0.0.1:53721 (4 connections now open)
+Mon Apr  8 11:18:24 [initandlisten] connection accepted from 127.0.0.1:54513 #6 (1 connection now open)
+Mon Apr  8 11:18:24 [initandlisten] connection accepted from 127.0.0.1:54514 #7 (2 connections now open)
+Mon Apr  8 11:18:24 [initandlisten] connection accepted from 127.0.0.1:54515 #8 (3 connections now open)
+Mon Apr  8 11:18:24 [initandlisten] connection accepted from 127.0.0.1:54516 #9 (4 connections now open)
+Mon Apr  8 11:18:24 [initandlisten] connection accepted from 127.0.0.1:54517 #10 (5 connections now open)
+Mon Apr  8 11:19:18 [conn9] end connection 127.0.0.1:54516 (4 connections now open)
+Mon Apr  8 11:19:18 [conn10] end connection 127.0.0.1:54517 (3 connections now open)
+Mon Apr  8 11:19:18 [conn7] end connection 127.0.0.1:54514 (3 connections now open)
+Mon Apr  8 11:19:18 [conn6] end connection 127.0.0.1:54513 (3 connections now open)
+Mon Apr  8 11:19:18 [conn8] end connection 127.0.0.1:54515 (3 connections now open)
+Mon Apr  8 11:19:24 [initandlisten] connection accepted from 127.0.0.1:54801 #11 (1 connection now open)
+Mon Apr  8 11:19:24 [initandlisten] connection accepted from 127.0.0.1:54802 #12 (2 connections now open)
+Mon Apr  8 11:19:24 [initandlisten] connection accepted from 127.0.0.1:54803 #13 (3 connections now open)
+Mon Apr  8 11:19:24 [initandlisten] connection accepted from 127.0.0.1:54804 #14 (4 connections now open)
+Mon Apr  8 11:19:24 [initandlisten] connection accepted from 127.0.0.1:54805 #15 (5 connections now open)
+Mon Apr  8 11:20:21 [conn14] end connection 127.0.0.1:54804 (4 connections now open)
+Mon Apr  8 11:20:21 [conn12] end connection 127.0.0.1:54802 (4 connections now open)
+Mon Apr  8 11:20:21 [conn13] end connection 127.0.0.1:54803 (4 connections now open)
+Mon Apr  8 11:20:21 [conn11] end connection 127.0.0.1:54801 (4 connections now open)
+Mon Apr  8 11:20:21 [conn15] end connection 127.0.0.1:54805 (4 connections now open)
+Mon Apr  8 11:20:27 [initandlisten] connection accepted from 127.0.0.1:55118 #16 (1 connection now open)
+Mon Apr  8 11:20:27 [initandlisten] connection accepted from 127.0.0.1:55119 #17 (2 connections now open)
+Mon Apr  8 11:20:27 [initandlisten] connection accepted from 127.0.0.1:55120 #18 (3 connections now open)
+Mon Apr  8 11:20:27 [initandlisten] connection accepted from 127.0.0.1:55121 #19 (4 connections now open)
+Mon Apr  8 11:20:27 [initandlisten] connection accepted from 127.0.0.1:55122 #20 (5 connections now open)
+Mon Apr  8 11:24:48 [conn20] end connection 127.0.0.1:55122 (4 connections now open)
+Mon Apr  8 11:24:48 [conn16] end connection 127.0.0.1:55118 (4 connections now open)
+Mon Apr  8 11:24:48 [conn18] end connection 127.0.0.1:55120 (4 connections now open)
+Mon Apr  8 11:24:48 [conn17] end connection 127.0.0.1:55119 (4 connections now open)
+Mon Apr  8 11:24:48 [conn19] end connection 127.0.0.1:55121 (4 connections now open)
+Mon Apr  8 11:24:53 [initandlisten] connection accepted from 127.0.0.1:56290 #21 (1 connection now open)
+Mon Apr  8 11:24:53 [initandlisten] connection accepted from 127.0.0.1:56291 #22 (2 connections now open)
+Mon Apr  8 11:24:53 [initandlisten] connection accepted from 127.0.0.1:56292 #23 (3 connections now open)
+Mon Apr  8 11:24:53 [initandlisten] connection accepted from 127.0.0.1:56293 #24 (4 connections now open)
+Mon Apr  8 11:24:53 [initandlisten] connection accepted from 127.0.0.1:56294 #25 (5 connections now open)
+Mon Apr  8 12:54:53 [conn25] end connection 127.0.0.1:56294 (4 connections now open)
+Mon Apr  8 12:54:53 [conn22] end connection 127.0.0.1:56291 (4 connections now open)
+Mon Apr  8 12:54:53 [conn24] end connection 127.0.0.1:56293 (4 connections now open)
+Mon Apr  8 12:54:53 [conn21] end connection 127.0.0.1:56290 (4 connections now open)
+Mon Apr  8 12:54:53 [conn23] end connection 127.0.0.1:56292 (4 connections now open)
+Mon Apr  8 12:55:00 [initandlisten] connection accepted from 127.0.0.1:58123 #26 (1 connection now open)
+Mon Apr  8 12:55:00 [initandlisten] connection accepted from 127.0.0.1:58124 #27 (2 connections now open)
+Mon Apr  8 12:55:00 [initandlisten] connection accepted from 127.0.0.1:58125 #28 (3 connections now open)
+Mon Apr  8 12:55:00 [initandlisten] connection accepted from 127.0.0.1:58126 #29 (4 connections now open)
+Mon Apr  8 12:55:00 [initandlisten] connection accepted from 127.0.0.1:58127 #30 (5 connections now open)
+Mon Apr  8 12:55:45 [conn30] end connection 127.0.0.1:58127 (4 connections now open)
+Mon Apr  8 12:55:45 [conn28] end connection 127.0.0.1:58125 (4 connections now open)
+Mon Apr  8 12:55:45 [conn29] end connection 127.0.0.1:58126 (4 connections now open)
+Mon Apr  8 12:55:45 [conn27] end connection 127.0.0.1:58124 (4 connections now open)
+Mon Apr  8 12:55:45 [conn26] end connection 127.0.0.1:58123 (4 connections now open)
+Mon Apr  8 12:55:49 [initandlisten] connection accepted from 127.0.0.1:58357 #31 (1 connection now open)
+Mon Apr  8 12:55:49 [initandlisten] connection accepted from 127.0.0.1:58358 #32 (2 connections now open)
+Mon Apr  8 12:55:49 [initandlisten] connection accepted from 127.0.0.1:58359 #33 (3 connections now open)
+Mon Apr  8 12:55:49 [initandlisten] connection accepted from 127.0.0.1:58360 #34 (4 connections now open)
+Mon Apr  8 12:55:49 [initandlisten] connection accepted from 127.0.0.1:58361 #35 (5 connections now open)
+Mon Apr  8 12:56:07 [conn35] end connection 127.0.0.1:58361 (4 connections now open)
+Mon Apr  8 12:56:07 [conn33] end connection 127.0.0.1:58359 (4 connections now open)
+Mon Apr  8 12:56:07 [conn31] end connection 127.0.0.1:58357 (4 connections now open)
+Mon Apr  8 12:56:07 [conn34] end connection 127.0.0.1:58360 (2 connections now open)
+Mon Apr  8 12:56:07 [conn32] end connection 127.0.0.1:58358 (1 connection now open)
+Mon Apr  8 12:56:10 [initandlisten] connection accepted from 127.0.0.1:58463 #36 (1 connection now open)
+Mon Apr  8 12:56:10 [initandlisten] connection accepted from 127.0.0.1:58464 #37 (2 connections now open)
+Mon Apr  8 12:56:10 [initandlisten] connection accepted from 127.0.0.1:58465 #38 (3 connections now open)
+Mon Apr  8 12:56:10 [initandlisten] connection accepted from 127.0.0.1:58466 #39 (4 connections now open)
+Mon Apr  8 12:56:10 [initandlisten] connection accepted from 127.0.0.1:58467 #40 (5 connections now open)
+Mon Apr  8 12:59:20 [conn40] end connection 127.0.0.1:58467 (4 connections now open)
+Mon Apr  8 12:59:20 [conn37] end connection 127.0.0.1:58464 (4 connections now open)
+Mon Apr  8 12:59:20 [conn38] end connection 127.0.0.1:58465 (4 connections now open)
+Mon Apr  8 12:59:20 [conn39] end connection 127.0.0.1:58466 (4 connections now open)
+Mon Apr  8 12:59:20 [conn36] end connection 127.0.0.1:58463 (4 connections now open)
+Mon Apr  8 12:59:25 [initandlisten] connection accepted from 127.0.0.1:59336 #41 (1 connection now open)
+Mon Apr  8 12:59:25 [initandlisten] connection accepted from 127.0.0.1:59337 #42 (2 connections now open)
+Mon Apr  8 12:59:25 [initandlisten] connection accepted from 127.0.0.1:59338 #43 (3 connections now open)
+Mon Apr  8 12:59:25 [initandlisten] connection accepted from 127.0.0.1:59339 #44 (4 connections now open)
+Mon Apr  8 12:59:25 [initandlisten] connection accepted from 127.0.0.1:59340 #45 (5 connections now open)
+Mon Apr  8 13:03:39 [conn45] end connection 127.0.0.1:59340 (4 connections now open)
+Mon Apr  8 13:03:39 [conn44] end connection 127.0.0.1:59339 (4 connections now open)
+Mon Apr  8 13:03:39 [conn41] end connection 127.0.0.1:59336 (4 connections now open)
+Mon Apr  8 13:03:39 [conn43] end connection 127.0.0.1:59338 (4 connections now open)
+Mon Apr  8 13:03:39 [conn42] end connection 127.0.0.1:59337 (4 connections now open)
+Mon Apr  8 13:03:47 [initandlisten] connection accepted from 127.0.0.1:60527 #46 (1 connection now open)
+Mon Apr  8 13:03:47 [initandlisten] connection accepted from 127.0.0.1:60528 #47 (2 connections now open)
+Mon Apr  8 13:03:47 [initandlisten] connection accepted from 127.0.0.1:60529 #48 (3 connections now open)
+Mon Apr  8 13:03:47 [initandlisten] connection accepted from 127.0.0.1:60530 #49 (4 connections now open)
+Mon Apr  8 13:03:47 [initandlisten] connection accepted from 127.0.0.1:60531 #50 (5 connections now open)
+Mon Apr  8 13:04:14 [conn50] end connection 127.0.0.1:60531 (4 connections now open)
+Mon Apr  8 13:04:14 [conn48] end connection 127.0.0.1:60529 (4 connections now open)
+Mon Apr  8 13:04:14 [conn49] end connection 127.0.0.1:60530 (2 connections now open)
+Mon Apr  8 13:04:14 [conn47] end connection 127.0.0.1:60528 (2 connections now open)
+Mon Apr  8 13:04:14 [conn46] end connection 127.0.0.1:60527 (1 connection now open)
+Mon Apr  8 13:04:18 [initandlisten] connection accepted from 127.0.0.1:60679 #51 (1 connection now open)
+Mon Apr  8 13:04:18 [initandlisten] connection accepted from 127.0.0.1:60681 #52 (2 connections now open)
+Mon Apr  8 13:04:18 [initandlisten] connection accepted from 127.0.0.1:60682 #53 (3 connections now open)
+Mon Apr  8 13:04:18 [initandlisten] connection accepted from 127.0.0.1:60683 #54 (4 connections now open)
+Mon Apr  8 13:04:18 [initandlisten] connection accepted from 127.0.0.1:60684 #55 (5 connections now open)

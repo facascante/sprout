@@ -21,6 +21,23 @@ module.exports = {
 				}
 				var instance = version[req.params.version];
 				execute(instance,res,instance.page.process(req,res));
+			},
+			login : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.page.login(req,res));
+			},
+			logout : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.page.logout(req,res));
+			},
+			calendar : function(req,res){
+				res.render('calendar',{title:'Calendar'});
 			}
 		},
 		grid : {
@@ -37,6 +54,34 @@ module.exports = {
 				}
 				var instance = version[req.params.version];
 				execute(instance,res,instance.grid.prov(req,res));
+			},
+			select : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.grid.select(req,res));
+			},
+			upload : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.grid.upload(req,res));
+			},
+			download : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.grid.download(req,res));
+			},
+			print : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.grid.print(req,res));
 			}
 		},
 		api : {
@@ -46,6 +91,27 @@ module.exports = {
 				}
 				var instance = version[req.params.version];
 				execute(instance,res,instance.api.autocomplete(req,res));
+			},
+			places : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.api.places(req,res));
+			},
+			chainselect : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.api.chainselect(req,res));
+			},
+			login : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.api.login(req,res));
 			}
 		}
 };

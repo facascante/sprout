@@ -1,0 +1,34 @@
+Fri Apr 12 13:34:18 [initandlisten] MongoDB starting : pid=368 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Fri Apr 12 13:34:18 [initandlisten] 
+Fri Apr 12 13:34:18 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri Apr 12 13:34:18 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Apr 12 13:34:18 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Apr 12 13:34:18 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Fri Apr 12 13:34:18 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Fri Apr 12 13:34:18 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Fri Apr 12 13:34:18 [initandlisten] recover : no journal files present, no recovery needed
+Fri Apr 12 13:34:18 [websvr] admin web console waiting for connections on port 28017
+Fri Apr 12 13:34:18 [initandlisten] waiting for connections on port 27017
+Fri Apr 12 13:34:39 [initandlisten] connection accepted from 127.0.0.1:56719 #1 (1 connection now open)
+Fri Apr 12 13:34:39 [initandlisten] connection accepted from 127.0.0.1:56720 #2 (2 connections now open)
+Fri Apr 12 13:34:39 [initandlisten] connection accepted from 127.0.0.1:56721 #3 (3 connections now open)
+Fri Apr 12 13:34:39 [initandlisten] connection accepted from 127.0.0.1:56722 #4 (4 connections now open)
+Fri Apr 12 13:34:39 [initandlisten] connection accepted from 127.0.0.1:56723 #5 (5 connections now open)
+Fri Apr 12 17:06:04 [conn3] end connection 127.0.0.1:56721 (4 connections now open)
+Fri Apr 12 17:06:04 [conn4] end connection 127.0.0.1:56722 (4 connections now open)
+Fri Apr 12 17:06:04 [conn5] end connection 127.0.0.1:56723 (4 connections now open)
+Fri Apr 12 17:06:04 [conn2] end connection 127.0.0.1:56720 (4 connections now open)
+Fri Apr 12 17:06:04 [conn1] end connection 127.0.0.1:56719 (4 connections now open)
+Fri Apr 12 17:06:25 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Fri Apr 12 17:06:25 [interruptThread] now exiting
+Fri Apr 12 17:06:25 dbexit: 
+Fri Apr 12 17:06:25 [interruptThread] shutdown: going to close listening sockets...
+Fri Apr 12 17:06:25 [interruptThread] closing listening socket: 6
+Fri Apr 12 17:06:25 [interruptThread] closing listening socket: 7
+Fri Apr 12 17:06:25 [interruptThread] closing listening socket: 8
+Fri Apr 12 17:06:25 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Fri Apr 12 17:06:25 [interruptThread] shutdown: going to flush diaglog...
+Fri Apr 12 17:06:25 [interruptThread] shutdown: going to close sockets...
+Fri Apr 12 17:06:25 [interruptThread] shutdown: waiting for fs preallocator...
+Fri Apr 12 17:06:25 [interruptThread] shutdown: lock for final commit...
+Fri Apr 12 17:06:25 [interruptThread] shutdown: final commit...

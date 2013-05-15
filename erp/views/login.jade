@@ -1,0 +1,15 @@
+extends layouts/layout
+block content-page
+	.container
+		.module-container
+			.login-bg
+				if message
+					label.message=message
+				form(name="login", action="/api/login/v00s01", method="POST")
+					.form-content
+						label Username
+						input(name="username", type="text")
+						label Password
+						input(name="password", type="password")
+						a(onclick="document.forms[0].submit();return true;")
+							.button-login

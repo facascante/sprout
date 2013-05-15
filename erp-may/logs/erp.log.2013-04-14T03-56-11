@@ -1,0 +1,145 @@
+Sun Apr 14 07:10:52 [initandlisten] MongoDB starting : pid=289 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Sun Apr 14 07:10:52 [initandlisten] 
+Sun Apr 14 07:10:52 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sun Apr 14 07:10:52 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Apr 14 07:10:52 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Apr 14 07:10:52 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Sun Apr 14 07:10:52 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Sun Apr 14 07:10:52 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Sun Apr 14 07:10:52 [initandlisten] recover : no journal files present, no recovery needed
+Sun Apr 14 07:10:53 [websvr] admin web console waiting for connections on port 28017
+Sun Apr 14 07:10:53 [initandlisten] waiting for connections on port 27017
+Sun Apr 14 07:12:03 [initandlisten] connection accepted from 127.0.0.1:49937 #1 (1 connection now open)
+Sun Apr 14 07:12:03 [initandlisten] connection accepted from 127.0.0.1:49938 #2 (2 connections now open)
+Sun Apr 14 07:12:03 [initandlisten] connection accepted from 127.0.0.1:49939 #3 (3 connections now open)
+Sun Apr 14 07:12:03 [initandlisten] connection accepted from 127.0.0.1:49940 #4 (4 connections now open)
+Sun Apr 14 07:12:03 [initandlisten] connection accepted from 127.0.0.1:49941 #5 (5 connections now open)
+Sun Apr 14 07:12:10 [conn2] warning: can't find plugin [asc]
+Sun Apr 14 07:12:50 [conn2] warning: can't find plugin [asc]
+Sun Apr 14 07:13:24 [conn2] warning: can't find plugin [asc]
+Sun Apr 14 07:13:26 [conn2] warning: can't find plugin [asc]
+Sun Apr 14 07:21:56 [conn1] warning: can't find plugin [asc]
+Sun Apr 14 07:23:23 [conn1] end connection 127.0.0.1:49937 (4 connections now open)
+Sun Apr 14 07:23:23 [conn5] end connection 127.0.0.1:49941 (4 connections now open)
+Sun Apr 14 07:23:23 [conn2] end connection 127.0.0.1:49938 (4 connections now open)
+Sun Apr 14 07:23:23 [conn4] end connection 127.0.0.1:49940 (4 connections now open)
+Sun Apr 14 07:23:23 [conn3] end connection 127.0.0.1:49939 (4 connections now open)
+Sun Apr 14 07:23:30 [initandlisten] connection accepted from 127.0.0.1:52960 #6 (1 connection now open)
+Sun Apr 14 07:23:30 [initandlisten] connection accepted from 127.0.0.1:52961 #7 (2 connections now open)
+Sun Apr 14 07:23:30 [initandlisten] connection accepted from 127.0.0.1:52962 #8 (3 connections now open)
+Sun Apr 14 07:23:30 [initandlisten] connection accepted from 127.0.0.1:52963 #9 (4 connections now open)
+Sun Apr 14 07:23:30 [initandlisten] connection accepted from 127.0.0.1:52964 #10 (5 connections now open)
+Sun Apr 14 07:34:36 [conn7] warning: can't find plugin [asc]
+Sun Apr 14 07:35:32 [conn6] warning: can't find plugin [asc]
+Sun Apr 14 07:36:00 [conn7] end connection 127.0.0.1:52961 (4 connections now open)
+Sun Apr 14 07:36:00 [conn6] end connection 127.0.0.1:52960 (4 connections now open)
+Sun Apr 14 07:36:00 [conn9] end connection 127.0.0.1:52963 (4 connections now open)
+Sun Apr 14 07:36:00 [conn8] end connection 127.0.0.1:52962 (4 connections now open)
+Sun Apr 14 07:36:00 [conn10] end connection 127.0.0.1:52964 (4 connections now open)
+Sun Apr 14 07:36:10 [initandlisten] connection accepted from 127.0.0.1:56590 #11 (1 connection now open)
+Sun Apr 14 07:36:10 [initandlisten] connection accepted from 127.0.0.1:56591 #12 (2 connections now open)
+Sun Apr 14 07:36:10 [initandlisten] connection accepted from 127.0.0.1:56592 #13 (3 connections now open)
+Sun Apr 14 07:36:10 [initandlisten] connection accepted from 127.0.0.1:56593 #14 (4 connections now open)
+Sun Apr 14 07:36:10 [initandlisten] connection accepted from 127.0.0.1:56594 #15 (5 connections now open)
+Sun Apr 14 07:40:27 [conn13] build index erp.auth { _id: 1 }
+Sun Apr 14 07:40:27 [conn13] build index done.  scanned 0 total records. 0 secs
+Sun Apr 14 07:40:29 [conn15] build index erp.permission { _id: 1 }
+Sun Apr 14 07:40:29 [conn15] build index done.  scanned 0 total records. 0 secs
+Sun Apr 14 07:40:30 [conn12] build index erp.role { _id: 1 }
+Sun Apr 14 07:40:30 [conn12] build index done.  scanned 0 total records. 0 secs
+Sun Apr 14 07:40:34 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 07:43:40 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 07:43:50 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 07:44:48 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 07:45:45 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 07:45:47 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 07:46:50 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 07:49:42 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 07:49:58 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 07:51:42 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 07:52:24 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 07:53:50 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 07:53:52 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 07:55:01 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 07:55:31 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 07:55:34 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 07:58:00 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 07:58:11 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 07:58:15 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 07:58:16 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 07:58:19 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:00:10 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:01:08 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:01:17 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 08:02:16 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:02:21 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:02:33 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 08:03:10 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:03:13 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:08:51 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 08:08:54 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 08:08:56 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:09:09 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 08:09:20 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:09:32 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 08:12:27 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 08:13:38 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 08:13:47 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:14:15 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:14:19 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 08:15:24 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:17:11 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 08:18:04 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:22:50 [conn12] build index erp.grant { _id: 1 }
+Sun Apr 14 08:22:50 [conn12] build index done.  scanned 0 total records. 0 secs
+Sun Apr 14 08:24:11 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 08:25:38 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 08:25:52 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 08:27:06 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 08:28:11 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 09:51:34 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 09:52:07 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 09:56:44 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 09:56:48 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 09:59:07 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 09:59:29 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 09:59:35 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 10:00:46 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 10:01:19 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 10:01:25 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 10:01:33 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 10:01:38 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 10:01:42 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 10:01:45 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 10:04:12 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 10:04:22 [conn14] warning: can't find plugin [asc]
+Sun Apr 14 10:04:25 [conn12] warning: can't find plugin [asc]
+Sun Apr 14 10:04:32 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 10:15:28 [conn13] warning: can't find plugin [asc]
+Sun Apr 14 10:15:32 [conn11] warning: can't find plugin [asc]
+Sun Apr 14 10:15:53 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 11:00:44 [conn15] warning: can't find plugin [asc]
+Sun Apr 14 11:01:10 [conn14] end connection 127.0.0.1:56593 (4 connections now open)
+Sun Apr 14 11:01:10 [conn12] end connection 127.0.0.1:56591 (4 connections now open)
+Sun Apr 14 11:01:10 [conn15] end connection 127.0.0.1:56594 (4 connections now open)
+Sun Apr 14 11:01:10 [conn13] end connection 127.0.0.1:56592 (4 connections now open)
+Sun Apr 14 11:01:10 [conn11] end connection 127.0.0.1:56590 (4 connections now open)
+Sun Apr 14 11:01:30 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Sun Apr 14 11:01:30 [interruptThread] now exiting
+Sun Apr 14 11:01:30 dbexit: 
+Sun Apr 14 11:01:30 [interruptThread] shutdown: going to close listening sockets...
+Sun Apr 14 11:01:30 [interruptThread] closing listening socket: 6
+Sun Apr 14 11:01:30 [interruptThread] closing listening socket: 7
+Sun Apr 14 11:01:30 [interruptThread] closing listening socket: 8
+Sun Apr 14 11:01:30 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Sun Apr 14 11:01:30 [interruptThread] shutdown: going to flush diaglog...
+Sun Apr 14 11:01:30 [interruptThread] shutdown: going to close sockets...
+Sun Apr 14 11:01:30 [interruptThread] shutdown: waiting for fs preallocator...
+Sun Apr 14 11:01:30 [interruptThread] shutdown: lock for final commit...
+Sun Apr 14 11:01:30 [interruptThread] shutdown: final commit...
+Sun Apr 14 11:01:30 [interruptThread] shutdown: closing all files...
+Sun Apr 14 11:01:30 [interruptThread] closeAllFiles() finished
+Sun Apr 14 11:01:30 [interruptThread] journalCleanup...
+Sun Apr 14 11:01:30 [interruptThread] removeJournalFiles
+Sun Apr 14 11:01:30 [interruptThread] shutdown: removing fs lock...
+Sun Apr 14 11:01:30 dbexit: really exiting now

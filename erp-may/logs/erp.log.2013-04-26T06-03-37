@@ -1,0 +1,310 @@
+Fri Apr 26 09:17:28 [initandlisten] MongoDB starting : pid=289 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Fri Apr 26 09:17:28 [initandlisten] 
+Fri Apr 26 09:17:28 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri Apr 26 09:17:28 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Apr 26 09:17:28 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Apr 26 09:17:28 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Fri Apr 26 09:17:28 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Fri Apr 26 09:17:28 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Fri Apr 26 09:17:28 [initandlisten] recover : no journal files present, no recovery needed
+Fri Apr 26 09:17:28 [websvr] admin web console waiting for connections on port 28017
+Fri Apr 26 09:17:28 [initandlisten] waiting for connections on port 27017
+Fri Apr 26 09:18:06 [initandlisten] connection accepted from 127.0.0.1:49649 #1 (1 connection now open)
+Fri Apr 26 09:18:06 [initandlisten] connection accepted from 127.0.0.1:49650 #2 (2 connections now open)
+Fri Apr 26 09:18:06 [initandlisten] connection accepted from 127.0.0.1:49651 #3 (3 connections now open)
+Fri Apr 26 09:18:06 [initandlisten] connection accepted from 127.0.0.1:49652 #4 (4 connections now open)
+Fri Apr 26 09:18:06 [initandlisten] connection accepted from 127.0.0.1:49653 #5 (5 connections now open)
+Fri Apr 26 09:19:11 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 09:22:21 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 09:22:25 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 09:22:31 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 09:22:43 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 09:22:52 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 09:23:40 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 09:56:33 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 09:56:36 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 09:58:00 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:58:15 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 09:58:22 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 09:58:41 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 09:58:44 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 09:58:58 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 09:59:02 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 09:59:04 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 09:59:17 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:20 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:23 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:26 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:29 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:32 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:35 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:38 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:41 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:44 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:47 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:50 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:53 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 09:59:57 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 10:04:39 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 10:11:42 [conn1] end connection 127.0.0.1:49649 (4 connections now open)
+Fri Apr 26 10:11:42 [conn4] end connection 127.0.0.1:49652 (4 connections now open)
+Fri Apr 26 10:11:42 [conn3] end connection 127.0.0.1:49651 (4 connections now open)
+Fri Apr 26 10:11:42 [conn2] end connection 127.0.0.1:49650 (4 connections now open)
+Fri Apr 26 10:11:42 [conn5] end connection 127.0.0.1:49653 (4 connections now open)
+Fri Apr 26 10:11:55 [initandlisten] connection accepted from 127.0.0.1:63355 #6 (1 connection now open)
+Fri Apr 26 10:11:55 [initandlisten] connection accepted from 127.0.0.1:63356 #7 (2 connections now open)
+Fri Apr 26 10:11:55 [initandlisten] connection accepted from 127.0.0.1:63357 #8 (3 connections now open)
+Fri Apr 26 10:11:55 [initandlisten] connection accepted from 127.0.0.1:63358 #9 (4 connections now open)
+Fri Apr 26 10:11:55 [initandlisten] connection accepted from 127.0.0.1:63359 #10 (5 connections now open)
+Fri Apr 26 10:12:29 [conn6] warning: can't find plugin [asc]
+Fri Apr 26 10:12:35 [conn9] warning: can't find plugin [asc]
+Fri Apr 26 10:13:26 [conn6] warning: can't find plugin [asc]
+Fri Apr 26 10:14:14 [conn9] end connection 127.0.0.1:63358 (4 connections now open)
+Fri Apr 26 10:14:14 [conn8] end connection 127.0.0.1:63357 (4 connections now open)
+Fri Apr 26 10:14:14 [conn6] end connection 127.0.0.1:63355 (2 connections now open)
+Fri Apr 26 10:14:14 [conn10] end connection 127.0.0.1:63359 (2 connections now open)
+Fri Apr 26 10:14:14 [conn7] end connection 127.0.0.1:63356 (2 connections now open)
+Fri Apr 26 10:14:24 [initandlisten] connection accepted from 127.0.0.1:64011 #11 (1 connection now open)
+Fri Apr 26 10:14:24 [initandlisten] connection accepted from 127.0.0.1:64012 #12 (2 connections now open)
+Fri Apr 26 10:14:24 [initandlisten] connection accepted from 127.0.0.1:64013 #13 (3 connections now open)
+Fri Apr 26 10:14:24 [initandlisten] connection accepted from 127.0.0.1:64014 #14 (4 connections now open)
+Fri Apr 26 10:14:24 [initandlisten] connection accepted from 127.0.0.1:64015 #15 (5 connections now open)
+Fri Apr 26 10:14:28 [conn14] warning: can't find plugin [asc]
+Fri Apr 26 10:14:50 [conn15] end connection 127.0.0.1:64015 (4 connections now open)
+Fri Apr 26 10:14:50 [conn13] end connection 127.0.0.1:64013 (4 connections now open)
+Fri Apr 26 10:14:50 [conn14] end connection 127.0.0.1:64014 (4 connections now open)
+Fri Apr 26 10:14:50 [conn11] end connection 127.0.0.1:64011 (4 connections now open)
+Fri Apr 26 10:14:50 [conn12] end connection 127.0.0.1:64012 (4 connections now open)
+Fri Apr 26 10:14:59 [initandlisten] connection accepted from 127.0.0.1:64172 #16 (1 connection now open)
+Fri Apr 26 10:14:59 [initandlisten] connection accepted from 127.0.0.1:64173 #17 (2 connections now open)
+Fri Apr 26 10:14:59 [initandlisten] connection accepted from 127.0.0.1:64174 #18 (3 connections now open)
+Fri Apr 26 10:14:59 [initandlisten] connection accepted from 127.0.0.1:64175 #19 (4 connections now open)
+Fri Apr 26 10:14:59 [initandlisten] connection accepted from 127.0.0.1:64176 #20 (5 connections now open)
+Fri Apr 26 10:15:04 [conn19] warning: can't find plugin [asc]
+Fri Apr 26 10:15:28 [conn20] end connection 127.0.0.1:64176 (4 connections now open)
+Fri Apr 26 10:15:28 [conn16] end connection 127.0.0.1:64172 (4 connections now open)
+Fri Apr 26 10:15:28 [conn19] end connection 127.0.0.1:64175 (2 connections now open)
+Fri Apr 26 10:15:28 [conn17] end connection 127.0.0.1:64173 (2 connections now open)
+Fri Apr 26 10:15:28 [conn18] end connection 127.0.0.1:64174 (2 connections now open)
+Fri Apr 26 10:15:42 [initandlisten] connection accepted from 127.0.0.1:64371 #21 (1 connection now open)
+Fri Apr 26 10:15:42 [initandlisten] connection accepted from 127.0.0.1:64372 #22 (2 connections now open)
+Fri Apr 26 10:15:42 [initandlisten] connection accepted from 127.0.0.1:64373 #23 (3 connections now open)
+Fri Apr 26 10:15:42 [initandlisten] connection accepted from 127.0.0.1:64374 #24 (4 connections now open)
+Fri Apr 26 10:15:42 [initandlisten] connection accepted from 127.0.0.1:64375 #25 (5 connections now open)
+Fri Apr 26 10:15:57 [conn24] warning: can't find plugin [asc]
+Fri Apr 26 10:17:22 [conn22] warning: can't find plugin [asc]
+Fri Apr 26 10:18:06 [conn24] warning: can't find plugin [asc]
+Fri Apr 26 10:20:26 [conn25] end connection 127.0.0.1:64375 (4 connections now open)
+Fri Apr 26 10:20:26 [conn24] end connection 127.0.0.1:64374 (4 connections now open)
+Fri Apr 26 10:20:26 [conn21] end connection 127.0.0.1:64371 (4 connections now open)
+Fri Apr 26 10:20:26 [conn23] end connection 127.0.0.1:64373 (4 connections now open)
+Fri Apr 26 10:20:26 [conn22] end connection 127.0.0.1:64372 (4 connections now open)
+Fri Apr 26 10:20:39 [initandlisten] connection accepted from 127.0.0.1:49310 #26 (1 connection now open)
+Fri Apr 26 10:20:39 [initandlisten] connection accepted from 127.0.0.1:49311 #27 (2 connections now open)
+Fri Apr 26 10:20:39 [initandlisten] connection accepted from 127.0.0.1:49312 #28 (3 connections now open)
+Fri Apr 26 10:20:39 [initandlisten] connection accepted from 127.0.0.1:49313 #29 (4 connections now open)
+Fri Apr 26 10:20:39 [initandlisten] connection accepted from 127.0.0.1:49314 #30 (5 connections now open)
+Fri Apr 26 10:20:46 [conn29] warning: can't find plugin [asc]
+Fri Apr 26 10:21:38 [conn30] warning: can't find plugin [asc]
+Fri Apr 26 10:22:55 [conn26] warning: can't find plugin [asc]
+Fri Apr 26 10:23:38 [conn30] end connection 127.0.0.1:49314 (4 connections now open)
+Fri Apr 26 10:23:38 [conn29] end connection 127.0.0.1:49313 (4 connections now open)
+Fri Apr 26 10:23:38 [conn26] end connection 127.0.0.1:49310 (4 connections now open)
+Fri Apr 26 10:23:38 [conn28] end connection 127.0.0.1:49312 (4 connections now open)
+Fri Apr 26 10:23:38 [conn27] end connection 127.0.0.1:49311 (4 connections now open)
+Fri Apr 26 10:23:49 [initandlisten] connection accepted from 127.0.0.1:50147 #31 (1 connection now open)
+Fri Apr 26 10:23:49 [initandlisten] connection accepted from 127.0.0.1:50148 #32 (2 connections now open)
+Fri Apr 26 10:23:49 [initandlisten] connection accepted from 127.0.0.1:50149 #33 (3 connections now open)
+Fri Apr 26 10:23:49 [initandlisten] connection accepted from 127.0.0.1:50150 #34 (4 connections now open)
+Fri Apr 26 10:23:49 [initandlisten] connection accepted from 127.0.0.1:50151 #35 (5 connections now open)
+Fri Apr 26 10:23:54 [conn33] warning: can't find plugin [asc]
+Fri Apr 26 10:24:34 [conn35] warning: can't find plugin [asc]
+Fri Apr 26 10:26:40 [conn31] warning: can't find plugin [asc]
+Fri Apr 26 10:27:58 [conn31] warning: can't find plugin [asc]
+Fri Apr 26 10:30:35 [conn35] end connection 127.0.0.1:50151 (4 connections now open)
+Fri Apr 26 10:30:35 [conn34] end connection 127.0.0.1:50150 (4 connections now open)
+Fri Apr 26 10:30:35 [conn33] end connection 127.0.0.1:50149 (4 connections now open)
+Fri Apr 26 10:30:35 [conn32] end connection 127.0.0.1:50148 (4 connections now open)
+Fri Apr 26 10:30:35 [conn31] end connection 127.0.0.1:50147 (4 connections now open)
+Fri Apr 26 10:30:46 [initandlisten] connection accepted from 127.0.0.1:51973 #36 (1 connection now open)
+Fri Apr 26 10:30:46 [initandlisten] connection accepted from 127.0.0.1:51974 #37 (2 connections now open)
+Fri Apr 26 10:30:46 [initandlisten] connection accepted from 127.0.0.1:51975 #38 (3 connections now open)
+Fri Apr 26 10:30:46 [initandlisten] connection accepted from 127.0.0.1:51976 #39 (4 connections now open)
+Fri Apr 26 10:30:46 [initandlisten] connection accepted from 127.0.0.1:51977 #40 (5 connections now open)
+Fri Apr 26 10:30:50 [conn39] warning: can't find plugin [asc]
+Fri Apr 26 10:35:58 [conn39] end connection 127.0.0.1:51976 (4 connections now open)
+Fri Apr 26 10:35:58 [conn36] end connection 127.0.0.1:51973 (4 connections now open)
+Fri Apr 26 10:35:58 [conn40] end connection 127.0.0.1:51977 (4 connections now open)
+Fri Apr 26 10:35:58 [conn37] end connection 127.0.0.1:51974 (4 connections now open)
+Fri Apr 26 10:35:58 [conn38] end connection 127.0.0.1:51975 (4 connections now open)
+Fri Apr 26 10:36:11 [initandlisten] connection accepted from 127.0.0.1:53406 #41 (1 connection now open)
+Fri Apr 26 10:36:11 [initandlisten] connection accepted from 127.0.0.1:53407 #42 (2 connections now open)
+Fri Apr 26 10:36:11 [initandlisten] connection accepted from 127.0.0.1:53408 #43 (3 connections now open)
+Fri Apr 26 10:36:11 [initandlisten] connection accepted from 127.0.0.1:53409 #44 (4 connections now open)
+Fri Apr 26 10:36:11 [initandlisten] connection accepted from 127.0.0.1:53410 #45 (5 connections now open)
+Fri Apr 26 10:36:43 [conn45] warning: can't find plugin [asc]
+Fri Apr 26 10:37:47 [conn44] end connection 127.0.0.1:53409 (4 connections now open)
+Fri Apr 26 10:37:47 [conn45] end connection 127.0.0.1:53410 (4 connections now open)
+Fri Apr 26 10:37:47 [conn42] end connection 127.0.0.1:53407 (4 connections now open)
+Fri Apr 26 10:37:47 [conn43] end connection 127.0.0.1:53408 (4 connections now open)
+Fri Apr 26 10:37:47 [conn41] end connection 127.0.0.1:53406 (4 connections now open)
+Fri Apr 26 10:39:03 [initandlisten] connection accepted from 127.0.0.1:54165 #46 (1 connection now open)
+Fri Apr 26 10:39:03 [initandlisten] connection accepted from 127.0.0.1:54166 #47 (2 connections now open)
+Fri Apr 26 10:39:03 [initandlisten] connection accepted from 127.0.0.1:54167 #48 (3 connections now open)
+Fri Apr 26 10:39:03 [initandlisten] connection accepted from 127.0.0.1:54168 #49 (4 connections now open)
+Fri Apr 26 10:39:03 [initandlisten] connection accepted from 127.0.0.1:54169 #50 (5 connections now open)
+Fri Apr 26 10:39:09 [conn49] warning: can't find plugin [asc]
+Fri Apr 26 10:39:55 [conn50] end connection 127.0.0.1:54169 (4 connections now open)
+Fri Apr 26 10:39:55 [conn49] end connection 127.0.0.1:54168 (4 connections now open)
+Fri Apr 26 10:39:55 [conn47] end connection 127.0.0.1:54166 (4 connections now open)
+Fri Apr 26 10:39:55 [conn48] end connection 127.0.0.1:54167 (4 connections now open)
+Fri Apr 26 10:39:55 [conn46] end connection 127.0.0.1:54165 (4 connections now open)
+Fri Apr 26 10:40:04 [initandlisten] connection accepted from 127.0.0.1:54441 #51 (1 connection now open)
+Fri Apr 26 10:40:04 [initandlisten] connection accepted from 127.0.0.1:54442 #52 (2 connections now open)
+Fri Apr 26 10:40:04 [initandlisten] connection accepted from 127.0.0.1:54443 #53 (3 connections now open)
+Fri Apr 26 10:40:04 [initandlisten] connection accepted from 127.0.0.1:54444 #54 (4 connections now open)
+Fri Apr 26 10:40:04 [initandlisten] connection accepted from 127.0.0.1:54445 #55 (5 connections now open)
+Fri Apr 26 10:40:08 [conn54] warning: can't find plugin [asc]
+Fri Apr 26 10:43:42 [conn54] end connection 127.0.0.1:54444 (4 connections now open)
+Fri Apr 26 10:43:42 [conn52] end connection 127.0.0.1:54442 (4 connections now open)
+Fri Apr 26 10:43:42 [conn55] end connection 127.0.0.1:54445 (4 connections now open)
+Fri Apr 26 10:43:42 [conn51] end connection 127.0.0.1:54441 (4 connections now open)
+Fri Apr 26 10:43:42 [conn53] end connection 127.0.0.1:54443 (4 connections now open)
+Fri Apr 26 10:43:51 [initandlisten] connection accepted from 127.0.0.1:55434 #56 (1 connection now open)
+Fri Apr 26 10:43:51 [initandlisten] connection accepted from 127.0.0.1:55435 #57 (2 connections now open)
+Fri Apr 26 10:43:51 [initandlisten] connection accepted from 127.0.0.1:55436 #58 (3 connections now open)
+Fri Apr 26 10:43:51 [initandlisten] connection accepted from 127.0.0.1:55437 #59 (4 connections now open)
+Fri Apr 26 10:43:51 [initandlisten] connection accepted from 127.0.0.1:55438 #60 (5 connections now open)
+Fri Apr 26 10:43:55 [conn59] warning: can't find plugin [asc]
+Fri Apr 26 10:47:15 [conn59] warning: can't find plugin [asc]
+Fri Apr 26 10:48:04 [conn58] warning: can't find plugin [asc]
+Fri Apr 26 10:48:45 [conn60] end connection 127.0.0.1:55438 (4 connections now open)
+Fri Apr 26 10:48:45 [conn59] end connection 127.0.0.1:55437 (4 connections now open)
+Fri Apr 26 10:48:45 [conn57] end connection 127.0.0.1:55435 (4 connections now open)
+Fri Apr 26 10:48:45 [conn56] end connection 127.0.0.1:55434 (4 connections now open)
+Fri Apr 26 10:48:45 [conn58] end connection 127.0.0.1:55436 (4 connections now open)
+Fri Apr 26 10:48:57 [initandlisten] connection accepted from 127.0.0.1:56798 #61 (1 connection now open)
+Fri Apr 26 10:48:57 [initandlisten] connection accepted from 127.0.0.1:56799 #62 (2 connections now open)
+Fri Apr 26 10:48:57 [initandlisten] connection accepted from 127.0.0.1:56800 #63 (3 connections now open)
+Fri Apr 26 10:48:57 [initandlisten] connection accepted from 127.0.0.1:56801 #64 (4 connections now open)
+Fri Apr 26 10:48:57 [initandlisten] connection accepted from 127.0.0.1:56802 #65 (5 connections now open)
+Fri Apr 26 10:49:00 [conn64] warning: can't find plugin [asc]
+Fri Apr 26 10:50:40 [conn64] warning: can't find plugin [asc]
+Fri Apr 26 10:51:33 [conn64] end connection 127.0.0.1:56801 (4 connections now open)
+Fri Apr 26 10:51:33 [conn61] end connection 127.0.0.1:56798 (4 connections now open)
+Fri Apr 26 10:51:33 [conn65] end connection 127.0.0.1:56802 (4 connections now open)
+Fri Apr 26 10:51:33 [conn62] end connection 127.0.0.1:56799 (4 connections now open)
+Fri Apr 26 10:51:33 [conn63] end connection 127.0.0.1:56800 (4 connections now open)
+Fri Apr 26 10:52:40 [initandlisten] connection accepted from 127.0.0.1:57781 #66 (1 connection now open)
+Fri Apr 26 10:52:40 [initandlisten] connection accepted from 127.0.0.1:57782 #67 (2 connections now open)
+Fri Apr 26 10:52:40 [initandlisten] connection accepted from 127.0.0.1:57783 #68 (3 connections now open)
+Fri Apr 26 10:52:40 [initandlisten] connection accepted from 127.0.0.1:57784 #69 (4 connections now open)
+Fri Apr 26 10:52:40 [initandlisten] connection accepted from 127.0.0.1:57785 #70 (5 connections now open)
+Fri Apr 26 10:52:45 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 10:58:04 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 10:58:42 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 10:59:45 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:01:48 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:02:27 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:02:49 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:03:52 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:04:21 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:07:38 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:08:00 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:08:39 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:09:58 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:10:02 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:10:09 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:10:17 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:11:01 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:26:09 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:28:20 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:29:06 [initandlisten] connection accepted from 127.0.0.1:51096 #71 (6 connections now open)
+Fri Apr 26 11:30:02 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:34:26 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:34:34 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:34:40 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:34:57 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:36:47 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:37:35 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:37:42 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:37:47 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:43:00 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:43:39 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:43:53 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:44:06 [conn68] warning: can't find plugin [asc]
+Fri Apr 26 11:44:10 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:44:17 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:44:32 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:47:22 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:48:37 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:48:56 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:49:07 [conn67] build index erp.undefined { _id: 1 }
+Fri Apr 26 11:49:07 [conn67] build index done.  scanned 0 total records. 0 secs
+Fri Apr 26 11:52:25 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:53:54 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:54:58 [conn68] warning: can't find plugin [asc]
+Fri Apr 26 11:55:51 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:57:05 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 11:57:25 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:57:28 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 11:58:48 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:58:52 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 11:59:10 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 11:59:16 [conn68] warning: can't find plugin [asc]
+Fri Apr 26 12:00:12 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:02:06 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:02:14 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:07:08 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:07:11 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:07:32 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:07:49 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:07:49 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:08:13 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 12:08:17 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 12:10:21 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:12:13 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:12:17 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:14:00 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:14:07 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:14:24 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 12:14:46 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:14:51 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:15:45 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:17:47 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 12:32:42 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:33:29 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:35:06 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:35:10 [conn66] warning: can't find plugin [asc]
+Fri Apr 26 12:35:28 [conn67] warning: can't find plugin [asc]
+Fri Apr 26 12:36:10 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:36:14 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:36:38 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 12:36:45 [conn69] warning: can't find plugin [asc]
+Fri Apr 26 12:37:47 [conn70] warning: can't find plugin [asc]
+Fri Apr 26 12:49:57 [conn68] warning: can't find plugin [asc]
+Fri Apr 26 13:00:35 [conn69] end connection 127.0.0.1:57784 (5 connections now open)
+Fri Apr 26 13:00:35 [conn70] end connection 127.0.0.1:57785 (5 connections now open)
+Fri Apr 26 13:00:35 [conn67] end connection 127.0.0.1:57782 (5 connections now open)
+Fri Apr 26 13:00:35 [conn66] end connection 127.0.0.1:57781 (5 connections now open)
+Fri Apr 26 13:00:35 [conn68] end connection 127.0.0.1:57783 (5 connections now open)
+Fri Apr 26 13:01:25 [conn71] end connection 127.0.0.1:51096 (0 connections now open)
+Fri Apr 26 13:01:47 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Fri Apr 26 13:01:47 [interruptThread] now exiting
+Fri Apr 26 13:01:47 dbexit: 
+Fri Apr 26 13:01:47 [interruptThread] shutdown: going to close listening sockets...
+Fri Apr 26 13:01:47 [interruptThread] closing listening socket: 6
+Fri Apr 26 13:01:47 [interruptThread] closing listening socket: 7
+Fri Apr 26 13:01:47 [interruptThread] closing listening socket: 8
+Fri Apr 26 13:01:47 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Fri Apr 26 13:01:47 [interruptThread] shutdown: going to flush diaglog...
+Fri Apr 26 13:01:47 [interruptThread] shutdown: going to close sockets...
+Fri Apr 26 13:01:47 [interruptThread] shutdown: waiting for fs preallocator...
+Fri Apr 26 13:01:47 [interruptThread] shutdown: lock for final commit...
+Fri Apr 26 13:01:47 [interruptThread] shutdown: final commit...
+Fri Apr 26 13:01:47 [interruptThread] shutdown: closing all files...
+Fri Apr 26 13:01:47 [interruptThread] closeAllFiles() finished
+Fri Apr 26 13:01:47 [interruptThread] journalCleanup...
+Fri Apr 26 13:01:47 [interruptThread] removeJournalFiles
+Fri Apr 26 13:01:47 [interruptThread] shutdown: removing fs lock...
+Fri Apr 26 13:01:47 dbexit: really exiting now

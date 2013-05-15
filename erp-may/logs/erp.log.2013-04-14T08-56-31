@@ -1,0 +1,127 @@
+Sun Apr 14 11:56:11 [initandlisten] MongoDB starting : pid=250 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Sun Apr 14 11:56:11 [initandlisten] 
+Sun Apr 14 11:56:11 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sun Apr 14 11:56:11 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sun Apr 14 11:56:11 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sun Apr 14 11:56:11 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Sun Apr 14 11:56:11 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Sun Apr 14 11:56:11 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Sun Apr 14 11:56:11 [initandlisten] recover : no journal files present, no recovery needed
+Sun Apr 14 11:56:17 [websvr] admin web console waiting for connections on port 28017
+Sun Apr 14 11:56:17 [initandlisten] waiting for connections on port 27017
+Sun Apr 14 13:00:29 [initandlisten] connection accepted from 127.0.0.1:51075 #1 (1 connection now open)
+Sun Apr 14 13:00:29 [initandlisten] connection accepted from 127.0.0.1:51076 #2 (2 connections now open)
+Sun Apr 14 13:00:29 [initandlisten] connection accepted from 127.0.0.1:51077 #3 (3 connections now open)
+Sun Apr 14 13:00:29 [initandlisten] connection accepted from 127.0.0.1:51078 #4 (4 connections now open)
+Sun Apr 14 13:00:29 [initandlisten] connection accepted from 127.0.0.1:51079 #5 (5 connections now open)
+Sun Apr 14 13:01:31 [conn2] end connection 127.0.0.1:51076 (4 connections now open)
+Sun Apr 14 13:01:31 [conn1] end connection 127.0.0.1:51075 (4 connections now open)
+Sun Apr 14 13:01:31 [conn4] end connection 127.0.0.1:51078 (4 connections now open)
+Sun Apr 14 13:01:31 [conn3] end connection 127.0.0.1:51077 (4 connections now open)
+Sun Apr 14 13:01:31 [conn5] end connection 127.0.0.1:51079 (4 connections now open)
+Sun Apr 14 13:03:57 [initandlisten] connection accepted from 127.0.0.1:52065 #6 (1 connection now open)
+Sun Apr 14 13:03:57 [initandlisten] connection accepted from 127.0.0.1:52066 #7 (2 connections now open)
+Sun Apr 14 13:03:57 [initandlisten] connection accepted from 127.0.0.1:52067 #8 (3 connections now open)
+Sun Apr 14 13:03:57 [initandlisten] connection accepted from 127.0.0.1:52068 #9 (4 connections now open)
+Sun Apr 14 13:03:57 [initandlisten] connection accepted from 127.0.0.1:52069 #10 (5 connections now open)
+Sun Apr 14 13:04:19 [conn6] warning: can't find plugin [asc]
+Sun Apr 14 13:08:05 [conn6] end connection 127.0.0.1:52065 (4 connections now open)
+Sun Apr 14 13:08:05 [conn9] end connection 127.0.0.1:52068 (4 connections now open)
+Sun Apr 14 13:08:05 [conn10] end connection 127.0.0.1:52069 (4 connections now open)
+Sun Apr 14 13:08:05 [conn7] end connection 127.0.0.1:52066 (4 connections now open)
+Sun Apr 14 13:08:05 [conn8] end connection 127.0.0.1:52067 (4 connections now open)
+Sun Apr 14 13:09:10 [initandlisten] connection accepted from 127.0.0.1:53495 #11 (1 connection now open)
+Sun Apr 14 13:09:10 [initandlisten] connection accepted from 127.0.0.1:53496 #12 (2 connections now open)
+Sun Apr 14 13:09:10 [initandlisten] connection accepted from 127.0.0.1:53497 #13 (3 connections now open)
+Sun Apr 14 13:09:10 [initandlisten] connection accepted from 127.0.0.1:53498 #14 (4 connections now open)
+Sun Apr 14 13:09:10 [initandlisten] connection accepted from 127.0.0.1:53499 #15 (5 connections now open)
+Sun Apr 14 14:43:12 [conn15] end connection 127.0.0.1:53499 (4 connections now open)
+Sun Apr 14 14:43:12 [conn14] end connection 127.0.0.1:53498 (3 connections now open)
+Sun Apr 14 14:43:12 [conn11] end connection 127.0.0.1:53495 (3 connections now open)
+Sun Apr 14 14:43:12 [conn12] end connection 127.0.0.1:53496 (3 connections now open)
+Sun Apr 14 14:43:12 [conn13] end connection 127.0.0.1:53497 (3 connections now open)
+Sun Apr 14 14:45:53 [initandlisten] connection accepted from 127.0.0.1:64205 #16 (1 connection now open)
+Sun Apr 14 14:45:53 [initandlisten] connection accepted from 127.0.0.1:64206 #17 (2 connections now open)
+Sun Apr 14 14:45:53 [initandlisten] connection accepted from 127.0.0.1:64207 #18 (3 connections now open)
+Sun Apr 14 14:45:53 [initandlisten] connection accepted from 127.0.0.1:64208 #19 (4 connections now open)
+Sun Apr 14 14:45:53 [initandlisten] connection accepted from 127.0.0.1:64209 #20 (5 connections now open)
+Sun Apr 14 14:58:01 [conn20] end connection 127.0.0.1:64209 (4 connections now open)
+Sun Apr 14 14:58:01 [conn16] end connection 127.0.0.1:64205 (4 connections now open)
+Sun Apr 14 14:58:01 [conn18] end connection 127.0.0.1:64207 (4 connections now open)
+Sun Apr 14 14:58:01 [conn17] end connection 127.0.0.1:64206 (4 connections now open)
+Sun Apr 14 14:58:01 [conn19] end connection 127.0.0.1:64208 (4 connections now open)
+Sun Apr 14 14:58:18 [initandlisten] connection accepted from 127.0.0.1:51319 #21 (1 connection now open)
+Sun Apr 14 14:58:18 [initandlisten] connection accepted from 127.0.0.1:51320 #22 (2 connections now open)
+Sun Apr 14 14:58:18 [initandlisten] connection accepted from 127.0.0.1:51321 #23 (3 connections now open)
+Sun Apr 14 14:58:18 [initandlisten] connection accepted from 127.0.0.1:51322 #24 (4 connections now open)
+Sun Apr 14 14:58:18 [initandlisten] connection accepted from 127.0.0.1:51323 #25 (5 connections now open)
+Sun Apr 14 15:03:30 [conn24] end connection 127.0.0.1:51322 (4 connections now open)
+Sun Apr 14 15:03:30 [conn22] end connection 127.0.0.1:51320 (4 connections now open)
+Sun Apr 14 15:03:30 [conn25] end connection 127.0.0.1:51323 (4 connections now open)
+Sun Apr 14 15:03:30 [conn23] end connection 127.0.0.1:51321 (4 connections now open)
+Sun Apr 14 15:03:30 [conn21] end connection 127.0.0.1:51319 (4 connections now open)
+Sun Apr 14 15:03:51 [initandlisten] connection accepted from 127.0.0.1:52890 #26 (1 connection now open)
+Sun Apr 14 15:03:51 [initandlisten] connection accepted from 127.0.0.1:52891 #27 (2 connections now open)
+Sun Apr 14 15:03:51 [initandlisten] connection accepted from 127.0.0.1:52892 #28 (3 connections now open)
+Sun Apr 14 15:03:51 [initandlisten] connection accepted from 127.0.0.1:52893 #29 (4 connections now open)
+Sun Apr 14 15:03:51 [initandlisten] connection accepted from 127.0.0.1:52894 #30 (5 connections now open)
+Sun Apr 14 15:04:17 [conn30] warning: can't find plugin [asc]
+Sun Apr 14 15:28:21 [conn29] end connection 127.0.0.1:52893 (4 connections now open)
+Sun Apr 14 15:28:21 [conn30] end connection 127.0.0.1:52894 (4 connections now open)
+Sun Apr 14 15:28:21 [conn28] end connection 127.0.0.1:52892 (4 connections now open)
+Sun Apr 14 15:28:21 [conn26] end connection 127.0.0.1:52890 (4 connections now open)
+Sun Apr 14 15:28:21 [conn27] end connection 127.0.0.1:52891 (4 connections now open)
+Sun Apr 14 15:28:32 [initandlisten] connection accepted from 127.0.0.1:59746 #31 (1 connection now open)
+Sun Apr 14 15:28:32 [initandlisten] connection accepted from 127.0.0.1:59747 #32 (2 connections now open)
+Sun Apr 14 15:28:32 [initandlisten] connection accepted from 127.0.0.1:59748 #33 (3 connections now open)
+Sun Apr 14 15:28:32 [initandlisten] connection accepted from 127.0.0.1:59749 #34 (4 connections now open)
+Sun Apr 14 15:28:32 [initandlisten] connection accepted from 127.0.0.1:59750 #35 (5 connections now open)
+Sun Apr 14 15:30:09 [conn31] warning: can't find plugin [asc]
+Sun Apr 14 15:31:54 [conn34] warning: can't find plugin [asc]
+Sun Apr 14 15:33:49 [conn33] warning: can't find plugin [asc]
+Sun Apr 14 15:38:09 [conn35] end connection 127.0.0.1:59750 (4 connections now open)
+Sun Apr 14 15:38:09 [conn33] end connection 127.0.0.1:59748 (3 connections now open)
+Sun Apr 14 15:38:09 [conn32] end connection 127.0.0.1:59747 (3 connections now open)
+Sun Apr 14 15:38:09 [conn31] end connection 127.0.0.1:59746 (3 connections now open)
+Sun Apr 14 15:38:09 [conn34] end connection 127.0.0.1:59749 (3 connections now open)
+Sun Apr 14 15:38:21 [initandlisten] connection accepted from 127.0.0.1:62418 #36 (1 connection now open)
+Sun Apr 14 15:38:21 [initandlisten] connection accepted from 127.0.0.1:62419 #37 (2 connections now open)
+Sun Apr 14 15:38:21 [initandlisten] connection accepted from 127.0.0.1:62420 #38 (3 connections now open)
+Sun Apr 14 15:38:21 [initandlisten] connection accepted from 127.0.0.1:62421 #39 (4 connections now open)
+Sun Apr 14 15:38:21 [initandlisten] connection accepted from 127.0.0.1:62422 #40 (5 connections now open)
+Sun Apr 14 15:38:30 [conn37] warning: can't find plugin [asc]
+Sun Apr 14 15:39:03 [conn40] end connection 127.0.0.1:62422 (4 connections now open)
+Sun Apr 14 15:39:03 [conn38] end connection 127.0.0.1:62420 (4 connections now open)
+Sun Apr 14 15:39:03 [conn36] end connection 127.0.0.1:62418 (4 connections now open)
+Sun Apr 14 15:39:03 [conn39] end connection 127.0.0.1:62421 (4 connections now open)
+Sun Apr 14 15:39:03 [conn37] end connection 127.0.0.1:62419 (4 connections now open)
+Sun Apr 14 15:39:13 [initandlisten] connection accepted from 127.0.0.1:62672 #41 (1 connection now open)
+Sun Apr 14 15:39:13 [initandlisten] connection accepted from 127.0.0.1:62673 #42 (2 connections now open)
+Sun Apr 14 15:39:13 [initandlisten] connection accepted from 127.0.0.1:62674 #43 (3 connections now open)
+Sun Apr 14 15:39:13 [initandlisten] connection accepted from 127.0.0.1:62675 #44 (4 connections now open)
+Sun Apr 14 15:39:13 [initandlisten] connection accepted from 127.0.0.1:62676 #45 (5 connections now open)
+Sun Apr 14 15:40:43 [conn43] warning: can't find plugin [asc]
+Sun Apr 14 15:42:42 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Sun Apr 14 15:42:42 [interruptThread] now exiting
+Sun Apr 14 15:42:42 dbexit: 
+Sun Apr 14 15:42:42 [interruptThread] shutdown: going to close listening sockets...
+Sun Apr 14 15:42:42 [interruptThread] closing listening socket: 6
+Sun Apr 14 15:42:42 [interruptThread] closing listening socket: 7
+Sun Apr 14 15:42:42 [interruptThread] closing listening socket: 8
+Sun Apr 14 15:42:42 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Sun Apr 14 15:42:42 [interruptThread] shutdown: going to flush diaglog...
+Sun Apr 14 15:42:42 [interruptThread] shutdown: going to close sockets...
+Sun Apr 14 15:42:42 [interruptThread] shutdown: waiting for fs preallocator...
+Sun Apr 14 15:42:42 [conn42] end connection 127.0.0.1:62673 (4 connections now open)
+Sun Apr 14 15:42:42 [conn45] end connection 127.0.0.1:62676 (4 connections now open)
+Sun Apr 14 15:42:42 [interruptThread] shutdown: lock for final commit...
+Sun Apr 14 15:42:42 [conn41] end connection 127.0.0.1:62672 (4 connections now open)
+Sun Apr 14 15:42:42 [conn44] end connection 127.0.0.1:62675 (4 connections now open)
+Sun Apr 14 15:42:42 [conn43] end connection 127.0.0.1:62674 (4 connections now open)
+Sun Apr 14 15:42:42 [interruptThread] shutdown: final commit...
+Sun Apr 14 15:42:42 [interruptThread] shutdown: closing all files...
+Sun Apr 14 15:42:42 [interruptThread] closeAllFiles() finished
+Sun Apr 14 15:42:42 [interruptThread] journalCleanup...
+Sun Apr 14 15:42:42 [interruptThread] removeJournalFiles
+Sun Apr 14 15:42:42 [interruptThread] shutdown: removing fs lock...
+Sun Apr 14 15:42:42 dbexit: really exiting now

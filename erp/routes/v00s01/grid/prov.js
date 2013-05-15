@@ -3,6 +3,10 @@ module.exports = function(req,res){
 	
 	var operation = req.body.oper;
 	delete req.body.oper;
+	if(operation == "edit" && req.body.id.split('_')[0] == "dnd"){
+		operation = "add";
+		delete req.body.id;
+	}
 	switch(operation){
 	
 		case "add": 

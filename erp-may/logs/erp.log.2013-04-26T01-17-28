@@ -1,0 +1,79 @@
+Fri Apr 26 05:35:18 [initandlisten] MongoDB starting : pid=611 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Fri Apr 26 05:35:18 [initandlisten] 
+Fri Apr 26 05:35:18 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri Apr 26 05:35:18 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri Apr 26 05:35:18 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri Apr 26 05:35:18 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Fri Apr 26 05:35:18 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Fri Apr 26 05:35:18 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Fri Apr 26 05:35:18 [initandlisten] recover : no journal files present, no recovery needed
+Fri Apr 26 05:35:18 [websvr] admin web console waiting for connections on port 28017
+Fri Apr 26 05:35:18 [initandlisten] waiting for connections on port 27017
+Fri Apr 26 05:35:49 [initandlisten] connection accepted from 127.0.0.1:53644 #1 (1 connection now open)
+Fri Apr 26 05:35:49 [initandlisten] connection accepted from 127.0.0.1:53645 #2 (2 connections now open)
+Fri Apr 26 05:35:49 [initandlisten] connection accepted from 127.0.0.1:53646 #3 (3 connections now open)
+Fri Apr 26 05:35:49 [initandlisten] connection accepted from 127.0.0.1:53647 #4 (4 connections now open)
+Fri Apr 26 05:35:49 [initandlisten] connection accepted from 127.0.0.1:53648 #5 (5 connections now open)
+Fri Apr 26 05:35:58 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 05:54:35 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 05:54:42 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 05:55:42 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 05:55:51 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 05:55:54 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 05:56:01 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 06:22:44 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 06:22:49 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 06:22:52 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 06:23:13 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 06:23:22 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 06:23:25 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 06:23:31 [conn2] warning: can't find plugin [asc]
+Fri Apr 26 06:26:14 [conn5] warning: can't find plugin [asc]
+Fri Apr 26 06:26:18 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 06:26:22 [conn3] warning: can't find plugin [asc]
+Fri Apr 26 06:26:27 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 06:26:34 [conn1] warning: can't find plugin [asc]
+Fri Apr 26 06:26:59 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 06:27:08 [conn4] warning: can't find plugin [asc]
+Fri Apr 26 06:33:56 [conn5] end connection 127.0.0.1:53648 (4 connections now open)
+Fri Apr 26 06:33:56 [conn3] end connection 127.0.0.1:53646 (4 connections now open)
+Fri Apr 26 06:33:56 [conn1] end connection 127.0.0.1:53644 (4 connections now open)
+Fri Apr 26 06:33:56 [conn4] end connection 127.0.0.1:53647 (4 connections now open)
+Fri Apr 26 06:33:56 [conn2] end connection 127.0.0.1:53645 (4 connections now open)
+Fri Apr 26 06:34:13 [initandlisten] connection accepted from 127.0.0.1:52441 #6 (1 connection now open)
+Fri Apr 26 06:34:13 [initandlisten] connection accepted from 127.0.0.1:52442 #7 (2 connections now open)
+Fri Apr 26 06:34:13 [initandlisten] connection accepted from 127.0.0.1:52443 #8 (3 connections now open)
+Fri Apr 26 06:34:13 [initandlisten] connection accepted from 127.0.0.1:52444 #9 (4 connections now open)
+Fri Apr 26 06:34:13 [initandlisten] connection accepted from 127.0.0.1:52445 #10 (5 connections now open)
+Fri Apr 26 06:34:25 [conn8] warning: can't find plugin [asc]
+Fri Apr 26 06:34:31 [conn8] warning: can't find plugin [asc]
+Fri Apr 26 06:38:01 [conn8] warning: can't find plugin [asc]
+Fri Apr 26 06:52:54 [conn7] warning: can't find plugin [asc]
+Fri Apr 26 06:53:06 [conn8] warning: can't find plugin [asc]
+Fri Apr 26 08:06:41 [conn8] warning: can't find plugin [asc]
+Fri Apr 26 08:06:50 [conn9] warning: can't find plugin [asc]
+Fri Apr 26 08:07:27 [conn7] warning: can't find plugin [asc]
+Fri Apr 26 08:09:46 [conn10] end connection 127.0.0.1:52445 (4 connections now open)
+Fri Apr 26 08:09:46 [conn9] end connection 127.0.0.1:52444 (4 connections now open)
+Fri Apr 26 08:09:46 [conn8] end connection 127.0.0.1:52443 (4 connections now open)
+Fri Apr 26 08:09:46 [conn6] end connection 127.0.0.1:52441 (4 connections now open)
+Fri Apr 26 08:09:46 [conn7] end connection 127.0.0.1:52442 (4 connections now open)
+Fri Apr 26 08:10:16 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Fri Apr 26 08:10:16 [interruptThread] now exiting
+Fri Apr 26 08:10:16 dbexit: 
+Fri Apr 26 08:10:16 [interruptThread] shutdown: going to close listening sockets...
+Fri Apr 26 08:10:16 [interruptThread] closing listening socket: 6
+Fri Apr 26 08:10:16 [interruptThread] closing listening socket: 7
+Fri Apr 26 08:10:16 [interruptThread] closing listening socket: 8
+Fri Apr 26 08:10:16 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Fri Apr 26 08:10:16 [interruptThread] shutdown: going to flush diaglog...
+Fri Apr 26 08:10:16 [interruptThread] shutdown: going to close sockets...
+Fri Apr 26 08:10:16 [interruptThread] shutdown: waiting for fs preallocator...
+Fri Apr 26 08:10:16 [interruptThread] shutdown: lock for final commit...
+Fri Apr 26 08:10:16 [interruptThread] shutdown: final commit...
+Fri Apr 26 08:10:16 [interruptThread] shutdown: closing all files...
+Fri Apr 26 08:10:16 [interruptThread] closeAllFiles() finished
+Fri Apr 26 08:10:16 [interruptThread] journalCleanup...
+Fri Apr 26 08:10:16 [interruptThread] removeJournalFiles
+Fri Apr 26 08:10:16 [interruptThread] shutdown: removing fs lock...
+Fri Apr 26 08:10:16 dbexit: really exiting now

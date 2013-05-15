@@ -1,0 +1,70 @@
+extends layouts/layout
+block content-header
+  #search_section
+    input#logout-button(type='submit', size=10, title='Logout', value='', name='Logout',onclick="location.href='/page/logout/v00s01'")
+block content-page
+  #menu-sub
+    include layouts/menu
+  #page-sub
+    link(rel='stylesheet', href='/stylesheets/core.css')
+    script(src="/javascripts/jquery/jMonthCalendar.js")
+    |  <style type="text/css" media="screen">
+    |     #jMonthCalendar .Collection { background-color: #DDFFFF;}
+    |     #jMonthCalendar .Delivery { background-color: #DD00FF;}
+    |   </style>
+    |    <script type="text/javascript">
+    |        $().ready(function() {
+    |             var options = {
+    |                  height: 550,
+    |                  width: 880,
+    |                  navHeight: 25,
+    |                  labelHeight: 25,
+    |                  onMonthChanging: function(dateIn) {
+    |                     return true;
+    |                  },
+    |                  onEventLinkClick: function(event) { 
+    |                         alert("event link click");
+    |                         return true; 
+    |                   },
+    |                   onEventBlockClick: function(event) { 
+    |                         alert("block clicked");
+    |                         return true; 
+    |                   },
+    |                   onEventBlockOver: function(event) {
+    |                         return true;
+    |                   },
+    |                   onEventBlockOut: function(event) {
+    |                         return true;
+    |                   },
+    |                   onDayLinkClick: function(date) { 
+    |                         alert(date.toLocaleDateString());
+    |                         return true; 
+    |                   },
+    |                   onDayCellClick: function(date) { 
+    |                         alert(date.toLocaleDateString());
+    |                         return true; 
+    |                   }
+    |           };
+    |            var events = [{ "EventID": 1, "Date": "new Date(2009, 3, 1)", "Title": "10:00 pm - EventTitle1", "URL": "#", "Description": "This is a sample event description", "CssClass": "Collection" },
+    |                          { "EventID": 1, "StartDateTime": new Date(2009, 3, 12), "Title": "10:00 pm - EventTitle1", "URL": "#", "Description": "This is a sample event description", "CssClass": "Collection" },
+    |                          { "EventID": 2, "Date": "2009-04-28T00:00:00.0000000", "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" },
+    |                          { "EventID": 3, "StartDateTime": new Date(2009, 3, 20), "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" },
+    |                          { "EventID": 4, "StartDateTime": "2009-04-14", "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" },
+    |                          { "EventID": 4, "StartDateTime": "2009-04-14", "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" },
+    |                          { "EventID": 4, "StartDateTime": "2009-04-14", "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" },
+    |                          { "EventID": 4, "StartDateTime": "2009-04-14", "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" }
+    |                         ];
+    |            $.jMonthCalendar.Initialize(options, events);
+    |            var extraEvents = [{ "EventID": 5, "StartDateTime": new Date(2009, 3, 11), "Title": "10:00 pm - EventTitle1", "URL": "#", "Description": "This is a sample event description", "CssClass": "Collection" },
+    |                               { "EventID": 6, "StartDateTime": new Date(2009, 3, 20), "Title": "9:30 pm - this is a much longer title", "URL": "#", "Description": "This is a sample event description", "CssClass": "Delivery" }
+    |                              ];
+    |            $("#Button").click(function() {
+    |                    $.jMonthCalendar.AddEvents(extraEvents);
+    |            });
+    |            $("#ChangeMonth").click(function() {
+    |                    $.jMonthCalendar.ChangeMonth(new Date(2008, 4, 7));
+    |            });
+    |    });
+    |    </script>
+    center
+      #jMonthCalendar

@@ -1,0 +1,53 @@
+Mon May 13 09:54:29 [initandlisten] MongoDB starting : pid=618 port=27017 dbpath=/Users/chito/Google Drive/db/erp-may/data 64-bit host=chitombp
+Mon May 13 09:54:29 [initandlisten] 
+Mon May 13 09:54:29 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon May 13 09:54:29 [initandlisten] db version v2.2.0, pdfile version 4.5
+Mon May 13 09:54:29 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Mon May 13 09:54:29 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Mon May 13 09:54:29 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Mon May 13 09:54:29 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp-may/data/journal
+Mon May 13 09:54:29 [initandlisten] recover : no journal files present, no recovery needed
+Mon May 13 09:54:29 [websvr] admin web console waiting for connections on port 28017
+Mon May 13 09:54:29 [initandlisten] waiting for connections on port 27017
+Mon May 13 09:56:15 [initandlisten] connection accepted from 127.0.0.1:56542 #1 (1 connection now open)
+Mon May 13 09:56:15 [initandlisten] connection accepted from 127.0.0.1:56543 #2 (2 connections now open)
+Mon May 13 09:56:15 [initandlisten] connection accepted from 127.0.0.1:56544 #3 (3 connections now open)
+Mon May 13 09:56:15 [initandlisten] connection accepted from 127.0.0.1:56545 #4 (4 connections now open)
+Mon May 13 09:56:15 [initandlisten] connection accepted from 127.0.0.1:56546 #5 (5 connections now open)
+Mon May 13 10:26:02 [conn1] info DFM::findAll(): extent 0:141000 was empty, skipping ahead. ns:erp.sales_item
+Mon May 13 10:26:10 [conn2] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Mon May 13 11:30:22 [conn5] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:56546 (4 connections now open)
+Mon May 13 11:30:22 [conn1] end connection 127.0.0.1:56542 (4 connections now open)
+Mon May 13 11:30:22 [conn4] end connection 127.0.0.1:56545 (4 connections now open)
+Mon May 13 11:30:22 [conn2] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:56543 (4 connections now open)
+Mon May 13 11:30:22 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:56544 (4 connections now open)
+Mon May 13 11:30:38 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Mon May 13 11:30:38 [interruptThread] now exiting
+Mon May 13 11:30:38 dbexit: 
+Mon May 13 11:30:38 [interruptThread] shutdown: going to close listening sockets...
+Mon May 13 11:30:38 [interruptThread] closing listening socket: 6
+Mon May 13 11:30:38 [interruptThread] closing listening socket: 7
+Mon May 13 11:30:38 [interruptThread] closing listening socket: 8
+Mon May 13 11:30:38 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Mon May 13 11:30:38 [interruptThread] shutdown: going to flush diaglog...
+Mon May 13 11:30:38 [interruptThread] shutdown: going to close sockets...
+Mon May 13 11:30:38 [interruptThread] shutdown: waiting for fs preallocator...
+Mon May 13 11:30:38 [interruptThread] shutdown: lock for final commit...
+Mon May 13 11:30:38 [interruptThread] shutdown: final commit...
+Mon May 13 11:30:38 [interruptThread] shutdown: closing all files...
+Mon May 13 11:30:38 [interruptThread] closeAllFiles() finished
+Mon May 13 11:30:38 [interruptThread] journalCleanup...
+Mon May 13 11:30:38 [interruptThread] removeJournalFiles
+Mon May 13 11:30:38 [interruptThread] shutdown: removing fs lock...
+Mon May 13 11:30:38 dbexit: really exiting now

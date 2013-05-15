@@ -2,7 +2,7 @@ var mongoq = require('mongoq');
 var config = require('../config.json');
 var db = mongoq(config.mongo.url);
 
-var model = {
+var model = exports.db = {
 		ObjectID : mongoq.mongodb.BSONPure.ObjectID,
 		count : function(content,cb){
 			db.collection(content.table)
@@ -21,7 +21,7 @@ var model = {
 			  .find(content.condition || {},content.columns || {})
 			  .sort(content.sorting || {})
 			  .skip(content.page || 0)
-			  .limit(content.rows || 100)
+			  .limit(content.rows || 0)
 			  .toArray()
 			  .done(function(result){
 				  cb(null,result);
@@ -33,7 +33,7 @@ var model = {
 		},
 		item : function(content,cb){
 			db.collection(content.table)
-			  .findOne(content.condition,content.columns)
+			  .findOne(content.condition || {},content.columns || {})
 			  .done(function(result){
 				  cb(null,result);
 			  })

@@ -1,5 +1,7 @@
 extends layouts/layout
-
+block content-header
+  #search_section
+    input#logout-button(type='submit', size=10, title='Logout', value='', name='Logout',onclick="location.href='/page/logout/v00s01'")
 block content-page
   #menu-sub
     include layouts/menu

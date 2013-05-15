@@ -9,6 +9,13 @@
     "express": "3.0.0rc5",
     "jade": "*",
     "mongoq": "*",
-    "async":"*"
+    "async":"*",
+    "passport":"*",
+    "passport-local":"*",
+    "connect-flash":"*",
+    "google-places":"*",
+    "json2csv":"*",
+    "moment":"*",
+    "pdfkit":"*"
   }
 }

@@ -1,0 +1,30 @@
+Tue May 14 14:37:00 [initandlisten] MongoDB starting : pid=388 port=27017 dbpath=/Users/chito/Google Drive/db/erp-may/data 64-bit host=chitombp
+Tue May 14 14:37:00 [initandlisten] 
+Tue May 14 14:37:00 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Tue May 14 14:37:00 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue May 14 14:37:00 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue May 14 14:37:00 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Tue May 14 14:37:00 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Tue May 14 14:37:00 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp-may/data/journal
+Tue May 14 14:37:00 [initandlisten] recover : no journal files present, no recovery needed
+Tue May 14 14:37:00 [websvr] admin web console waiting for connections on port 28017
+Tue May 14 14:37:00 [initandlisten] waiting for connections on port 27017
+Tue May 14 16:18:55 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Tue May 14 16:18:55 [interruptThread] now exiting
+Tue May 14 16:18:55 dbexit: 
+Tue May 14 16:18:55 [interruptThread] shutdown: going to close listening sockets...
+Tue May 14 16:18:55 [interruptThread] closing listening socket: 6
+Tue May 14 16:18:55 [interruptThread] closing listening socket: 7
+Tue May 14 16:18:55 [interruptThread] closing listening socket: 8
+Tue May 14 16:18:55 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Tue May 14 16:18:55 [interruptThread] shutdown: going to flush diaglog...
+Tue May 14 16:18:55 [interruptThread] shutdown: going to close sockets...
+Tue May 14 16:18:55 [interruptThread] shutdown: waiting for fs preallocator...
+Tue May 14 16:18:55 [interruptThread] shutdown: lock for final commit...
+Tue May 14 16:18:55 [interruptThread] shutdown: final commit...
+Tue May 14 16:18:55 [interruptThread] shutdown: closing all files...
+Tue May 14 16:18:55 [interruptThread] closeAllFiles() finished
+Tue May 14 16:18:55 [interruptThread] journalCleanup...
+Tue May 14 16:18:55 [interruptThread] removeJournalFiles
+Tue May 14 16:18:55 [interruptThread] shutdown: removing fs lock...
+Tue May 14 16:18:55 dbexit: really exiting now

@@ -1,0 +1,213 @@
+Wed May  1 10:25:28 [initandlisten] MongoDB starting : pid=303 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Wed May  1 10:25:28 [initandlisten] 
+Wed May  1 10:25:28 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Wed May  1 10:25:28 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed May  1 10:25:28 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed May  1 10:25:28 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Wed May  1 10:25:28 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Wed May  1 10:25:28 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Wed May  1 10:25:28 [initandlisten] recover : no journal files present, no recovery needed
+Wed May  1 10:25:29 [websvr] admin web console waiting for connections on port 28017
+Wed May  1 10:25:29 [initandlisten] waiting for connections on port 27017
+Wed May  1 10:26:08 [initandlisten] connection accepted from 127.0.0.1:49998 #1 (1 connection now open)
+Wed May  1 10:26:08 [initandlisten] connection accepted from 127.0.0.1:49999 #2 (2 connections now open)
+Wed May  1 10:26:08 [initandlisten] connection accepted from 127.0.0.1:50000 #3 (3 connections now open)
+Wed May  1 10:26:08 [initandlisten] connection accepted from 127.0.0.1:50001 #4 (4 connections now open)
+Wed May  1 10:26:08 [initandlisten] connection accepted from 127.0.0.1:50002 #5 (5 connections now open)
+Wed May  1 10:32:47 [conn4] end connection 127.0.0.1:50001 (4 connections now open)
+Wed May  1 10:32:47 [conn5] end connection 127.0.0.1:50002 (4 connections now open)
+Wed May  1 10:32:47 [conn3] end connection 127.0.0.1:50000 (4 connections now open)
+Wed May  1 10:32:47 [conn2] end connection 127.0.0.1:49999 (4 connections now open)
+Wed May  1 10:32:47 [conn1] end connection 127.0.0.1:49998 (4 connections now open)
+Wed May  1 10:32:54 [initandlisten] connection accepted from 127.0.0.1:51487 #6 (1 connection now open)
+Wed May  1 10:32:54 [initandlisten] connection accepted from 127.0.0.1:51488 #7 (2 connections now open)
+Wed May  1 10:32:54 [initandlisten] connection accepted from 127.0.0.1:51489 #8 (3 connections now open)
+Wed May  1 10:32:54 [initandlisten] connection accepted from 127.0.0.1:51490 #9 (4 connections now open)
+Wed May  1 10:32:54 [initandlisten] connection accepted from 127.0.0.1:51491 #10 (5 connections now open)
+Wed May  1 10:34:59 [initandlisten] connection accepted from 127.0.0.1:51934 #11 (6 connections now open)
+Wed May  1 10:38:22 [conn10] end connection 127.0.0.1:51491 (5 connections now open)
+Wed May  1 10:38:22 [conn6] end connection 127.0.0.1:51487 (5 connections now open)
+Wed May  1 10:38:22 [conn9] end connection 127.0.0.1:51490 (5 connections now open)
+Wed May  1 10:38:22 [conn8] end connection 127.0.0.1:51489 (5 connections now open)
+Wed May  1 10:38:22 [conn7] end connection 127.0.0.1:51488 (5 connections now open)
+Wed May  1 10:38:55 [initandlisten] connection accepted from 127.0.0.1:52898 #12 (2 connections now open)
+Wed May  1 10:38:55 [initandlisten] connection accepted from 127.0.0.1:52899 #13 (3 connections now open)
+Wed May  1 10:38:55 [initandlisten] connection accepted from 127.0.0.1:52900 #14 (4 connections now open)
+Wed May  1 10:38:55 [initandlisten] connection accepted from 127.0.0.1:52901 #15 (5 connections now open)
+Wed May  1 10:38:55 [initandlisten] connection accepted from 127.0.0.1:52902 #16 (6 connections now open)
+Wed May  1 12:11:27 [conn16] info DFM::findAll(): extent 0:f8000 was empty, skipping ahead. ns:erp.sales
+Wed May  1 12:16:45 [conn13] warning: can't find plugin [asc]
+Wed May  1 12:16:51 [conn13] warning: can't find plugin [asc]
+Wed May  1 12:16:59 [conn13] warning: can't find plugin [asc]
+Wed May  1 12:17:00 [conn13] warning: can't find plugin [asc]
+Wed May  1 12:21:44 [conn16] end connection 127.0.0.1:52902 (5 connections now open)
+Wed May  1 12:21:44 [conn12] end connection 127.0.0.1:52898 (5 connections now open)
+Wed May  1 12:21:44 [conn14] end connection 127.0.0.1:52900 (5 connections now open)
+Wed May  1 12:21:44 [conn15] end connection 127.0.0.1:52901 (5 connections now open)
+Wed May  1 12:21:44 [conn13] end connection 127.0.0.1:52899 (5 connections now open)
+Wed May  1 12:21:53 [initandlisten] connection accepted from 127.0.0.1:63675 #17 (2 connections now open)
+Wed May  1 12:21:53 [initandlisten] connection accepted from 127.0.0.1:63676 #18 (3 connections now open)
+Wed May  1 12:21:53 [initandlisten] connection accepted from 127.0.0.1:63677 #19 (4 connections now open)
+Wed May  1 12:21:53 [initandlisten] connection accepted from 127.0.0.1:63678 #20 (5 connections now open)
+Wed May  1 12:21:53 [initandlisten] connection accepted from 127.0.0.1:63679 #21 (6 connections now open)
+Wed May  1 12:21:59 [conn21] end connection 127.0.0.1:63679 (5 connections now open)
+Wed May  1 12:21:59 [conn20] end connection 127.0.0.1:63678 (5 connections now open)
+Wed May  1 12:21:59 [conn18] end connection 127.0.0.1:63676 (5 connections now open)
+Wed May  1 12:21:59 [conn19] end connection 127.0.0.1:63677 (4 connections now open)
+Wed May  1 12:21:59 [conn17] end connection 127.0.0.1:63675 (4 connections now open)
+Wed May  1 12:22:37 [initandlisten] connection accepted from 127.0.0.1:63887 #22 (2 connections now open)
+Wed May  1 12:22:37 [initandlisten] connection accepted from 127.0.0.1:63888 #23 (3 connections now open)
+Wed May  1 12:22:37 [initandlisten] connection accepted from 127.0.0.1:63889 #24 (4 connections now open)
+Wed May  1 12:22:37 [initandlisten] connection accepted from 127.0.0.1:63890 #25 (5 connections now open)
+Wed May  1 12:22:37 [initandlisten] connection accepted from 127.0.0.1:63891 #26 (6 connections now open)
+Wed May  1 12:22:41 [conn26] end connection 127.0.0.1:63891 (5 connections now open)
+Wed May  1 12:22:41 [conn23] end connection 127.0.0.1:63888 (5 connections now open)
+Wed May  1 12:22:41 [conn22] end connection 127.0.0.1:63887 (3 connections now open)
+Wed May  1 12:22:41 [conn24] end connection 127.0.0.1:63889 (2 connections now open)
+Wed May  1 12:22:41 [conn25] end connection 127.0.0.1:63890 (1 connection now open)
+Wed May  1 12:24:44 [initandlisten] connection accepted from 127.0.0.1:64512 #27 (2 connections now open)
+Wed May  1 12:24:44 [initandlisten] connection accepted from 127.0.0.1:64513 #28 (3 connections now open)
+Wed May  1 12:24:44 [initandlisten] connection accepted from 127.0.0.1:64514 #29 (4 connections now open)
+Wed May  1 12:24:44 [initandlisten] connection accepted from 127.0.0.1:64515 #30 (5 connections now open)
+Wed May  1 12:24:44 [initandlisten] connection accepted from 127.0.0.1:64516 #31 (6 connections now open)
+Wed May  1 12:25:52 [conn29] warning: can't find plugin [asc]
+Wed May  1 12:32:21 [conn27] warning: can't find plugin [asc]
+Wed May  1 12:34:15 [conn31] end connection 127.0.0.1:64516 (5 connections now open)
+Wed May  1 12:34:15 [conn29] end connection 127.0.0.1:64514 (5 connections now open)
+Wed May  1 12:34:15 [conn27] end connection 127.0.0.1:64512 (5 connections now open)
+Wed May  1 12:34:15 [conn28] end connection 127.0.0.1:64513 (5 connections now open)
+Wed May  1 12:34:15 [conn30] end connection 127.0.0.1:64515 (5 connections now open)
+Wed May  1 12:34:24 [initandlisten] connection accepted from 127.0.0.1:50762 #32 (2 connections now open)
+Wed May  1 12:34:24 [initandlisten] connection accepted from 127.0.0.1:50763 #33 (3 connections now open)
+Wed May  1 12:34:24 [initandlisten] connection accepted from 127.0.0.1:50764 #34 (4 connections now open)
+Wed May  1 12:34:24 [initandlisten] connection accepted from 127.0.0.1:50765 #35 (5 connections now open)
+Wed May  1 12:34:24 [initandlisten] connection accepted from 127.0.0.1:50766 #36 (6 connections now open)
+Wed May  1 12:34:31 [conn33] warning: can't find plugin [asc]
+Wed May  1 12:34:37 [conn35] warning: can't find plugin [asc]
+Wed May  1 12:34:40 [conn36] warning: can't find plugin [asc]
+Wed May  1 12:34:43 [conn32] warning: can't find plugin [asc]
+Wed May  1 12:34:47 [conn32] warning: can't find plugin [asc]
+Wed May  1 12:34:49 [conn32] warning: can't find plugin [asc]
+Wed May  1 12:35:05 [conn35] end connection 127.0.0.1:50765 (5 connections now open)
+Wed May  1 12:35:05 [conn36] end connection 127.0.0.1:50766 (5 connections now open)
+Wed May  1 12:35:05 [conn33] end connection 127.0.0.1:50763 (5 connections now open)
+Wed May  1 12:35:05 [conn34] end connection 127.0.0.1:50764 (5 connections now open)
+Wed May  1 12:35:05 [conn32] end connection 127.0.0.1:50762 (5 connections now open)
+Wed May  1 12:35:10 [initandlisten] connection accepted from 127.0.0.1:50980 #37 (2 connections now open)
+Wed May  1 12:35:10 [initandlisten] connection accepted from 127.0.0.1:50981 #38 (3 connections now open)
+Wed May  1 12:35:10 [initandlisten] connection accepted from 127.0.0.1:50982 #39 (4 connections now open)
+Wed May  1 12:35:10 [initandlisten] connection accepted from 127.0.0.1:50983 #40 (5 connections now open)
+Wed May  1 12:35:10 [initandlisten] connection accepted from 127.0.0.1:50984 #41 (6 connections now open)
+Wed May  1 12:35:19 [conn39] warning: can't find plugin [asc]
+Wed May  1 12:35:20 [conn39] warning: can't find plugin [asc]
+Wed May  1 12:35:25 [conn39] warning: can't find plugin [asc]
+Wed May  1 12:35:26 [conn39] warning: can't find plugin [asc]
+Wed May  1 12:36:22 [conn39] end connection 127.0.0.1:50982 (5 connections now open)
+Wed May  1 12:36:22 [conn40] end connection 127.0.0.1:50983 (5 connections now open)
+Wed May  1 12:36:22 [conn41] end connection 127.0.0.1:50984 (5 connections now open)
+Wed May  1 12:36:22 [conn37] end connection 127.0.0.1:50980 (5 connections now open)
+Wed May  1 12:36:22 [conn38] end connection 127.0.0.1:50981 (5 connections now open)
+Wed May  1 12:36:27 [initandlisten] connection accepted from 127.0.0.1:51334 #42 (2 connections now open)
+Wed May  1 12:36:27 [initandlisten] connection accepted from 127.0.0.1:51335 #43 (3 connections now open)
+Wed May  1 12:36:27 [initandlisten] connection accepted from 127.0.0.1:51336 #44 (4 connections now open)
+Wed May  1 12:36:27 [initandlisten] connection accepted from 127.0.0.1:51337 #45 (5 connections now open)
+Wed May  1 12:36:27 [initandlisten] connection accepted from 127.0.0.1:51338 #46 (6 connections now open)
+Wed May  1 12:36:32 [conn43] warning: can't find plugin [asc]
+Wed May  1 12:36:37 [conn45] warning: can't find plugin [asc]
+Wed May  1 12:36:39 [conn45] warning: can't find plugin [asc]
+Wed May  1 12:36:48 [conn46] warning: can't find plugin [asc]
+Wed May  1 12:36:49 [conn46] warning: can't find plugin [asc]
+Wed May  1 12:37:01 [conn42] warning: can't find plugin [asc]
+Wed May  1 12:37:03 [conn42] warning: can't find plugin [asc]
+Wed May  1 12:37:07 [conn42] warning: can't find plugin [asc]
+Wed May  1 12:37:12 [conn42] warning: can't find plugin [asc]
+Wed May  1 12:42:23 [conn44] end connection 127.0.0.1:51336 (5 connections now open)
+Wed May  1 12:42:23 [conn45] end connection 127.0.0.1:51337 (5 connections now open)
+Wed May  1 12:42:23 [conn46] end connection 127.0.0.1:51338 (5 connections now open)
+Wed May  1 12:42:23 [conn43] end connection 127.0.0.1:51335 (5 connections now open)
+Wed May  1 12:42:23 [conn42] end connection 127.0.0.1:51334 (5 connections now open)
+Wed May  1 12:42:35 [initandlisten] connection accepted from 127.0.0.1:53053 #47 (2 connections now open)
+Wed May  1 12:42:35 [initandlisten] connection accepted from 127.0.0.1:53054 #48 (3 connections now open)
+Wed May  1 12:42:35 [initandlisten] connection accepted from 127.0.0.1:53055 #49 (4 connections now open)
+Wed May  1 12:42:35 [initandlisten] connection accepted from 127.0.0.1:53056 #50 (5 connections now open)
+Wed May  1 12:42:35 [initandlisten] connection accepted from 127.0.0.1:53057 #51 (6 connections now open)
+Wed May  1 12:43:02 [conn51] warning: can't find plugin [asc]
+Wed May  1 12:43:09 [conn51] warning: can't find plugin [asc]
+Wed May  1 12:43:12 [conn51] warning: can't find plugin [asc]
+Wed May  1 12:52:28 [conn48] info DFM::findAll(): extent 0:f8000 was empty, skipping ahead. ns:erp.sales
+Wed May  1 12:52:33 [conn51] warning: can't find plugin [asc]
+Wed May  1 12:52:45 [conn50] warning: can't find plugin [asc]
+Wed May  1 12:52:48 [conn50] warning: can't find plugin [asc]
+Wed May  1 12:53:02 [conn50] warning: can't find plugin [asc]
+Wed May  1 12:53:25 [conn50] warning: can't find plugin [asc]
+Wed May  1 12:53:27 [conn50] warning: can't find plugin [asc]
+Wed May  1 12:57:03 [conn51] warning: can't find plugin [asc]
+Wed May  1 12:58:28 [conn50] warning: can't find plugin [asc]
+Wed May  1 13:02:56 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:04:43 [conn48] warning: can't find plugin [asc]
+Wed May  1 13:06:16 [conn50] warning: can't find plugin [asc]
+Wed May  1 13:06:26 [conn48] warning: can't find plugin [asc]
+Wed May  1 13:07:26 [conn49] warning: can't find plugin [asc]
+Wed May  1 13:08:11 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:08:39 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:08:44 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:08:48 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:08:52 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:08:55 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:09:20 [conn49] warning: can't find plugin [asc]
+Wed May  1 13:09:33 [conn47] warning: can't find plugin [asc]
+Wed May  1 13:09:35 [conn47] warning: can't find plugin [asc]
+Wed May  1 13:11:54 [conn49] warning: can't find plugin [asc]
+Wed May  1 13:12:05 [conn49] warning: can't find plugin [asc]
+Wed May  1 13:14:59 [conn48] info DFM::findAll(): extent 0:f8000 was empty, skipping ahead. ns:erp.sales
+Wed May  1 13:15:09 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:15:17 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:16:32 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:16:34 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:16:46 [conn49] warning: can't find plugin [asc]
+Wed May  1 13:20:35 [conn48] warning: can't find plugin [asc]
+Wed May  1 13:20:37 [conn48] warning: can't find plugin [asc]
+Wed May  1 13:22:16 [conn50] warning: can't find plugin [asc]
+Wed May  1 13:22:24 [conn50] warning: can't find plugin [asc]
+Wed May  1 13:22:34 [conn50] warning: can't find plugin [asc]
+Wed May  1 13:23:21 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:23:22 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:24:59 [conn51] warning: can't find plugin [asc]
+Wed May  1 13:50:57 [conn47] end connection 127.0.0.1:53053 (5 connections now open)
+Wed May  1 13:50:57 [conn51] end connection 127.0.0.1:53057 (4 connections now open)
+Wed May  1 13:50:57 [conn50] end connection 127.0.0.1:53056 (4 connections now open)
+Wed May  1 13:50:57 [conn48] end connection 127.0.0.1:53054 (3 connections now open)
+Wed May  1 13:50:57 [conn49] end connection 127.0.0.1:53055 (4 connections now open)
+Wed May  1 13:51:06 [initandlisten] connection accepted from 127.0.0.1:55065 #52 (2 connections now open)
+Wed May  1 13:51:06 [initandlisten] connection accepted from 127.0.0.1:55066 #53 (3 connections now open)
+Wed May  1 13:51:06 [initandlisten] connection accepted from 127.0.0.1:55067 #54 (4 connections now open)
+Wed May  1 13:51:06 [initandlisten] connection accepted from 127.0.0.1:55068 #55 (5 connections now open)
+Wed May  1 13:51:06 [initandlisten] connection accepted from 127.0.0.1:55069 #56 (6 connections now open)
+Wed May  1 13:52:23 [conn56] info DFM::findAll(): extent 0:f8000 was empty, skipping ahead. ns:erp.sales
+Wed May  1 13:52:34 [conn53] warning: can't find plugin [asc]
+Wed May  1 13:58:37 [conn53] warning: can't find plugin [asc]
+Wed May  1 14:03:12 [conn55] end connection 127.0.0.1:55068 (5 connections now open)
+Wed May  1 14:03:12 [conn56] end connection 127.0.0.1:55069 (5 connections now open)
+Wed May  1 14:03:12 [conn53] end connection 127.0.0.1:55066 (5 connections now open)
+Wed May  1 14:03:12 [conn52] end connection 127.0.0.1:55065 (5 connections now open)
+Wed May  1 14:03:12 [conn54] end connection 127.0.0.1:55067 (5 connections now open)
+Wed May  1 14:03:21 [conn11] end connection 127.0.0.1:51934 (0 connections now open)
+Wed May  1 14:03:33 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Wed May  1 14:03:33 [interruptThread] now exiting
+Wed May  1 14:03:33 dbexit: 
+Wed May  1 14:03:33 [interruptThread] shutdown: going to close listening sockets...
+Wed May  1 14:03:33 [interruptThread] closing listening socket: 6
+Wed May  1 14:03:33 [interruptThread] closing listening socket: 7
+Wed May  1 14:03:33 [interruptThread] closing listening socket: 8
+Wed May  1 14:03:33 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Wed May  1 14:03:33 [interruptThread] shutdown: going to flush diaglog...
+Wed May  1 14:03:33 [interruptThread] shutdown: going to close sockets...
+Wed May  1 14:03:33 [interruptThread] shutdown: waiting for fs preallocator...
+Wed May  1 14:03:33 [interruptThread] shutdown: lock for final commit...
+Wed May  1 14:03:33 [interruptThread] shutdown: final commit...
+Wed May  1 14:03:33 [interruptThread] shutdown: closing all files...
+Wed May  1 14:03:33 [interruptThread] closeAllFiles() finished
+Wed May  1 14:03:33 [interruptThread] journalCleanup...
+Wed May  1 14:03:33 [interruptThread] removeJournalFiles
+Wed May  1 14:03:33 [interruptThread] shutdown: removing fs lock...
+Wed May  1 14:03:33 dbexit: really exiting now

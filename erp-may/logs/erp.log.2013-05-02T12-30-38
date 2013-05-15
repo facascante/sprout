@@ -1,0 +1,290 @@
+Thu May  2 14:22:20 [initandlisten] MongoDB starting : pid=220 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Thu May  2 14:22:20 [initandlisten] 
+Thu May  2 14:22:20 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Thu May  2 14:22:20 [initandlisten] db version v2.2.0, pdfile version 4.5
+Thu May  2 14:22:20 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Thu May  2 14:22:20 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu May  2 14:22:20 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Thu May  2 14:22:20 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Thu May  2 14:22:20 [initandlisten] recover : no journal files present, no recovery needed
+Thu May  2 14:22:21 [websvr] admin web console waiting for connections on port 28017
+Thu May  2 14:22:21 [initandlisten] waiting for connections on port 27017
+Thu May  2 14:22:42 [initandlisten] connection accepted from 127.0.0.1:49162 #1 (1 connection now open)
+Thu May  2 14:22:42 [initandlisten] connection accepted from 127.0.0.1:49163 #2 (2 connections now open)
+Thu May  2 14:22:42 [initandlisten] connection accepted from 127.0.0.1:49164 #3 (3 connections now open)
+Thu May  2 14:22:42 [initandlisten] connection accepted from 127.0.0.1:49165 #4 (4 connections now open)
+Thu May  2 14:22:42 [initandlisten] connection accepted from 127.0.0.1:49166 #5 (5 connections now open)
+Thu May  2 14:22:42 [conn5] query erp.grant query: { $query: { role: "Developer" }, orderby: {} } cursorid:2443735740541580814 ntoreturn:0 ntoskip:0 nscanned:102 keyUpdates:0 locks(micros) r:171188 nreturned:101 reslen:10492 171ms
+Thu May  2 14:22:47 [conn4] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+query erp.customer query: { $query: {}, orderby: { _id: 1 } } cursorid:152046491109181933 ntoreturn:10 ntoskip:0 nscanned:11 keyUpdates:0 locks(micros) r:133399 nreturned:10 reslen:4939 158ms
+Thu May  2 14:22:57 [conn1] warning: can't find plugin [asc]
+Thu May  2 14:52:12 [conn4] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49165 (4 connections now open)
+Thu May  2 14:52:12 [conn1] end connection 127.0.0.1:49162 (4 connections now open)
+Thu May  2 14:52:12 [conn3] end connection 127.0.0.1:49164 (4 connections now open)
+Thu May  2 14:52:12 [conn5] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49166 (4 connections now open)
+Thu May  2 14:52:12 [conn2] end connection 127.0.0.1:49163 (4 connections now open)
+Thu May  2 14:52:22 [initandlisten] connection accepted from 127.0.0.1:55154 #6 (1 connection now open)
+Thu May  2 14:52:22 [initandlisten] connection accepted from 127.0.0.1:55155 #7 (2 connections now open)
+Thu May  2 14:52:22 [initandlisten] connection accepted from 127.0.0.1:55156 #8 (3 connections now open)
+Thu May  2 14:52:22 [initandlisten] connection accepted from 127.0.0.1:55157 #9 (4 connections now open)
+Thu May  2 14:52:22 [initandlisten] connection accepted from 127.0.0.1:55158 #10 (5 connections now open)
+Thu May  2 15:03:27 [initandlisten] connection accepted from 127.0.0.1:57475 #11 (6 connections now open)
+Thu May  2 15:04:35 [conn11] end connection 127.0.0.1:57475 (5 connections now open)
+Thu May  2 15:04:54 [conn6] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:04:59 [conn10] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:05:00 [conn10] warning: can't find plugin [asc]
+Thu May  2 15:05:12 [conn6] warning: can't find plugin [asc]
+Thu May  2 15:05:21 [conn10] warning: can't find plugin [asc]
+Thu May  2 15:05:41 [conn10] warning: can't find plugin [asc]
+Thu May  2 15:05:44 [conn10] warning: can't find plugin [asc]
+Thu May  2 15:05:52 [conn6] warning: can't find plugin [asc]
+Thu May  2 15:06:10 [initandlisten] connection accepted from 127.0.0.1:58033 #12 (6 connections now open)
+Thu May  2 15:06:16 [conn12] end connection 127.0.0.1:58033 (5 connections now open)
+Thu May  2 15:06:53 [conn7] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:07:02 [conn8] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:07:03 [conn8] warning: can't find plugin [asc]
+Thu May  2 15:07:21 [conn10] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:07:21 [conn6] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:11:09 [initandlisten] connection accepted from 127.0.0.1:59052 #13 (6 connections now open)
+Thu May  2 15:12:25 [conn8] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:12:31 [conn7] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:12:32 [conn7] warning: can't find plugin [asc]
+Thu May  2 15:12:37 [conn8] warning: can't find plugin [asc]
+Thu May  2 15:12:42 [conn7] warning: can't find plugin [asc]
+Thu May  2 15:13:02 [conn9] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:13:06 [conn10] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:14:21 [conn9] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:14:29 [conn8] warning: can't find plugin [asc]
+Thu May  2 15:14:38 [conn8] warning: can't find plugin [asc]
+Thu May  2 15:16:22 [conn7] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:f8000 was empty, skipping ahead. ns:erp.sales
+Thu May  2 15:17:12 [conn8] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:17:25 [conn8] warning: can't find plugin [asc]
+Thu May  2 15:17:29 [conn7] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:17:48 [conn10] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:17:55 [conn6] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:17:56 [conn6] warning: can't find plugin [asc]
+Thu May  2 15:18:05 [conn6] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 15:18:12 [conn10] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:18:12 [conn10] end connection 127.0.0.1:55158 (5 connections now open)
+Thu May  2 15:18:12 [conn6] end connection 127.0.0.1:55154 (4 connections now open)
+Thu May  2 15:18:12 [conn8] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:55156 (5 connections now open)
+Thu May  2 15:18:12 [conn7] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:55155 (5 connections now open)
+Thu May  2 15:18:12 [conn9] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:55157 (5 connections now open)
+Thu May  2 15:19:10 [initandlisten] connection accepted from 127.0.0.1:60684 #14 (2 connections now open)
+Thu May  2 15:19:10 [initandlisten] connection accepted from 127.0.0.1:60685 #15 (3 connections now open)
+Thu May  2 15:19:10 [initandlisten] connection accepted from 127.0.0.1:60686 #16 (4 connections now open)
+Thu May  2 15:19:10 [initandlisten] connection accepted from 127.0.0.1:60687 #17 (5 connections now open)
+Thu May  2 15:19:10 [initandlisten] connection accepted from 127.0.0.1:60688 #18 (6 connections now open)
+Thu May  2 15:19:15 [conn18] warning: can't find plugin [asc]
+Thu May  2 15:20:35 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:20:38 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:20:41 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:21:03 [conn15] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 15:21:10 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:27:29 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:29:02 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:29:35 [conn14] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 15:30:48 [conn15] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:30:53 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:31:17 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:31:25 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:31:30 [conn16] warning: can't find plugin [asc]
+Thu May  2 15:32:17 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:32:24 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:33:06 [conn18] warning: can't find plugin [asc]
+Thu May  2 15:39:56 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:41:07 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:41:13 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:50:21 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.coa { _id: 1 }
+Thu May  2 15:50:21 [conn18] build index done.  scanned 0 total records. 0 secs
+Thu May  2 15:50:35 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:53:34 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:53:36 [conn18] warning: can't find plugin [asc]
+Thu May  2 15:53:46 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:54:19 [conn16] warning: can't find plugin [asc]
+Thu May  2 15:54:34 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 15:54:35 [conn14] warning: can't find plugin [asc]
+Thu May  2 15:54:40 [conn14] warning: can't find plugin [asc]
+Thu May  2 15:55:17 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:55:22 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:55:31 [conn18] warning: can't find plugin [asc]
+Thu May  2 15:55:34 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:55:37 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:55:42 [conn17] warning: can't find plugin [asc]
+Thu May  2 15:55:57 [conn15] warning: can't find plugin [asc]
+Thu May  2 15:56:00 [conn15] warning: can't find plugin [asc]
+Thu May  2 16:15:26 [conn18] warning: can't find plugin [asc]
+Thu May  2 16:15:27 [conn18] warning: can't find plugin [asc]
+Thu May  2 16:18:27 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 16:18:33 [conn16] warning: can't find plugin [asc]
+Thu May  2 16:18:36 [conn16] warning: can't find plugin [asc]
+Thu May  2 16:18:46 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 16:18:48 [conn14] warning: can't find plugin [asc]
+Thu May  2 16:23:39 [conn15] warning: can't find plugin [asc]
+Thu May  2 16:29:27 [conn14] warning: can't find plugin [asc]
+Thu May  2 16:50:01 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 16:53:11 [conn16] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 16:54:56 [conn16] warning: can't find plugin [asc]
+Thu May  2 16:57:17 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 16:57:19 [conn17] warning: can't find plugin [asc]
+Thu May  2 16:57:27 [conn17] warning: can't find plugin [asc]
+Thu May  2 16:57:35 [conn17] warning: can't find plugin [asc]
+Thu May  2 16:57:39 [conn15] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 16:57:50 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 16:57:51 [conn18] warning: can't find plugin [asc]
+Thu May  2 16:57:55 [conn18] warning: can't find plugin [asc]
+Thu May  2 16:57:57 [conn18] warning: can't find plugin [asc]
+Thu May  2 16:57:59 [conn18] warning: can't find plugin [asc]
+Thu May  2 16:58:10 [conn18] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 16:58:12 [conn17] warning: can't find plugin [asc]
+Thu May  2 16:58:16 [conn17] warning: can't find plugin [asc]
+Thu May  2 16:59:05 [conn16] warning: can't find plugin [asc]
+Thu May  2 17:00:34 [conn16] warning: can't find plugin [asc]
+Thu May  2 17:01:06 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 17:01:27 [conn15] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 17:01:37 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 17:01:47 [conn16] warning: can't find plugin [asc]
+Thu May  2 17:03:21 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 17:08:30 [conn15] warning: can't find plugin [asc]
+Thu May  2 17:08:48 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May  2 17:18:49 [conn14] warning: can't find plugin [asc]
+Thu May  2 17:20:32 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May  2 17:22:47 [conn18] end connection 127.0.0.1:60688 (5 connections now open)
+Thu May  2 17:22:47 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:60687 (5 connections now open)
+Thu May  2 17:22:47 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:60686 (5 connections now open)
+Thu May  2 17:22:47 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:60684 (5 connections now open)
+Thu May  2 17:22:47 [conn15] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:60685 (5 connections now open)
+Thu May  2 17:22:50 [conn13] end connection 127.0.0.1:59052 (0 connections now open)
+Thu May  2 17:23:39 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Thu May  2 17:23:39 [interruptThread] now exiting
+Thu May  2 17:23:39 dbexit: 
+Thu May  2 17:23:39 [interruptThread] shutdown: going to close listening sockets...
+Thu May  2 17:23:39 [interruptThread] closing listening socket: 6
+Thu May  2 17:23:39 [interruptThread] closing listening socket: 7
+Thu May  2 17:23:39 [interruptThread] closing listening socket: 8
+Thu May  2 17:23:39 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Thu May  2 17:23:39 [interruptThread] shutdown: going to flush diaglog...
+Thu May  2 17:23:39 [interruptThread] shutdown: going to close sockets...
+Thu May  2 17:23:39 [interruptThread] shutdown: waiting for fs preallocator...
+Thu May  2 17:23:39 [interruptThread] shutdown: lock for final commit...
+Thu May  2 17:23:39 [interruptThread] shutdown: final commit...
+Thu May  2 17:23:39 [interruptThread] shutdown: closing all files...
+Thu May  2 17:23:39 [interruptThread] closeAllFiles() finished
+Thu May  2 17:23:39 [interruptThread] journalCleanup...
+Thu May  2 17:23:39 [interruptThread] removeJournalFiles
+Thu May  2 17:23:39 [interruptThread] shutdown: removing fs lock...
+Thu May  2 17:23:39 dbexit: really exiting now

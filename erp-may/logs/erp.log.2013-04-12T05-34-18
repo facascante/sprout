@@ -1,0 +1,56 @@
+Thu Apr 11 06:27:40 [initandlisten] MongoDB starting : pid=492 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Thu Apr 11 06:27:40 [initandlisten] 
+Thu Apr 11 06:27:40 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Thu Apr 11 06:27:40 [initandlisten] db version v2.2.0, pdfile version 4.5
+Thu Apr 11 06:27:40 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Thu Apr 11 06:27:40 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Thu Apr 11 06:27:40 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Thu Apr 11 06:27:40 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Thu Apr 11 06:27:40 [initandlisten] recover : no journal files present, no recovery needed
+Thu Apr 11 06:27:41 [websvr] admin web console waiting for connections on port 28017
+Thu Apr 11 06:27:41 [initandlisten] waiting for connections on port 27017
+Thu Apr 11 06:31:30 [initandlisten] connection accepted from 127.0.0.1:53598 #1 (1 connection now open)
+Thu Apr 11 06:31:30 [initandlisten] connection accepted from 127.0.0.1:53599 #2 (2 connections now open)
+Thu Apr 11 06:31:30 [initandlisten] connection accepted from 127.0.0.1:53600 #3 (3 connections now open)
+Thu Apr 11 06:31:30 [initandlisten] connection accepted from 127.0.0.1:53601 #4 (4 connections now open)
+Thu Apr 11 06:31:30 [initandlisten] connection accepted from 127.0.0.1:53602 #5 (5 connections now open)
+Thu Apr 11 06:59:30 [conn4] end connection 127.0.0.1:53601 (4 connections now open)
+Thu Apr 11 06:59:30 [conn5] end connection 127.0.0.1:53602 (4 connections now open)
+Thu Apr 11 06:59:30 [conn3] end connection 127.0.0.1:53600 (4 connections now open)
+Thu Apr 11 06:59:30 [conn2] end connection 127.0.0.1:53599 (4 connections now open)
+Thu Apr 11 06:59:30 [conn1] end connection 127.0.0.1:53598 (4 connections now open)
+Thu Apr 11 06:59:41 [initandlisten] connection accepted from 127.0.0.1:59759 #6 (1 connection now open)
+Thu Apr 11 08:20:35 [conn6] end connection 127.0.0.1:59759 (0 connections now open)
+Thu Apr 11 08:20:36 [initandlisten] connection accepted from 127.0.0.1:60422 #7 (1 connection now open)
+Thu Apr 11 10:15:25 [conn7] end connection 127.0.0.1:60422 (0 connections now open)
+Thu Apr 11 10:15:51 [initandlisten] connection accepted from 127.0.0.1:53124 #8 (1 connection now open)
+Thu Apr 11 10:15:51 [initandlisten] connection accepted from 127.0.0.1:53125 #9 (2 connections now open)
+Thu Apr 11 10:15:51 [initandlisten] connection accepted from 127.0.0.1:53126 #10 (3 connections now open)
+Thu Apr 11 10:15:51 [initandlisten] connection accepted from 127.0.0.1:53127 #11 (4 connections now open)
+Thu Apr 11 10:15:51 [initandlisten] connection accepted from 127.0.0.1:53128 #12 (5 connections now open)
+Thu Apr 11 10:19:41 [conn11] build index erp.sample { _id: 1 }
+Thu Apr 11 10:19:41 [conn11] build index done.  scanned 0 total records. 0.001 secs
+Thu Apr 11 10:36:27 [conn12] end connection 127.0.0.1:53128 (4 connections now open)
+Thu Apr 11 10:36:27 [conn10] end connection 127.0.0.1:53126 (4 connections now open)
+Thu Apr 11 10:36:27 [conn8] end connection 127.0.0.1:53124 (2 connections now open)
+Thu Apr 11 10:36:27 [conn9] end connection 127.0.0.1:53125 (3 connections now open)
+Thu Apr 11 10:36:27 [conn11] end connection 127.0.0.1:53127 (3 connections now open)
+Thu Apr 11 16:53:10 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Thu Apr 11 16:53:10 [interruptThread] now exiting
+Thu Apr 11 16:53:10 dbexit: 
+Thu Apr 11 16:53:10 [interruptThread] shutdown: going to close listening sockets...
+Thu Apr 11 16:53:10 [interruptThread] closing listening socket: 6
+Thu Apr 11 16:53:10 [interruptThread] closing listening socket: 7
+Thu Apr 11 16:53:10 [interruptThread] closing listening socket: 8
+Thu Apr 11 16:53:10 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Thu Apr 11 16:53:10 [interruptThread] shutdown: going to flush diaglog...
+Thu Apr 11 16:53:10 [interruptThread] shutdown: going to close sockets...
+Thu Apr 11 16:53:10 [interruptThread] shutdown: waiting for fs preallocator...
+Thu Apr 11 16:53:10 [interruptThread] shutdown: lock for final commit...
+Thu Apr 11 16:53:10 [interruptThread] shutdown: final commit...
+Thu Apr 11 16:53:10 [interruptThread] shutdown: closing all files...
+Thu Apr 11 16:53:10 [interruptThread] closeAllFiles() finished
+Thu Apr 11 16:53:10 [interruptThread] journalCleanup...
+Thu Apr 11 16:53:10 [interruptThread] removeJournalFiles
+Thu Apr 11 16:53:10 [interruptThread] shutdown: removing fs lock...
+Thu Apr 11 16:53:10 dbexit: really exiting now

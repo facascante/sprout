@@ -1,40 +1,371 @@
 | <script type='text/javascript'>
 |  $(document).ready(function () {
 |    'use strict';
-|    function ac(elem, url) {
-|     setTimeout(function () {
-|         $(elem).autocomplete({
-|             source: url+'?param='+ $(elem).attr('id'),
-|             minLength: 2,
-|             focus: function( event, ui ) {
-|                  $(elem).val(ui.item.value);
-|                  return false;
-|             },
-|             select: function (event, ui) {
-|                 $(elem).val(ui.item.id);
-|                 $(elem).trigger('change');
-|                 return false;
-|             }
-|         }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
-|                return $( "<li>" )
-|                .append( "<a>Id:" + item.id + "<br>Value:" + item.value + "</a>" )
-|                .appendTo( ul );
-|         };
-|     }, 50);
+|    function image(cellvalue,options,rowObject){
+|          return "<img src='"+ cellvalue +"' width='80' height='80'></img>";
 |    }
-|    function cs(elem,target,url){
-|       $(elem).chainSelect("#"+target,url);
-|       $(elem).trigger('change');
+|    function flink(cellvalue,options,rowObject){
+|      if(cellvalue)
+|         return "<a href='"+ cellvalue +"' >"+ cellvalue.substring(cellvalue.lastIndexOf("/") + 1)+"</a>";
+|      else return "";
 |    }
-|    var _wac = function(elem){ac(elem,'/api/ac/!{version}');};
-|    var _wcs = function(elem,target,url){ cs(elem,target,url);};
-|    $("#grid_table").jqGrid(!{collection.replace(/"_wac"/g,"_wac")});
+|    function uimage(cellvalue, options, cell){
+|         return $('img', cell).attr('src');
+|    }
+|    function ulink(cellvalue, options, cell){
+|         return $('a', cell).attr('href');
+|    }
+|    function format_promo(cellvalue, options, cell){
+|         if(cellvalue == 1){
+|           return "No"
+|         }
+|         else {
+|            return "Yes";
+|         }
+|    }
+|    function acadd(elem, url) {
+|        setTimeout(function () {
+|            $(elem).autocomplete({
+|            source: url+'?param='+ $(elem).attr('id'),
+|            minLength: 2,
+|            focus: function( event, ui ) {
+|                $(elem).val(ui.item.value);
+|                return false;
+|            },
+|            select: function (event, ui) {
+|                $(elem).val(ui.item.value);
+|                $(elem).trigger('change');
+|                return false;
+|            }
+|            }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+|              return $( "<li>" )
+|               .append( "<a>" + item.value + "</a>" )
+|               .appendTo( ul );
+|            };
+|         }, 50);
+|    }
+|    var _wdp = function (element) {
+|         $(element).datepicker({ dateFormat: 'mm/dd/yy' })
+|    }
+|    var _wac = function(elem){acadd(elem,'/api/acadd/v00s01');};
+|    var collection=!{collection.replace(/"_wac"/g,"_wac").replace(/"_wdp"/g,"_wdp").replace(/"image"/g,"image").replace(/"format_promo"/g,"format_promo").replace(/"flink"/g,"flink").replace(/"in"/g,"'$in'")};
+|    if(collection.subGrid){
+|       collection.subGridOptions = {
+|         "plusicon" : "ui-icon-triangle-1-e", 
+|         "minusicon" : "ui-icon-triangle-1-s", 
+|         "openicon" : "ui-icon-arrowreturn-1-e"
+|       };
+|       collection.subGridRowExpanded = function(subgrid_id, row_id) {
+|            var subgrid_table_id;
+|            subgrid_table_id = subgrid_id+"_t";
+|            var pager_id = "p_"+subgrid_table_id;
+|            var subcol = !{subcol.replace(/"_wac"/g,"_wac").replace(/"_wdp"/g,"_wdp").replace(/"image"/g,"image").replace(/"format_promo"/g,"format_promo")};
+|            var gridRecord = $("#grid_table").getRowData(row_id);
+|            var add_param = "",postData = {};
+|            collection.subconfig.link.forEach(function(link){
+|                 add_param+="&"+link+"="+gridRecord[link];
+|                 postData[link] = gridRecord[link];
+|            });
+|            subcol.postData = postData;
+|            subcol.url+="?"+subcol.table+"_id="+row_id+add_param;
+|            subcol.editurl+="?"+subcol.table+"_id="+row_id+add_param;
+|            subcol.pager = pager_id;
+|            subcol.subGrid = false;
+|            jQuery("#"+subgrid_id).html("<table id='"+subgrid_table_id+"' class='scroll'></table><div id='"+pager_id+"' class='scroll'></div>");
+|            jQuery("#"+subgrid_table_id).jqGrid(subcol);
+|            $("#"+subgrid_table_id).jqGrid('gridResize', { minWidth: 200, minHeight: 500, maxHeight:800, maxWidth:1150 });
+|            $("#"+subgrid_table_id).jqGrid('setFrozenColumns');
+|            $("#"+subgrid_table_id).jqGrid(
+|                 'navGrid',
+|                 "#"+pager_id,
+|                 !{subgridPermission},
+|                 { 
+|                    width:700,
+|                    height:'auto',
+|                    reloadAfterSubmit:true,
+|                    recreateForm:true,
+|                    savekey:[true,13],
+|                    closeAfterEdit:true,
+|                    closeAfterAdd:true,
+|                    navkeys:true,
+|                    closeOnEscape:true,
+|                    saveicon:[true,"left","ui-icon-disk"],
+|                    closeicon:[true,"left","ui-icon-close"],
+|                    errorTextFormat: function(data) {
+|                           return '<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>'+
+|                           "<strong>Transaction failed! :<strong><br/>Details: '" +data.responseText;
+|                    },
+|                    onInitializeForm:function(formid){
+|                          $(formid).attr('method','POST');
+|                          $(formid).attr('action','');
+|                          $(formid).attr('enctype','multipart/form-data');
+|                          $('input:text, input:file, input:password, input[type=email]')
+|                            .button().addClass('ui-textfield'); 
+|                          subcol.colModel.forEach(function(model){
+|                               if(model.chain instanceof Array){
+|                                   model.chain.forEach(function(chain){
+|                                   setTimeout(function () { 
+|                                       var settings = {defaultValue: $("#"+model.name).val() };
+|                                       $("#"+model.name).chainSelect("#"+chain.target,"/api/cs/"+chain.table+"/"+chain.target+'/v00s01',settings);
+|                                       $("#"+model.name).change();
+|                                     },1000);
+|                                   });
+|                               }
+|                          });
+|                    },
+|                    onClose : function(){
+|                        jQuery("#"+subgrid_table_id).trigger("reloadGrid")
+|                        return true;
+|                    
+|                    },
+|                    afterSubmit : function(response, postdata){
+|                       var id =eval(response.responseText)[2];
+|                       for(var i in subcol.colModel){
+|                             if(subcol.colModel[i].edittype =="file"){
+|                                $.ajaxFileUpload({
+|                                    url: '/api/grid/upload/'+ subcol.table +'/'+ subcol.process+'/'+subcol.colModel[i].name+'/'+id, 
+|                                    secureuri:false,
+|                                    fileElementId:subcol.colModel[i].name,
+|                                    dataType: 'json'
+|                                });
+|                             }
+|                       }
+|                       return response
+|                    }
+|                 },
+|                 {
+|                    width:700,
+|                    height:'auto',
+|                    reloadAfterSubmit:true,
+|                    recreateForm:true,
+|                    savekey:[true,13],
+|                    closeAfterEdit:true,
+|                    closeAfterAdd:true,
+|                    navkeys:true,
+|                    closeOnEscape:true,
+|                    saveicon:[true,"left","ui-icon-disk"],
+|                    closeicon:[true,"left","ui-icon-close"],
+|                    errorTextFormat: function(data) {
+|                           return '<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>'+
+|                           "<strong>Transaction failed! :<strong><br/>Details: '" +data.responseText;
+|                    },
+|                    onInitializeForm:function(formid){
+|                          $(formid).attr('method','POST');
+|                          $(formid).attr('action','');
+|                          $(formid).attr('enctype','multipart/form-data');
+|                          $('input:text, input:file, input:password, input[type=email]')
+|                            .button().addClass('ui-textfield'); 
+|                          subcol.colModel.forEach(function(model){
+|                               if(model.chain instanceof Array){
+|                                   model.chain.forEach(function(chain){
+|                                   setTimeout(function () { 
+|                                       var settings = {defaultValue: $("#"+model.name).val() };
+|                                       $("#"+model.name).chainSelect("#"+chain.target,"/api/cs/"+chain.table+"/"+chain.target+'/v00s01',settings);
+|                                       $("#"+model.name).change();
+|                                     },1000);
+|                                   });
+|                               }
+|                          });
+|                    },
+|                    onClose : function(){
+|                        jQuery("#"+subgrid_table_id).trigger("reloadGrid")
+|                        return true;
+|                    
+|                    },
+|                    afterSubmit : function(response, postdata){
+|                       var id =eval(response.responseText)[2];
+|                       for(var i in subcol.colModel){
+|                             if(subcol.colModel[i].edittype =="file"){
+|                                $.ajaxFileUpload({
+|                                    url: '/api/grid/upload/'+ subcol.table +'/'+ subcol.process+'/'+subcol.colModel[i].name+'/'+id, 
+|                                    secureuri:false,
+|                                    fileElementId:subcol.colModel[i].name,
+|                                    dataType: 'json'
+|                                });
+|                             }
+|                       }
+|                       return response
+|                    }
+|                 },
+|                 {
+|                     errorTextFormat: function(data) {
+|                           return '<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>'+
+|                           "<strong>Transaction failed! :<strong><br/>Details: '" +data.responseText;
+|                     }
+|                 }
+|            );
+|            jQuery("#"+subgrid_table_id).jqGrid('filterToolbar',{stringResult: true});
+|        if(permission.excel == true){
+|            jQuery("#"+subgrid_table_id).jqGrid('navButtonAdd','#'+pager_id,{
+|                caption: "",
+|                title: "Click Here to Download Selection",
+|                buttonicon: "ui-icon-circle-arrow-s",
+|                onClickButton : function () { 
+|                   jQuery("#grid_table").jqGrid('excelExport',{"url":"/grid/"+subcol.table+"/"+subcol.process+"/v00s01"+"?"+subcol.table+"_id="+row_id+add_param});
+|                } 
+|            });
+|        }
+|            $('input:text, input:file, input:password, input[type=email]')
+|               .button().addClass('ui-textfield'); 
+|       };
+|    }
+|    $("#grid_table").jqGrid(collection);
 |    $("#grid_table").jqGrid('gridResize', { minWidth: 200, minHeight: 500, maxHeight:800, maxWidth:1150 });
 |    $("#grid_table").jqGrid('setFrozenColumns');
-|    $("#grid_table").jqGrid('navGrid','#grid_pager',{edit:true,add:true,del:true},{width:'auto',height:'auto'},{width:'auto',height:'auto'});
-|    jQuery("#grid_table").jqGrid('filterToolbar',{stringResult: true});
+|    $("#grid_table").jqGrid(
+|                 'navGrid',
+|                 '#grid_pager',
+|                 !{permission},
+|                 { 
+|                    width:700,
+|                    height:'auto',
+|                    reloadAfterSubmit:true,
+|                    recreateForm:true,
+|                    savekey:[true,13],
+|                    closeAfterEdit:true,
+|                    closeAfterAdd:true,
+|                    navkeys:true,
+|                    closeOnEscape:true,
+|                    saveicon:[true,"left","ui-icon-disk"],
+|                    closeicon:[true,"left","ui-icon-close"],
+|                    errorTextFormat: function(data) {
+|                           return '<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>'+
+|                           "<strong>Transaction failed! :<strong><br/>Details: '" +data.responseText;
+|                    },
+|                    onInitializeForm:function(formid){
+|                          $(formid).attr('method','POST');
+|                          $(formid).attr('action','');
+|                          $(formid).attr('enctype','multipart/form-data');
+|                          $('input:text, input:file, input:password, input[type=email]')
+|                            .button().addClass('ui-textfield'); 
+|                          collection.colModel.forEach(function(model){
+|                               if(model.chain instanceof Array){
+|                                   model.chain.forEach(function(chain){
+|                                   setTimeout(function () { 
+|                                       var settings = {defaultValue: $("#"+model.name).val() };
+|                                       $("#"+model.name).chainSelect("#"+chain.target,"/api/cs/"+chain.table+"/"+chain.target+'/v00s01',settings);
+|                                       $("#"+model.name).change();
+|                                     },1000);
+|                                   });
+|                               }
+|                          });
+|                    },
+|                    onClose : function(){
+|                        jQuery("#grid_table").trigger("reloadGrid")
+|                        return true;
+|                    
+|                    },
+|                    afterSubmit : function(response, postdata){
+|                       var id =eval(response.responseText)[2];
+|                       for(var i in collection.colModel){
+|                             if(collection.colModel[i].edittype =="file"){
+|                                $.ajaxFileUpload({
+|                                    url: '/api/grid/upload/'+ collection.table +'/'+ collection.process+'/'+collection.colModel[i].name+'/'+id, 
+|                                    secureuri:false,
+|                                    fileElementId:collection.colModel[i].name,
+|                                    dataType: 'json'
+|                                });
+|                             }
+|                       }
+|                       return response
+|                    }
+|                 },
+|                 {
+|                    width:700,
+|                    height:'auto',
+|                    reloadAfterSubmit:true,
+|                    recreateForm:true,
+|                    savekey:[true,13],
+|                    closeAfterEdit:true,
+|                    closeAfterAdd:true,
+|                    navkeys:true,
+|                    closeOnEscape:true,
+|                    saveicon:[true,"left","ui-icon-disk"],
+|                    closeicon:[true,"left","ui-icon-close"],
+|                    errorTextFormat: function(data) {
+|                           return '<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>'+
+|                           "<strong>Transaction failed! :<strong><br/>Details: '" +data.responseText;
+|                    },
+|                    onInitializeForm:function(formid){
+|                          $(formid).attr('method','POST');
+|                          $(formid).attr('action','');
+|                          $(formid).attr('enctype','multipart/form-data');
+|                          $('input:text, input:file, input:password, input[type=email]')
+|                            .button().addClass('ui-textfield');
+|                          collection.colModel.forEach(function(model){
+|                               if(model.chain instanceof Array){
+|                                   model.chain.forEach(function(chain){
+|                                   setTimeout(function () { 
+|                                       var settings = {defaultValue: $("#"+model.name).val() };
+|                                       $("#"+model.name).chainSelect("#"+chain.target,"/api/cs/"+chain.table+"/"+chain.target+'/v00s01',settings);
+|                                       $("#"+model.name).change();
+|                                     },1000);
+|                                   });
+|                               }
+|                          });
+|                    },
+|                    onClose : function(){
+|                        jQuery("#grid_table").trigger("reloadGrid")
+|                        return true;
+|                    
+|                    },
+|                    afterSubmit : function(response, postdata){
+|                       var id =eval(response.responseText)[2];
+|                       for(var i in collection.colModel){
+|                             if(collection.colModel[i].edittype =="file"){
+|                                $.ajaxFileUpload({
+|                                    url: '/api/grid/upload/'+ collection.table +'/'+ collection.process+'/'+collection.colModel[i].name+'/'+id, 
+|                                    secureuri:false,
+|                                    fileElementId:collection.colModel[i].name,
+|                                    dataType: 'json'
+|                                });
+|                             }
+|                       }
+|                       return response
+|                    }
+|                 },
+|                {errorTextFormat: function(data) {
+|                    return '<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>'+
+|                    "<strong>Transaction failed! :<strong><br/>Details: '" +data.responseText;
+|                }
+|          }
+|    );
+|    jQuery("#grid_table").jqGrid('filterToolbar',{
+|             stringResult: true,
+|             beforeSearch: function() {
+|               $("#grid_table").setGridParam({postData:collection.postData });
+|             }
+|    });
 |    $('input:text, input:file, input:password, input[type=email]')
 |       .button().addClass('ui-textfield'); 
+|    var permission = !{permission};
+|    if(permission.add == true){
+|       jQuery("#grid_table").jqGrid('gridDnD',
+|              {
+|                  connectWith:'#grid_table',
+|                  dropbyname:true,
+|                  ondrop: function (ev, ui, getdata) {
+|                    var rids = $('#grid_table').jqGrid('getDataIDs');
+|                    jQuery("#grid_table").jqGrid('editGridRow',rids[0],{onClose : function(){
+|                        jQuery("#grid_table").trigger("reloadGrid")
+|                        return true;
+|                    
+|                    }}); 
+|                  },
+|                  drag_opts:{stop:null}
+|              }
+|       );
+|    }
+|    if(permission.excel == true){
+|       jQuery("#grid_table").jqGrid('navButtonAdd','#grid_pager',{
+|            caption: "",
+|            title: "Click Here to Download Selection",
+|            buttonicon: "ui-icon-circle-arrow-s",
+|            onClickButton : function () { 
+|              jQuery("#grid_table").jqGrid('excelExport',{"url":"/grid/"+collection.table+"/"+collection.process+"/v00s01","method":"POST"});
+|            } 
+|       });
+|    }
 |  });
 | </script>
 #page_holder

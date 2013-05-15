@@ -1,9 +1,35 @@
 var utility = {
 		transformSort : function (sidx,sord){
-			sidx = sidx.replace('id','_id');
-			sord = Number(sord.replace('desc',-1).replace('asc',1));
 			var sort = {};
-			sort[sidx] = sord;
+			if(sidx){
+				sidx = sidx.replace('id','_id');
+			}
+			else{
+				sidx = "_id";
+			}
+			if(sord){
+				sord = Number(sord.replace('desc',-1).replace('asc',1));
+			}
+			else{
+				sord = "asc";
+			}
+			var nsidx = sidx.split(', ');
+			if(nsidx.length > 1){
+				for(var i in nsidx){
+					var ninsidx = nsidx[i].split(' ');
+					if(ninsidx.length == 2){
+						sort[ninsidx[0]] = ninsidx[1];
+					}
+					else{
+						sort[ninsidx[0]] = sord;
+					}
+					
+					
+				}
+			}
+			else{
+				sort[sidx] = sord;
+			}
 			return sort;
 		},
 		parseNumber : function(n) {
@@ -12,6 +38,14 @@ var utility = {
 			  }
 			  else{
 				  return n;
+			  }
+		},
+		isNumber : function(n){
+			  if(!isNaN(parseFloat(n)) && isFinite(n)){
+				  return true;
+			  }
+			  else{
+				  return false;
 			  }
 		},
 		parseBoolean : function(bool){
@@ -70,6 +104,30 @@ var utility = {
 			
 			}
 			return result;
+		},
+		calculator : (function(){
+			function safe(expr){
+				if (/[^\d*-+\/()^%. ]/.test(expr))
+					throw "Malformed expression.";
+				return expr;
+			}
+			function calculate(expr) {
+				try {
+					return eval(expr);
+				} catch (e) {
+					return expr.toString();
+				}
+			}
+			return { calculate: calculate };
+		})(),
+		parseEquation : function(expr,data){
+
+			for(var i in data){
+				var regex = new RegExp(i,"g");
+				expr = expr.replace(regex,data[i]);
+			}
+			expr = expr.replace(/ /g,"");
+			return expr;
 		}
 };
 

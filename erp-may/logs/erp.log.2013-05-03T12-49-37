@@ -1,0 +1,16 @@
+Fri May  3 19:59:28 [initandlisten] MongoDB starting : pid=334 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Fri May  3 19:59:28 [initandlisten] 
+Fri May  3 19:59:28 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Fri May  3 19:59:28 [initandlisten] db version v2.2.0, pdfile version 4.5
+Fri May  3 19:59:28 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Fri May  3 19:59:28 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Fri May  3 19:59:28 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Fri May  3 19:59:29 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Fri May  3 19:59:29 [initandlisten] recover : no journal files present, no recovery needed
+Fri May  3 19:59:29 [websvr] admin web console waiting for connections on port 28017
+Fri May  3 19:59:29 [initandlisten] waiting for connections on port 27017
+Fri May  3 20:00:01 [initandlisten] connection accepted from 127.0.0.1:49479 #1 (1 connection now open)
+Fri May  3 20:00:01 [initandlisten] connection accepted from 127.0.0.1:49480 #2 (2 connections now open)
+Fri May  3 20:00:01 [initandlisten] connection accepted from 127.0.0.1:49481 #3 (3 connections now open)
+Fri May  3 20:00:01 [initandlisten] connection accepted from 127.0.0.1:49482 #4 (4 connections now open)
+Fri May  3 20:00:01 [initandlisten] connection accepted from 127.0.0.1:49483 #5 (5 connections now open)

@@ -1,0 +1,621 @@
+Wed May 15 18:07:54 [initandlisten] MongoDB starting : pid=375 port=27017 dbpath=/Users/chito/Google Drive/db/erp-may/data 64-bit host=chitombp
+Wed May 15 18:07:54 [initandlisten] 
+Wed May 15 18:07:54 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Wed May 15 18:07:54 [initandlisten] db version v2.2.0, pdfile version 4.5
+Wed May 15 18:07:54 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Wed May 15 18:07:54 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Wed May 15 18:07:54 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Wed May 15 18:07:54 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp-may/data/journal
+Wed May 15 18:07:54 [initandlisten] recover : no journal files present, no recovery needed
+Wed May 15 18:07:55 [initandlisten] preallocateIsFaster=true 3.7
+Wed May 15 18:07:58 [websvr] admin web console waiting for connections on port 28017
+Wed May 15 18:07:58 [initandlisten] waiting for connections on port 27017
+Wed May 15 18:08:39 [initandlisten] connection accepted from 127.0.0.1:49484 #1 (1 connection now open)
+Wed May 15 18:08:39 [initandlisten] connection accepted from 127.0.0.1:49485 #2 (2 connections now open)
+Wed May 15 18:08:39 [initandlisten] connection accepted from 127.0.0.1:49486 #3 (3 connections now open)
+Wed May 15 18:08:39 [initandlisten] connection accepted from 127.0.0.1:49487 #4 (4 connections now open)
+Wed May 15 18:08:39 [initandlisten] connection accepted from 127.0.0.1:49488 #5 (5 connections now open)
+Wed May 15 18:08:43 [conn4] query erp.parameter query: { $query: { table: "sales", process: "order" }, orderby: { sequence: 1 } } ntoreturn:0 ntoskip:0 nscanned:452 scanAndOrder:1 keyUpdates:0 locks(micros) r:164281 nreturned:18 reslen:8211 164ms
+Wed May 15 18:08:45 [conn1] query erp.customer query: { $query: {}, orderby: { customer: 1 } } ntoreturn:0 ntoskip:0 nscanned:1585 scanAndOrder:1 keyUpdates:0 locks(micros) r:400808 nreturned:1585 reslen:86066 400ms
+Wed May 15 18:08:45 [conn5] query erp.customer query: { $query: {}, orderby: { s_address: 1 } } ntoreturn:0 ntoskip:0 nscanned:1585 scanAndOrder:1 keyUpdates:0 locks(micros) r:402335 nreturned:1585 reslen:164030 402ms
+Wed May 15 18:08:45 [conn4] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+query erp.customer query: { $query: {}, orderby: { b_address: 1 } } ntoreturn:0 ntoskip:0 nscanned:1585 scanAndOrder:1 keyUpdates:0 locks(micros) r:403328 nreturned:1585 reslen:163999 403ms
+Wed May 15 18:08:45 [conn2] query erp.customer query: { $query: {}, orderby: { shipping: 1 } } ntoreturn:0 ntoskip:0 nscanned:1585 scanAndOrder:1 keyUpdates:0 locks(micros) r:389696 nreturned:1585 reslen:73290 404ms
+Wed May 15 18:08:45 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+query erp.customer query: { $query: {}, orderby: { se: 1 } } ntoreturn:0 ntoskip:0 nscanned:1585 scanAndOrder:1 keyUpdates:0 locks(micros) r:419012 nreturned:1585 reslen:34890 419ms
+Wed May 15 18:08:45 [conn5] query erp.status query: { $query: { table: "sales", process: "order" }, orderby: { status_name: 1 } } ntoreturn:0 ntoskip:0 nscanned:27 scanAndOrder:1 keyUpdates:0 locks(micros) r:113248 nreturned:3 reslen:161 113ms
+Wed May 15 18:08:45 [conn2] query erp.customer_term query: { $query: {}, orderby: { term: 1 } } ntoreturn:0 ntoskip:0 nscanned:1585 scanAndOrder:1 keyUpdates:0 numYields: 1 locks(micros) r:357495 nreturned:1585 reslen:50740 204ms
+Wed May 15 18:08:49 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+query erp.discount query: { $query: { ccode: 1531 }, orderby: {} } ntoreturn:0 ntoskip:0 nscanned:1585 keyUpdates:0 locks(micros) r:107885 nreturned:1 reslen:61 107ms
+Wed May 15 18:23:11 [conn2] info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Wed May 15 18:36:27 [initandlisten] connection accepted from 127.0.0.1:55321 #6 (6 connections now open)
+Wed May 15 18:36:27 [conn6] end connection 127.0.0.1:55321 (5 connections now open)
+Wed May 15 18:36:42 [conn4] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 18:38:11 [initandlisten] connection accepted from 127.0.0.1:55683 #7 (6 connections now open)
+Wed May 15 18:38:28 [conn7] end connection 127.0.0.1:55683 (5 connections now open)
+Wed May 15 18:40:46 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 18:40:50 [conn2] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 18:41:02 [conn1] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 18:41:11 [conn1] warning: can't find plugin [asc]
+Wed May 15 18:42:29 [initandlisten] connection accepted from 127.0.0.1:56586 #8 (6 connections now open)
+Wed May 15 18:42:33 [conn8] end connection 127.0.0.1:56586 (5 connections now open)
+Wed May 15 18:42:39 [initandlisten] connection accepted from 127.0.0.1:56618 #9 (6 connections now open)
+Wed May 15 18:42:39 [conn9] end connection 127.0.0.1:56618 (5 connections now open)
+Wed May 15 18:42:49 [conn5] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 18:59:34 [initandlisten] connection accepted from 127.0.0.1:60158 #10 (6 connections now open)
+Wed May 15 19:00:27 [conn10] end connection 127.0.0.1:60158 (5 connections now open)
+Wed May 15 19:01:54 [initandlisten] connection accepted from 127.0.0.1:60630 #11 (6 connections now open)
+Wed May 15 19:02:40 [conn11] end connection 127.0.0.1:60630 (5 connections now open)
+Wed May 15 19:02:47 [initandlisten] connection accepted from 127.0.0.1:60809 #12 (6 connections now open)
+Wed May 15 19:02:47 [conn12] end connection 127.0.0.1:60809 (5 connections now open)
+Wed May 15 19:05:28 [conn4] end connection 127.0.0.1:49487 (4 connections now open)
+Wed May 15 19:05:28 [conn1] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49484 (4 connections now open)
+Wed May 15 19:05:28 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49486 (4 connections now open)
+Wed May 15 19:05:28 [conn5] end connection 127.0.0.1:49488 (4 connections now open)
+Wed May 15 19:05:28 [conn2] end connection 127.0.0.1:49485 (4 connections now open)
+Wed May 15 19:05:37 [initandlisten] connection accepted from 127.0.0.1:61549 #13 (1 connection now open)
+Wed May 15 19:05:37 [initandlisten] connection accepted from 127.0.0.1:61550 #14 (2 connections now open)
+Wed May 15 19:05:37 [initandlisten] connection accepted from 127.0.0.1:61551 #15 (3 connections now open)
+Wed May 15 19:05:37 [initandlisten] connection accepted from 127.0.0.1:61552 #16 (4 connections now open)
+Wed May 15 19:05:37 [initandlisten] connection accepted from 127.0.0.1:61553 #17 (5 connections now open)
+Wed May 15 19:05:59 [conn17] end connection 127.0.0.1:61553 (4 connections now open)
+Wed May 15 19:05:59 [conn16] end connection 127.0.0.1:61552 (4 connections now open)
+Wed May 15 19:05:59 [conn13] end connection 127.0.0.1:61549 (4 connections now open)
+Wed May 15 19:05:59 [conn15] end connection 127.0.0.1:61551 (4 connections now open)
+Wed May 15 19:05:59 [conn14] end connection 127.0.0.1:61550 (4 connections now open)
+Wed May 15 19:06:10 [initandlisten] connection accepted from 127.0.0.1:61702 #18 (1 connection now open)
+Wed May 15 19:06:49 [conn18] CMD: drop erp.bundle
+Wed May 15 19:06:59 [conn18] CMD: drop erp.bundle_item
+Wed May 15 19:07:07 [conn18] CMD: drop erp.bundle_item
+Wed May 15 19:07:08 [conn18] end connection 127.0.0.1:61702 (0 connections now open)
+Wed May 15 19:07:12 [initandlisten] connection accepted from 127.0.0.1:61993 #19 (1 connection now open)
+Wed May 15 19:07:16 [initandlisten] connection accepted from 127.0.0.1:62011 #20 (2 connections now open)
+Wed May 15 19:07:16 [initandlisten] connection accepted from 127.0.0.1:62012 #21 (3 connections now open)
+Wed May 15 19:07:16 [initandlisten] connection accepted from 127.0.0.1:62013 #22 (4 connections now open)
+Wed May 15 19:07:16 [initandlisten] connection accepted from 127.0.0.1:62014 #23 (5 connections now open)
+Wed May 15 19:07:16 [initandlisten] connection accepted from 127.0.0.1:62015 #24 (6 connections now open)
+Wed May 15 19:07:17 [conn24] build index erp.bundle_item { _id: 1 }
+Wed May 15 19:07:17 [conn24] build index done.  scanned 0 total records. 0 secs
+Wed May 15 19:07:32 [conn19] end connection 127.0.0.1:61993 (5 connections now open)
+Wed May 15 19:07:42 [initandlisten] connection accepted from 127.0.0.1:62137 #25 (6 connections now open)
+Wed May 15 19:07:42 [conn25] end connection 127.0.0.1:62137 (5 connections now open)
+Wed May 15 19:07:45 [conn24] end connection 127.0.0.1:62015 (4 connections now open)
+Wed May 15 19:07:45 [conn21] end connection 127.0.0.1:62012 (4 connections now open)
+Wed May 15 19:07:45 [conn23] end connection 127.0.0.1:62014 (4 connections now open)
+Wed May 15 19:07:45 [conn22] end connection 127.0.0.1:62013 (4 connections now open)
+Wed May 15 19:07:45 [conn20] end connection 127.0.0.1:62011 (4 connections now open)
+Wed May 15 19:08:04 [initandlisten] connection accepted from 127.0.0.1:62238 #26 (1 connection now open)
+Wed May 15 19:08:04 [initandlisten] connection accepted from 127.0.0.1:62239 #27 (2 connections now open)
+Wed May 15 19:08:04 [initandlisten] connection accepted from 127.0.0.1:62240 #28 (3 connections now open)
+Wed May 15 19:08:04 [initandlisten] connection accepted from 127.0.0.1:62241 #29 (4 connections now open)
+Wed May 15 19:08:04 [initandlisten] connection accepted from 127.0.0.1:62242 #30 (5 connections now open)
+Wed May 15 19:08:11 [initandlisten] connection accepted from 127.0.0.1:62277 #31 (6 connections now open)
+Wed May 15 19:08:34 [conn29] end connection 127.0.0.1:62241 (5 connections now open)
+Wed May 15 19:08:34 [conn30] end connection 127.0.0.1:62242 (5 connections now open)
+Wed May 15 19:08:34 [conn26] end connection 127.0.0.1:62238 (5 connections now open)
+Wed May 15 19:08:34 [conn27] end connection 127.0.0.1:62239 (5 connections now open)
+Wed May 15 19:08:34 [conn28] end connection 127.0.0.1:62240 (5 connections now open)
+Wed May 15 19:08:41 [initandlisten] connection accepted from 127.0.0.1:62427 #32 (2 connections now open)
+Wed May 15 19:08:41 [initandlisten] connection accepted from 127.0.0.1:62428 #33 (3 connections now open)
+Wed May 15 19:08:41 [initandlisten] connection accepted from 127.0.0.1:62429 #34 (4 connections now open)
+Wed May 15 19:08:41 [initandlisten] connection accepted from 127.0.0.1:62430 #35 (5 connections now open)
+Wed May 15 19:08:41 [initandlisten] connection accepted from 127.0.0.1:62431 #36 (6 connections now open)
+Wed May 15 19:08:45 [conn34] warning: can't find plugin [asc]
+Wed May 15 19:08:54 [conn32] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:09:20 [conn34] warning: can't find plugin [asc]
+Wed May 15 19:09:25 [conn36] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:10:00 [conn31] end connection 127.0.0.1:62277 (5 connections now open)
+Wed May 15 19:10:04 [initandlisten] connection accepted from 127.0.0.1:62798 #37 (6 connections now open)
+Wed May 15 19:12:26 [conn33] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:15:54 [conn37] end connection 127.0.0.1:62798 (5 connections now open)
+Wed May 15 19:15:56 [initandlisten] connection accepted from 127.0.0.1:64380 #38 (6 connections now open)
+Wed May 15 19:15:59 [conn38] CMD: drop erp.bundle_item
+Wed May 15 19:16:05 [conn38] end connection 127.0.0.1:64380 (5 connections now open)
+Wed May 15 19:16:13 [initandlisten] connection accepted from 127.0.0.1:64459 #39 (6 connections now open)
+Wed May 15 19:16:13 [conn39] build index erp.bundle_item { _id: 1 }
+Wed May 15 19:16:13 [conn39] build index done.  scanned 0 total records. 0 secs
+Wed May 15 19:16:13 [conn39] end connection 127.0.0.1:64459 (5 connections now open)
+Wed May 15 19:16:15 [initandlisten] connection accepted from 127.0.0.1:64466 #40 (6 connections now open)
+Wed May 15 19:17:29 [conn40] end connection 127.0.0.1:64466 (5 connections now open)
+Wed May 15 19:17:40 [conn36] end connection 127.0.0.1:62431 (4 connections now open)
+Wed May 15 19:17:40 [conn34] end connection 127.0.0.1:62429 (4 connections now open)
+Wed May 15 19:17:40 [conn35] end connection 127.0.0.1:62430 (4 connections now open)
+Wed May 15 19:17:40 [conn32] end connection 127.0.0.1:62427 (4 connections now open)
+Wed May 15 19:17:40 [conn33] end connection 127.0.0.1:62428 (4 connections now open)
+Wed May 15 19:17:43 [initandlisten] connection accepted from 127.0.0.1:64866 #41 (1 connection now open)
+Wed May 15 19:17:43 [initandlisten] connection accepted from 127.0.0.1:64867 #42 (2 connections now open)
+Wed May 15 19:17:43 [initandlisten] connection accepted from 127.0.0.1:64868 #43 (3 connections now open)
+Wed May 15 19:17:43 [initandlisten] connection accepted from 127.0.0.1:64869 #44 (4 connections now open)
+Wed May 15 19:17:43 [initandlisten] connection accepted from 127.0.0.1:64870 #45 (5 connections now open)
+Wed May 15 19:17:46 [conn43] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:64868 (4 connections now open)
+Wed May 15 19:17:46 [conn45] end connection 127.0.0.1:64870 (4 connections now open)
+Wed May 15 19:17:46 [conn44] end connection 127.0.0.1:64869 (4 connections now open)
+Wed May 15 19:17:46 [conn41] end connection 127.0.0.1:64866 (4 connections now open)
+Wed May 15 19:17:46 [conn42] end connection 127.0.0.1:64867 (4 connections now open)
+Wed May 15 19:17:47 [initandlisten] connection accepted from 127.0.0.1:64892 #46 (1 connection now open)
+Wed May 15 19:18:36 [conn46] end connection 127.0.0.1:64892 (0 connections now open)
+Wed May 15 19:18:37 [initandlisten] connection accepted from 127.0.0.1:65109 #47 (1 connection now open)
+Wed May 15 19:18:40 [conn47] CMD: drop erp.bundle_item
+Wed May 15 19:18:48 [conn47] end connection 127.0.0.1:65109 (0 connections now open)
+Wed May 15 19:18:50 [initandlisten] connection accepted from 127.0.0.1:65175 #48 (1 connection now open)
+Wed May 15 19:18:50 [conn48] build index erp.bundle_item { _id: 1 }
+Wed May 15 19:18:50 [conn48] build index done.  scanned 0 total records. 0 secs
+Wed May 15 19:18:50 [conn48] end connection 127.0.0.1:65175 (0 connections now open)
+Wed May 15 19:18:57 [initandlisten] connection accepted from 127.0.0.1:65204 #49 (1 connection now open)
+Wed May 15 19:18:57 [initandlisten] connection accepted from 127.0.0.1:65205 #50 (2 connections now open)
+Wed May 15 19:18:57 [initandlisten] connection accepted from 127.0.0.1:65206 #51 (3 connections now open)
+Wed May 15 19:18:57 [initandlisten] connection accepted from 127.0.0.1:65207 #52 (4 connections now open)
+Wed May 15 19:18:57 [initandlisten] connection accepted from 127.0.0.1:65208 #53 (5 connections now open)
+Wed May 15 19:19:09 [conn53] end connection 127.0.0.1:65208 (4 connections now open)
+Wed May 15 19:19:09 [conn51] end connection 127.0.0.1:65206 (4 connections now open)
+Wed May 15 19:19:09 [conn52] end connection 127.0.0.1:65207 (4 connections now open)
+Wed May 15 19:19:09 [conn49] end connection 127.0.0.1:65204 (4 connections now open)
+Wed May 15 19:19:09 [conn50] end connection 127.0.0.1:65205 (4 connections now open)
+Wed May 15 19:19:16 [initandlisten] connection accepted from 127.0.0.1:65308 #54 (1 connection now open)
+Wed May 15 19:19:16 [initandlisten] connection accepted from 127.0.0.1:65309 #55 (2 connections now open)
+Wed May 15 19:19:16 [initandlisten] connection accepted from 127.0.0.1:65310 #56 (3 connections now open)
+Wed May 15 19:19:16 [initandlisten] connection accepted from 127.0.0.1:65311 #57 (4 connections now open)
+Wed May 15 19:19:16 [initandlisten] connection accepted from 127.0.0.1:65312 #58 (5 connections now open)
+Wed May 15 19:19:19 [conn56] info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Wed May 15 19:19:19 [conn54] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:19:26 [conn58] warning: can't find plugin [asc]
+Wed May 15 19:22:16 [conn57] warning: can't find plugin [asc]
+Wed May 15 19:32:12 [initandlisten] connection accepted from 127.0.0.1:52434 #59 (6 connections now open)
+Wed May 15 19:32:12 [conn59] end connection 127.0.0.1:52434 (5 connections now open)
+Wed May 15 19:32:37 [conn58] warning: can't find plugin [asc]
+Wed May 15 19:32:42 [conn55] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:33:01 [conn57] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:33:54 [conn55] info DFM::findAll(): extent 0:90000 was empty, skipping ahead. ns:erp.product
+Wed May 15 19:33:54 [conn55] warning: can't find plugin [asc]
+Wed May 15 19:34:45 [conn58] warning: can't find plugin [asc]
+Wed May 15 19:38:27 [conn54] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:38:30 [conn57] warning: can't find plugin [asc]
+Wed May 15 19:47:57 [initandlisten] connection accepted from 127.0.0.1:56668 #60 (6 connections now open)
+Wed May 15 19:47:57 [conn60] end connection 127.0.0.1:56668 (5 connections now open)
+Wed May 15 19:51:34 [initandlisten] connection accepted from 127.0.0.1:57637 #61 (6 connections now open)
+Wed May 15 19:51:34 [conn61] end connection 127.0.0.1:57637 (5 connections now open)
+Wed May 15 19:53:49 [initandlisten] connection accepted from 127.0.0.1:58252 #62 (6 connections now open)
+Wed May 15 19:53:49 [conn62] end connection 127.0.0.1:58252 (5 connections now open)
+Wed May 15 19:55:54 [initandlisten] connection accepted from 127.0.0.1:58815 #63 (6 connections now open)
+Wed May 15 19:55:54 [conn63] end connection 127.0.0.1:58815 (5 connections now open)
+Wed May 15 19:56:54 [conn56] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 19:59:44 [initandlisten] connection accepted from 127.0.0.1:59854 #64 (6 connections now open)
+Wed May 15 19:59:44 [conn64] end connection 127.0.0.1:59854 (5 connections now open)
+Wed May 15 20:00:51 [initandlisten] connection accepted from 127.0.0.1:60156 #65 (6 connections now open)
+Wed May 15 20:01:01 [conn65] CMD: drop erp.supplier
+Wed May 15 20:01:02 [conn65] end connection 127.0.0.1:60156 (5 connections now open)
+Wed May 15 20:01:04 [initandlisten] connection accepted from 127.0.0.1:60214 #66 (6 connections now open)
+Wed May 15 20:01:04 [conn66] build index erp.supplier { _id: 1 }
+Wed May 15 20:01:04 [conn66] build index done.  scanned 0 total records. 0 secs
+Wed May 15 20:01:04 [conn66] end connection 127.0.0.1:60214 (5 connections now open)
+Wed May 15 20:06:00 [conn55] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 20:06:12 [conn54] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Wed May 15 20:17:15 [initandlisten] connection accepted from 127.0.0.1:64598 #67 (6 connections now open)
+Wed May 15 20:17:15 [conn67] end connection 127.0.0.1:64598 (5 connections now open)
+Wed May 15 20:18:43 [initandlisten] connection accepted from 127.0.0.1:64981 #68 (6 connections now open)
+Wed May 15 20:18:43 [conn68] end connection 127.0.0.1:64981 (5 connections now open)
+Wed May 15 20:19:19 [initandlisten] connection accepted from 127.0.0.1:65139 #69 (6 connections now open)
+Wed May 15 20:19:19 [conn69] end connection 127.0.0.1:65139 (5 connections now open)
+Wed May 15 20:20:21 [initandlisten] connection accepted from 127.0.0.1:65424 #70 (6 connections now open)
+Wed May 15 20:20:27 [conn70] CMD: drop erp.grant
+Wed May 15 20:23:45 [conn70] end connection 127.0.0.1:65424 (5 connections now open)
+Wed May 15 20:23:48 [initandlisten] connection accepted from 127.0.0.1:49954 #71 (6 connections now open)
+Wed May 15 20:23:48 [conn71] build index erp.grant { _id: 1 }
+Wed May 15 20:23:48 [conn71] build index done.  scanned 0 total records. 0.001 secs
+Wed May 15 20:23:48 [conn71] end connection 127.0.0.1:49954 (5 connections now open)
+Wed May 15 20:24:15 [conn57] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:65311 (4 connections now open)
+Wed May 15 20:24:15 [conn54] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:65308 (4 connections now open)
+Wed May 15 20:24:15 [conn58] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:65312 (4 connections now open)
+Wed May 15 20:24:15 [conn56] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:65310 (4 connections now open)
+Wed May 15 20:24:15 [conn55] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:65309 (4 connections now open)
+Wed May 15 20:24:22 [initandlisten] connection accepted from 127.0.0.1:50107 #72 (1 connection now open)
+Wed May 15 20:24:22 [conn72] end connection 127.0.0.1:50107 (0 connections now open)
+Wed May 15 20:24:40 [initandlisten] connection accepted from 127.0.0.1:50188 #73 (1 connection now open)
+Wed May 15 20:24:40 [conn73] end connection 127.0.0.1:50188 (0 connections now open)
+Wed May 15 20:25:57 [initandlisten] connection accepted from 127.0.0.1:50525 #74 (1 connection now open)
+Wed May 15 20:25:57 [conn74] end connection 127.0.0.1:50525 (0 connections now open)
+Wed May 15 20:26:45 [initandlisten] connection accepted from 127.0.0.1:50738 #75 (1 connection now open)
+Wed May 15 20:26:45 [conn75] end connection 127.0.0.1:50738 (0 connections now open)
+Wed May 15 20:27:00 [initandlisten] connection accepted from 127.0.0.1:50806 #76 (1 connection now open)
+Wed May 15 20:27:00 [conn76] end connection 127.0.0.1:50806 (0 connections now open)
+Wed May 15 20:27:17 [initandlisten] connection accepted from 127.0.0.1:50883 #77 (1 connection now open)
+Wed May 15 20:27:51 [initandlisten] connection accepted from 127.0.0.1:51040 #78 (2 connections now open)
+Wed May 15 20:27:51 [initandlisten] connection accepted from 127.0.0.1:51041 #79 (3 connections now open)
+Wed May 15 20:27:51 [initandlisten] connection accepted from 127.0.0.1:51042 #80 (4 connections now open)
+Wed May 15 20:27:51 [initandlisten] connection accepted from 127.0.0.1:51043 #81 (5 connections now open)
+Wed May 15 20:27:51 [initandlisten] connection accepted from 127.0.0.1:51044 #82 (6 connections now open)
+Wed May 15 20:28:48 [conn77] CMD: drop erp.grant
+Wed May 15 20:29:02 [conn77] end connection 127.0.0.1:50883 (5 connections now open)
+Wed May 15 20:29:05 [initandlisten] connection accepted from 127.0.0.1:51366 #83 (6 connections now open)
+Wed May 15 20:29:05 [conn83] build index erp.grant { _id: 1 }
+Wed May 15 20:29:05 [conn83] build index done.  scanned 0 total records. 0 secs
+Wed May 15 20:29:05 [conn83] end connection 127.0.0.1:51366 (5 connections now open)
+Wed May 15 20:29:40 [initandlisten] connection accepted from 127.0.0.1:51524 #84 (6 connections now open)
+Wed May 15 20:29:40 [conn84] end connection 127.0.0.1:51524 (5 connections now open)
+Wed May 15 20:30:25 [initandlisten] connection accepted from 127.0.0.1:51720 #85 (6 connections now open)
+Wed May 15 20:30:25 [conn85] end connection 127.0.0.1:51720 (5 connections now open)
+Wed May 15 20:30:51 [initandlisten] connection accepted from 127.0.0.1:51837 #86 (6 connections now open)
+Wed May 15 20:30:51 [conn86] end connection 127.0.0.1:51837 (5 connections now open)
+Wed May 15 20:31:19 [initandlisten] connection accepted from 127.0.0.1:51961 #87 (6 connections now open)
+Wed May 15 20:31:19 [conn87] end connection 127.0.0.1:51961 (5 connections now open)
+Wed May 15 20:31:48 [initandlisten] connection accepted from 127.0.0.1:52089 #88 (6 connections now open)
+Wed May 15 20:31:48 [conn88] end connection 127.0.0.1:52089 (5 connections now open)
+Wed May 15 20:33:02 [conn80] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 20:33:08 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:16 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:17 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:18 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:19 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:20 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:23 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:25 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:25 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:26 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:27 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:33:27 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:34:08 [conn81] warning: can't find plugin [asc]
+Wed May 15 20:35:15 [initandlisten] connection accepted from 127.0.0.1:53000 #89 (6 connections now open)
+Wed May 15 20:35:15 [conn89] end connection 127.0.0.1:53000 (5 connections now open)
+Wed May 15 20:35:42 [initandlisten] connection accepted from 127.0.0.1:53121 #90 (6 connections now open)
+Wed May 15 20:35:42 [conn90] end connection 127.0.0.1:53121 (5 connections now open)
+Wed May 15 20:35:50 [conn81] warning: can't find plugin [asc]
+Wed May 15 20:36:14 [conn81] warning: can't find plugin [asc]
+Wed May 15 20:36:55 [conn81] warning: can't find plugin [asc]
+Wed May 15 20:38:20 [conn82] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Wed May 15 20:39:00 [conn80] warning: can't find plugin [asc]
+Wed May 15 20:39:15 [conn80] warning: can't find plugin [asc]
+Thu May 16 03:43:49 [conn81] warning: can't find plugin [asc]
+Thu May 16 03:44:47 [conn79] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:f8000 was empty, skipping ahead. ns:erp.sales
+Thu May 16 03:45:24 [conn78] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 03:45:36 [conn78] warning: can't find plugin [asc]
+Thu May 16 03:47:41 [conn81] warning: can't find plugin [asc]
+Thu May 16 03:48:25 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:50:34 [conn82] warning: can't find plugin [asc]
+Thu May 16 03:52:13 [conn80] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 03:52:42 [conn80] warning: can't find plugin [asc]
+Thu May 16 03:52:46 [conn80] warning: can't find plugin [asc]
+Thu May 16 03:53:51 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:54:37 [conn82] warning: can't find plugin [asc]
+Thu May 16 03:55:04 [conn80] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 03:55:19 [conn78] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 03:55:43 [conn81] warning: can't find plugin [asc]
+Thu May 16 03:56:25 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:56:39 [conn82] warning: can't find plugin [asc]
+Thu May 16 03:57:03 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:57:07 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:57:34 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:57:51 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:58:01 [conn79] warning: can't find plugin [asc]
+Thu May 16 03:59:06 [conn82] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 03:59:22 [conn82] warning: can't find plugin [asc]
+Thu May 16 04:08:34 [conn78] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 04:19:45 [initandlisten] connection accepted from 127.0.0.1:61942 #91 (6 connections now open)
+Thu May 16 04:19:59 [initandlisten] connection accepted from 127.0.0.1:62005 #92 (7 connections now open)
+Thu May 16 04:20:00 [conn92] end connection 127.0.0.1:62005 (6 connections now open)
+Thu May 16 04:21:35 [conn79] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 04:21:41 [conn79] warning: can't find plugin [asc]
+Thu May 16 04:21:45 [conn79] warning: can't find plugin [asc]
+Thu May 16 04:22:05 [conn79] warning: can't find plugin [asc]
+Thu May 16 04:22:14 [conn79] warning: can't find plugin [asc]
+Thu May 16 04:22:37 [conn79] info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Thu May 16 04:25:46 [conn81] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 04:26:14 [conn78] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 04:26:48 [conn78] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:27:26 [conn78] info DFM::findAll(): extent 0:157000 was empty, skipping ahead. ns:erp.discount
+Thu May 16 04:39:18 [conn82] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51044 (5 connections now open)
+Thu May 16 04:39:18 [conn81] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51043 (5 connections now open)
+Thu May 16 04:39:18 [conn79] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51041 (5 connections now open)
+Thu May 16 04:39:18 [conn80] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51042 (5 connections now open)
+Thu May 16 04:39:18 [conn78] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51040 (5 connections now open)
+Thu May 16 04:39:30 [initandlisten] connection accepted from 127.0.0.1:50892 #93 (2 connections now open)
+Thu May 16 04:39:30 [initandlisten] connection accepted from 127.0.0.1:50893 #94 (3 connections now open)
+Thu May 16 04:39:30 [initandlisten] connection accepted from 127.0.0.1:50894 #95 (4 connections now open)
+Thu May 16 04:39:30 [initandlisten] connection accepted from 127.0.0.1:50895 #96 (5 connections now open)
+Thu May 16 04:39:30 [initandlisten] connection accepted from 127.0.0.1:50896 #97 (6 connections now open)
+Thu May 16 04:39:56 [conn93] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:40:49 [conn94] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:41:15 [conn94] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:44:53 [conn97] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:50896 (5 connections now open)
+Thu May 16 04:44:53 [conn96] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:50895 (5 connections now open)
+Thu May 16 04:44:53 [conn94] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:50893 (5 connections now open)
+Thu May 16 04:44:53 [conn93] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:50892 (5 connections now open)
+Thu May 16 04:44:53 [conn95] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:50894 (5 connections now open)
+Thu May 16 04:45:13 [initandlisten] connection accepted from 127.0.0.1:52480 #98 (2 connections now open)
+Thu May 16 04:45:13 [initandlisten] connection accepted from 127.0.0.1:52481 #99 (3 connections now open)
+Thu May 16 04:45:13 [initandlisten] connection accepted from 127.0.0.1:52482 #100 (4 connections now open)
+Thu May 16 04:45:13 [initandlisten] connection accepted from 127.0.0.1:52483 #101 (5 connections now open)
+Thu May 16 04:45:13 [initandlisten] connection accepted from 127.0.0.1:52484 #102 (6 connections now open)
+Thu May 16 04:46:04 [conn99] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:46:58 [conn100] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:52482 (5 connections now open)
+Thu May 16 04:46:58 [conn101] end connection 127.0.0.1:52483 (5 connections now open)
+Thu May 16 04:46:58 [conn102] end connection 127.0.0.1:52484 (5 connections now open)
+Thu May 16 04:46:58 [conn99] end connection 127.0.0.1:52481 (5 connections now open)
+Thu May 16 04:46:58 [conn98] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:52480 (5 connections now open)
+Thu May 16 04:47:43 [initandlisten] connection accepted from 127.0.0.1:53183 #103 (2 connections now open)
+Thu May 16 04:47:43 [initandlisten] connection accepted from 127.0.0.1:53184 #104 (3 connections now open)
+Thu May 16 04:47:43 [initandlisten] connection accepted from 127.0.0.1:53185 #105 (4 connections now open)
+Thu May 16 04:47:43 [initandlisten] connection accepted from 127.0.0.1:53187 #106 (5 connections now open)
+Thu May 16 04:47:43 [initandlisten] connection accepted from 127.0.0.1:53188 #107 (6 connections now open)
+Thu May 16 04:49:15 [conn107] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:53188 (5 connections now open)
+Thu May 16 04:49:15 [conn106] end connection 127.0.0.1:53187 (5 connections now open)
+Thu May 16 04:49:15 [conn103] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:53183 (5 connections now open)
+Thu May 16 04:49:15 [conn105] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:53185 (5 connections now open)
+Thu May 16 04:49:15 [conn104] end connection 127.0.0.1:53184 (5 connections now open)
+Thu May 16 04:50:08 [initandlisten] connection accepted from 127.0.0.1:53882 #108 (2 connections now open)
+Thu May 16 04:50:08 [initandlisten] connection accepted from 127.0.0.1:53883 #109 (3 connections now open)
+Thu May 16 04:50:08 [initandlisten] connection accepted from 127.0.0.1:53884 #110 (4 connections now open)
+Thu May 16 04:50:08 [initandlisten] connection accepted from 127.0.0.1:53885 #111 (5 connections now open)
+Thu May 16 04:50:08 [initandlisten] connection accepted from 127.0.0.1:53886 #112 (6 connections now open)
+Thu May 16 04:50:12 [conn109] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:51:31 [conn112] end connection 127.0.0.1:53886 (5 connections now open)
+Thu May 16 04:51:31 [conn109] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:53883 (5 connections now open)
+Thu May 16 04:51:31 [conn108] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:53882 (5 connections now open)
+Thu May 16 04:51:31 [conn111] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:53885 (5 connections now open)
+Thu May 16 04:51:31 [conn110] end connection 127.0.0.1:53884 (5 connections now open)
+Thu May 16 04:51:38 [initandlisten] connection accepted from 127.0.0.1:54300 #113 (2 connections now open)
+Thu May 16 04:51:38 [initandlisten] connection accepted from 127.0.0.1:54301 #114 (3 connections now open)
+Thu May 16 04:51:38 [initandlisten] connection accepted from 127.0.0.1:54302 #115 (4 connections now open)
+Thu May 16 04:51:38 [initandlisten] connection accepted from 127.0.0.1:54303 #116 (5 connections now open)
+Thu May 16 04:51:38 [initandlisten] connection accepted from 127.0.0.1:54304 #117 (6 connections now open)
+Thu May 16 04:54:23 [conn117] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:54304 (5 connections now open)
+Thu May 16 04:54:23 [conn113] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:54300 (5 connections now open)
+Thu May 16 04:54:23 [conn115] end connection 127.0.0.1:54302 (5 connections now open)
+Thu May 16 04:54:23 [conn116] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:54303 (5 connections now open)
+Thu May 16 04:54:23 [conn114] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:54301 (5 connections now open)
+Thu May 16 04:54:30 [initandlisten] connection accepted from 127.0.0.1:55081 #118 (2 connections now open)
+Thu May 16 04:54:30 [initandlisten] connection accepted from 127.0.0.1:55082 #119 (3 connections now open)
+Thu May 16 04:54:30 [initandlisten] connection accepted from 127.0.0.1:55083 #120 (4 connections now open)
+Thu May 16 04:54:30 [initandlisten] connection accepted from 127.0.0.1:55084 #121 (5 connections now open)
+Thu May 16 04:54:30 [initandlisten] connection accepted from 127.0.0.1:55085 #122 (6 connections now open)
+Thu May 16 04:54:34 [conn118] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 04:55:48 [conn120] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:55083 (5 connections now open)
+Thu May 16 04:55:48 [conn118] end connection 127.0.0.1:55081 (5 connections now open)
+Thu May 16 04:55:48 [conn122] end connection 127.0.0.1:55085 (5 connections now open)
+Thu May 16 04:55:48 [conn119] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:55082 (5 connections now open)
+Thu May 16 04:55:48 [conn121] end connection 127.0.0.1:55084 (5 connections now open)
+Thu May 16 04:55:54 [initandlisten] connection accepted from 127.0.0.1:55508 #123 (2 connections now open)
+Thu May 16 04:55:54 [initandlisten] connection accepted from 127.0.0.1:55509 #124 (3 connections now open)
+Thu May 16 04:55:54 [initandlisten] connection accepted from 127.0.0.1:55510 #125 (4 connections now open)
+Thu May 16 04:55:54 [initandlisten] connection accepted from 127.0.0.1:55511 #126 (5 connections now open)
+Thu May 16 04:55:54 [initandlisten] connection accepted from 127.0.0.1:55512 #127 (6 connections now open)
+Thu May 16 04:56:30 [conn125] info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 05:02:15 [conn124] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Thu May 16 05:06:12 [conn124] info DFM::findAll(): extent 0:90000 was empty, skipping ahead. ns:erp.product
+Thu May 16 05:10:56 [conn123] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 05:17:59 [conn124] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:85000 was empty, skipping ahead. ns:erp.customer
+Thu May 16 05:25:48 [conn124] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.cycle_count { _id: 1 }
+Thu May 16 05:25:48 [conn124] build index done.  scanned 0 total records. 0 secs
+Thu May 16 05:41:41 [conn125] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 05:41:45 [conn123] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 05:42:34 [conn127] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 05:45:18 [conn126] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Thu May 16 05:45:34 [conn127] info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Thu May 16 06:00:56 [conn91] end connection 127.0.0.1:61942 (5 connections now open)
+Thu May 16 06:01:03 [conn127] end connection 127.0.0.1:55512 (4 connections now open)
+Thu May 16 06:01:03 [conn126] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:55511 (4 connections now open)
+Thu May 16 06:01:03 [conn125] end connection 127.0.0.1:55510 (4 connections now open)
+Thu May 16 06:01:03 [conn124] end connection 127.0.0.1:55509 (4 connections now open)
+Thu May 16 06:01:03 [conn123] end connection 127.0.0.1:55508 (4 connections now open)

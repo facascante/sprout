@@ -9,8 +9,8 @@ html
     script(src="/javascripts/jquery/jquery-migrate-1.0.0.js")
     script(src="/javascripts/jquery/jquery-ui-1.10.0.custom.min.js")
     script(src="/javascripts/jquery/jquery.chainedSelects.js")
-    script(src="/javascripts/jquery/grid.locale-en.js")
     script(src="/javascripts/jquery/ui.multiselect.js")
+    script(src="/javascripts/jquery/grid.locale-en.js")
     script(src="/javascripts/jquery/jquery.jqGrid.min.js")
     script(src="/javascripts/jquery/ajaxfileupload.js")
     script(src="/javascripts/jquery/jquery.cookie.js")
@@ -18,9 +18,6 @@ html
   body
     #header_wrapper
       #header
-        #search_section
-          form(method='GET', action='#')
-            input#searchfield(type='text', size=10, name='q')
-            input#searchbutton(type='submit', size=10, title='Search', value='', name='Search')
+        block content-header
       #content
         block content-page

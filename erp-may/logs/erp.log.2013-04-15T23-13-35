@@ -1,0 +1,677 @@
+Mon Apr 15 06:03:37 [initandlisten] MongoDB starting : pid=336 port=27017 dbpath=/Users/chito/Google Drive/db/erp/data 64-bit host=chitombp
+Mon Apr 15 06:03:37 [initandlisten] 
+Mon Apr 15 06:03:37 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon Apr 15 06:03:37 [initandlisten] db version v2.2.0, pdfile version 4.5
+Mon Apr 15 06:03:37 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Mon Apr 15 06:03:37 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Mon Apr 15 06:03:37 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Mon Apr 15 06:03:37 [initandlisten] journal dir=/Users/chito/Google Drive/db/erp/data/journal
+Mon Apr 15 06:03:37 [initandlisten] recover begin
+Mon Apr 15 06:03:37 [initandlisten] recover lsn: 14708495
+Mon Apr 15 06:03:37 [initandlisten] recover /Users/chito/Google Drive/db/erp/data/journal/j._0
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:7881540 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:7936430 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:7991360 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:8101110 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:8156030 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:8210900 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:8265790 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:8484935 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section seq:8539905 < lsn:14708495
+Mon Apr 15 06:03:37 [initandlisten] recover skipping application of section more...
+Mon Apr 15 06:03:37 [initandlisten] recover cleaning up
+Mon Apr 15 06:03:37 [initandlisten] removeJournalFiles
+Mon Apr 15 06:03:37 [initandlisten] recover done
+Mon Apr 15 06:03:38 [websvr] admin web console waiting for connections on port 28017
+Mon Apr 15 06:03:38 [initandlisten] waiting for connections on port 27017
+Mon Apr 15 06:29:21 [initandlisten] connection accepted from 127.0.0.1:56951 #1 (1 connection now open)
+Mon Apr 15 06:29:21 [initandlisten] connection accepted from 127.0.0.1:56952 #2 (2 connections now open)
+Mon Apr 15 06:29:21 [initandlisten] connection accepted from 127.0.0.1:56953 #3 (3 connections now open)
+Mon Apr 15 06:29:21 [initandlisten] connection accepted from 127.0.0.1:56954 #4 (4 connections now open)
+Mon Apr 15 06:29:21 [initandlisten] connection accepted from 127.0.0.1:56955 #5 (5 connections now open)
+Mon Apr 15 06:30:30 [conn5] end connection 127.0.0.1:56955 (4 connections now open)
+Mon Apr 15 06:30:30 [conn1] end connection 127.0.0.1:56951 (4 connections now open)
+Mon Apr 15 06:30:30 [conn3] end connection 127.0.0.1:56953 (4 connections now open)
+Mon Apr 15 06:30:30 [conn4] end connection 127.0.0.1:56954 (4 connections now open)
+Mon Apr 15 06:30:30 [conn2] end connection 127.0.0.1:56952 (4 connections now open)
+Mon Apr 15 06:30:40 [initandlisten] connection accepted from 127.0.0.1:57317 #6 (1 connection now open)
+Mon Apr 15 06:30:40 [initandlisten] connection accepted from 127.0.0.1:57318 #7 (2 connections now open)
+Mon Apr 15 06:30:40 [initandlisten] connection accepted from 127.0.0.1:57319 #8 (3 connections now open)
+Mon Apr 15 06:30:40 [initandlisten] connection accepted from 127.0.0.1:57320 #9 (4 connections now open)
+Mon Apr 15 06:30:40 [initandlisten] connection accepted from 127.0.0.1:57321 #10 (5 connections now open)
+Mon Apr 15 06:30:52 [conn8] warning: can't find plugin [asc]
+Mon Apr 15 06:41:33 [conn10] end connection 127.0.0.1:57321 (4 connections now open)
+Mon Apr 15 06:41:33 [conn7] end connection 127.0.0.1:57318 (4 connections now open)
+Mon Apr 15 06:41:33 [conn9] end connection 127.0.0.1:57320 (4 connections now open)
+Mon Apr 15 06:41:33 [conn6] end connection 127.0.0.1:57317 (3 connections now open)
+Mon Apr 15 06:41:33 [conn8] end connection 127.0.0.1:57319 (3 connections now open)
+Mon Apr 15 06:42:02 [initandlisten] connection accepted from 127.0.0.1:60454 #11 (1 connection now open)
+Mon Apr 15 06:42:02 [initandlisten] connection accepted from 127.0.0.1:60455 #12 (2 connections now open)
+Mon Apr 15 06:42:02 [initandlisten] connection accepted from 127.0.0.1:60456 #13 (3 connections now open)
+Mon Apr 15 06:42:02 [initandlisten] connection accepted from 127.0.0.1:60457 #14 (4 connections now open)
+Mon Apr 15 06:42:02 [initandlisten] connection accepted from 127.0.0.1:60458 #15 (5 connections now open)
+Mon Apr 15 06:43:38 [conn15] end connection 127.0.0.1:60458 (4 connections now open)
+Mon Apr 15 06:43:38 [conn14] end connection 127.0.0.1:60457 (3 connections now open)
+Mon Apr 15 06:43:38 [conn11] end connection 127.0.0.1:60454 (3 connections now open)
+Mon Apr 15 06:43:38 [conn13] end connection 127.0.0.1:60456 (2 connections now open)
+Mon Apr 15 06:43:38 [conn12] end connection 127.0.0.1:60455 (3 connections now open)
+Mon Apr 15 06:43:52 [initandlisten] connection accepted from 127.0.0.1:60953 #16 (1 connection now open)
+Mon Apr 15 06:43:52 [initandlisten] connection accepted from 127.0.0.1:60954 #17 (2 connections now open)
+Mon Apr 15 06:43:52 [initandlisten] connection accepted from 127.0.0.1:60955 #18 (3 connections now open)
+Mon Apr 15 06:43:52 [initandlisten] connection accepted from 127.0.0.1:60956 #19 (4 connections now open)
+Mon Apr 15 06:43:52 [initandlisten] connection accepted from 127.0.0.1:60957 #20 (5 connections now open)
+Mon Apr 15 06:46:01 [conn20] end connection 127.0.0.1:60957 (4 connections now open)
+Mon Apr 15 06:46:01 [conn18] end connection 127.0.0.1:60955 (4 connections now open)
+Mon Apr 15 06:46:01 [conn16] end connection 127.0.0.1:60953 (3 connections now open)
+Mon Apr 15 06:46:01 [conn17] end connection 127.0.0.1:60954 (3 connections now open)
+Mon Apr 15 06:46:01 [conn19] end connection 127.0.0.1:60956 (3 connections now open)
+Mon Apr 15 06:46:20 [initandlisten] connection accepted from 127.0.0.1:61666 #21 (1 connection now open)
+Mon Apr 15 06:46:20 [initandlisten] connection accepted from 127.0.0.1:61667 #22 (2 connections now open)
+Mon Apr 15 06:46:20 [initandlisten] connection accepted from 127.0.0.1:61668 #23 (3 connections now open)
+Mon Apr 15 06:46:20 [initandlisten] connection accepted from 127.0.0.1:61669 #24 (4 connections now open)
+Mon Apr 15 06:46:20 [initandlisten] connection accepted from 127.0.0.1:61670 #25 (5 connections now open)
+Mon Apr 15 06:47:29 [conn25] end connection 127.0.0.1:61670 (4 connections now open)
+Mon Apr 15 06:47:29 [conn22] end connection 127.0.0.1:61667 (4 connections now open)
+Mon Apr 15 06:47:29 [conn24] end connection 127.0.0.1:61669 (4 connections now open)
+Mon Apr 15 06:47:29 [conn23] end connection 127.0.0.1:61668 (4 connections now open)
+Mon Apr 15 06:47:29 [conn21] end connection 127.0.0.1:61666 (4 connections now open)
+Mon Apr 15 06:47:39 [initandlisten] connection accepted from 127.0.0.1:62021 #26 (1 connection now open)
+Mon Apr 15 06:47:39 [initandlisten] connection accepted from 127.0.0.1:62022 #27 (2 connections now open)
+Mon Apr 15 06:47:39 [initandlisten] connection accepted from 127.0.0.1:62023 #28 (3 connections now open)
+Mon Apr 15 06:47:39 [initandlisten] connection accepted from 127.0.0.1:62024 #29 (4 connections now open)
+Mon Apr 15 06:47:39 [initandlisten] connection accepted from 127.0.0.1:62025 #30 (5 connections now open)
+Mon Apr 15 06:50:16 [conn30] end connection 127.0.0.1:62025 (4 connections now open)
+Mon Apr 15 06:50:16 [conn29] end connection 127.0.0.1:62024 (4 connections now open)
+Mon Apr 15 06:50:16 [conn27] end connection 127.0.0.1:62022 (4 connections now open)
+Mon Apr 15 06:50:16 [conn26] end connection 127.0.0.1:62021 (4 connections now open)
+Mon Apr 15 06:50:16 [conn28] end connection 127.0.0.1:62023 (4 connections now open)
+Mon Apr 15 06:51:55 [initandlisten] connection accepted from 127.0.0.1:63224 #31 (1 connection now open)
+Mon Apr 15 06:51:55 [initandlisten] connection accepted from 127.0.0.1:63225 #32 (2 connections now open)
+Mon Apr 15 06:51:55 [initandlisten] connection accepted from 127.0.0.1:63226 #33 (3 connections now open)
+Mon Apr 15 06:51:55 [initandlisten] connection accepted from 127.0.0.1:63227 #34 (4 connections now open)
+Mon Apr 15 06:51:55 [initandlisten] connection accepted from 127.0.0.1:63228 #35 (5 connections now open)
+Mon Apr 15 06:51:55 [conn35] end connection 127.0.0.1:63228 (4 connections now open)
+Mon Apr 15 06:51:55 [conn34] end connection 127.0.0.1:63227 (4 connections now open)
+Mon Apr 15 06:51:55 [conn32] end connection 127.0.0.1:63225 (4 connections now open)
+Mon Apr 15 06:51:55 [conn31] end connection 127.0.0.1:63224 (4 connections now open)
+Mon Apr 15 06:51:55 [conn33] end connection 127.0.0.1:63226 (4 connections now open)
+Mon Apr 15 06:52:27 [initandlisten] connection accepted from 127.0.0.1:63383 #36 (1 connection now open)
+Mon Apr 15 06:52:27 [initandlisten] connection accepted from 127.0.0.1:63384 #37 (2 connections now open)
+Mon Apr 15 06:52:27 [initandlisten] connection accepted from 127.0.0.1:63385 #38 (3 connections now open)
+Mon Apr 15 06:52:27 [initandlisten] connection accepted from 127.0.0.1:63386 #39 (4 connections now open)
+Mon Apr 15 06:52:27 [initandlisten] connection accepted from 127.0.0.1:63387 #40 (5 connections now open)
+Mon Apr 15 06:52:49 [conn39] end connection 127.0.0.1:63386 (4 connections now open)
+Mon Apr 15 06:52:49 [conn40] end connection 127.0.0.1:63387 (4 connections now open)
+Mon Apr 15 06:52:49 [conn37] end connection 127.0.0.1:63384 (4 connections now open)
+Mon Apr 15 06:52:49 [conn38] end connection 127.0.0.1:63385 (4 connections now open)
+Mon Apr 15 06:52:49 [conn36] end connection 127.0.0.1:63383 (4 connections now open)
+Mon Apr 15 06:52:58 [initandlisten] connection accepted from 127.0.0.1:63539 #41 (1 connection now open)
+Mon Apr 15 06:52:58 [initandlisten] connection accepted from 127.0.0.1:63540 #42 (2 connections now open)
+Mon Apr 15 06:52:58 [initandlisten] connection accepted from 127.0.0.1:63541 #43 (3 connections now open)
+Mon Apr 15 06:52:58 [initandlisten] connection accepted from 127.0.0.1:63542 #44 (4 connections now open)
+Mon Apr 15 06:52:58 [initandlisten] connection accepted from 127.0.0.1:63543 #45 (5 connections now open)
+Mon Apr 15 06:54:29 [conn45] end connection 127.0.0.1:63543 (4 connections now open)
+Mon Apr 15 06:54:29 [conn42] end connection 127.0.0.1:63540 (4 connections now open)
+Mon Apr 15 06:54:29 [conn44] end connection 127.0.0.1:63542 (4 connections now open)
+Mon Apr 15 06:54:29 [conn43] end connection 127.0.0.1:63541 (4 connections now open)
+Mon Apr 15 06:54:29 [conn41] end connection 127.0.0.1:63539 (4 connections now open)
+Mon Apr 15 06:57:59 [initandlisten] connection accepted from 127.0.0.1:64905 #46 (1 connection now open)
+Mon Apr 15 06:57:59 [initandlisten] connection accepted from 127.0.0.1:64906 #47 (2 connections now open)
+Mon Apr 15 06:57:59 [initandlisten] connection accepted from 127.0.0.1:64907 #48 (3 connections now open)
+Mon Apr 15 06:57:59 [initandlisten] connection accepted from 127.0.0.1:64908 #49 (4 connections now open)
+Mon Apr 15 06:57:59 [initandlisten] connection accepted from 127.0.0.1:64909 #50 (5 connections now open)
+Mon Apr 15 07:07:30 [conn50] end connection 127.0.0.1:64909 (4 connections now open)
+Mon Apr 15 07:07:30 [conn48] end connection 127.0.0.1:64907 (4 connections now open)
+Mon Apr 15 07:07:30 [conn49] end connection 127.0.0.1:64908 (4 connections now open)
+Mon Apr 15 07:07:30 [conn47] end connection 127.0.0.1:64906 (3 connections now open)
+Mon Apr 15 07:07:30 [conn46] end connection 127.0.0.1:64905 (3 connections now open)
+Mon Apr 15 07:09:14 [initandlisten] connection accepted from 127.0.0.1:51591 #51 (1 connection now open)
+Mon Apr 15 07:09:14 [initandlisten] connection accepted from 127.0.0.1:51592 #52 (2 connections now open)
+Mon Apr 15 07:09:14 [initandlisten] connection accepted from 127.0.0.1:51593 #53 (3 connections now open)
+Mon Apr 15 07:09:14 [initandlisten] connection accepted from 127.0.0.1:51594 #54 (4 connections now open)
+Mon Apr 15 07:09:14 [initandlisten] connection accepted from 127.0.0.1:51595 #55 (5 connections now open)
+Mon Apr 15 07:10:08 [conn54] end connection 127.0.0.1:51594 (4 connections now open)
+Mon Apr 15 07:10:08 [conn52] end connection 127.0.0.1:51592 (4 connections now open)
+Mon Apr 15 07:10:08 [conn53] end connection 127.0.0.1:51593 (4 connections now open)
+Mon Apr 15 07:10:08 [conn55] end connection 127.0.0.1:51595 (4 connections now open)
+Mon Apr 15 07:10:08 [conn51] end connection 127.0.0.1:51591 (4 connections now open)
+Mon Apr 15 07:10:18 [initandlisten] connection accepted from 127.0.0.1:51899 #56 (1 connection now open)
+Mon Apr 15 07:10:18 [initandlisten] connection accepted from 127.0.0.1:51900 #57 (2 connections now open)
+Mon Apr 15 07:10:18 [initandlisten] connection accepted from 127.0.0.1:51901 #58 (3 connections now open)
+Mon Apr 15 07:10:18 [initandlisten] connection accepted from 127.0.0.1:51902 #59 (4 connections now open)
+Mon Apr 15 07:10:18 [initandlisten] connection accepted from 127.0.0.1:51903 #60 (5 connections now open)
+Mon Apr 15 07:10:44 [conn59] end connection 127.0.0.1:51902 (4 connections now open)
+Mon Apr 15 07:10:44 [conn57] end connection 127.0.0.1:51900 (4 connections now open)
+Mon Apr 15 07:10:44 [conn58] end connection 127.0.0.1:51901 (4 connections now open)
+Mon Apr 15 07:10:44 [conn56] end connection 127.0.0.1:51899 (4 connections now open)
+Mon Apr 15 07:10:44 [conn60] end connection 127.0.0.1:51903 (4 connections now open)
+Mon Apr 15 07:10:52 [initandlisten] connection accepted from 127.0.0.1:52063 #61 (1 connection now open)
+Mon Apr 15 07:10:52 [initandlisten] connection accepted from 127.0.0.1:52064 #62 (2 connections now open)
+Mon Apr 15 07:10:52 [initandlisten] connection accepted from 127.0.0.1:52065 #63 (3 connections now open)
+Mon Apr 15 07:10:52 [initandlisten] connection accepted from 127.0.0.1:52066 #64 (4 connections now open)
+Mon Apr 15 07:10:52 [initandlisten] connection accepted from 127.0.0.1:52067 #65 (5 connections now open)
+Mon Apr 15 07:13:54 [conn65] end connection 127.0.0.1:52067 (4 connections now open)
+Mon Apr 15 07:13:54 [conn62] end connection 127.0.0.1:52064 (4 connections now open)
+Mon Apr 15 07:13:54 [conn64] end connection 127.0.0.1:52066 (4 connections now open)
+Mon Apr 15 07:13:54 [conn61] end connection 127.0.0.1:52063 (4 connections now open)
+Mon Apr 15 07:13:54 [conn63] end connection 127.0.0.1:52065 (4 connections now open)
+Mon Apr 15 07:14:07 [initandlisten] connection accepted from 127.0.0.1:52981 #66 (1 connection now open)
+Mon Apr 15 07:14:07 [initandlisten] connection accepted from 127.0.0.1:52982 #67 (2 connections now open)
+Mon Apr 15 07:14:07 [initandlisten] connection accepted from 127.0.0.1:52983 #68 (3 connections now open)
+Mon Apr 15 07:14:07 [initandlisten] connection accepted from 127.0.0.1:52984 #69 (4 connections now open)
+Mon Apr 15 07:14:07 [initandlisten] connection accepted from 127.0.0.1:52985 #70 (5 connections now open)
+Mon Apr 15 07:16:34 [conn70] end connection 127.0.0.1:52985 (4 connections now open)
+Mon Apr 15 07:16:34 [conn69] end connection 127.0.0.1:52984 (4 connections now open)
+Mon Apr 15 07:16:34 [conn68] end connection 127.0.0.1:52983 (4 connections now open)
+Mon Apr 15 07:16:34 [conn67] end connection 127.0.0.1:52982 (4 connections now open)
+Mon Apr 15 07:16:34 [conn66] end connection 127.0.0.1:52981 (4 connections now open)
+Mon Apr 15 07:16:43 [initandlisten] connection accepted from 127.0.0.1:53707 #71 (1 connection now open)
+Mon Apr 15 07:16:43 [initandlisten] connection accepted from 127.0.0.1:53708 #72 (2 connections now open)
+Mon Apr 15 07:16:43 [initandlisten] connection accepted from 127.0.0.1:53709 #73 (3 connections now open)
+Mon Apr 15 07:16:43 [initandlisten] connection accepted from 127.0.0.1:53710 #74 (4 connections now open)
+Mon Apr 15 07:16:43 [initandlisten] connection accepted from 127.0.0.1:53711 #75 (5 connections now open)
+Mon Apr 15 07:17:54 [conn75] end connection 127.0.0.1:53711 (4 connections now open)
+Mon Apr 15 07:17:54 [conn71] end connection 127.0.0.1:53707 (4 connections now open)
+Mon Apr 15 07:17:54 [conn74] end connection 127.0.0.1:53710 (4 connections now open)
+Mon Apr 15 07:17:54 [conn72] end connection 127.0.0.1:53708 (4 connections now open)
+Mon Apr 15 07:17:54 [conn73] end connection 127.0.0.1:53709 (4 connections now open)
+Mon Apr 15 07:18:02 [initandlisten] connection accepted from 127.0.0.1:54070 #76 (1 connection now open)
+Mon Apr 15 07:18:02 [initandlisten] connection accepted from 127.0.0.1:54071 #77 (2 connections now open)
+Mon Apr 15 07:18:02 [initandlisten] connection accepted from 127.0.0.1:54072 #78 (3 connections now open)
+Mon Apr 15 07:18:02 [initandlisten] connection accepted from 127.0.0.1:54073 #79 (4 connections now open)
+Mon Apr 15 07:18:02 [initandlisten] connection accepted from 127.0.0.1:54074 #80 (5 connections now open)
+Mon Apr 15 07:26:19 [conn79] end connection 127.0.0.1:54073 (4 connections now open)
+Mon Apr 15 07:26:19 [conn80] end connection 127.0.0.1:54074 (4 connections now open)
+Mon Apr 15 07:26:19 [conn77] end connection 127.0.0.1:54071 (4 connections now open)
+Mon Apr 15 07:26:19 [conn78] end connection 127.0.0.1:54072 (4 connections now open)
+Mon Apr 15 07:26:19 [conn76] end connection 127.0.0.1:54070 (4 connections now open)
+Mon Apr 15 07:26:31 [initandlisten] connection accepted from 127.0.0.1:56368 #81 (1 connection now open)
+Mon Apr 15 07:26:31 [initandlisten] connection accepted from 127.0.0.1:56369 #82 (2 connections now open)
+Mon Apr 15 07:26:31 [initandlisten] connection accepted from 127.0.0.1:56370 #83 (3 connections now open)
+Mon Apr 15 07:26:31 [initandlisten] connection accepted from 127.0.0.1:56371 #84 (4 connections now open)
+Mon Apr 15 07:26:31 [initandlisten] connection accepted from 127.0.0.1:56372 #85 (5 connections now open)
+Mon Apr 15 07:26:58 [conn85] end connection 127.0.0.1:56372 (4 connections now open)
+Mon Apr 15 07:26:58 [conn83] end connection 127.0.0.1:56370 (4 connections now open)
+Mon Apr 15 07:26:58 [conn84] end connection 127.0.0.1:56371 (4 connections now open)
+Mon Apr 15 07:26:58 [conn81] end connection 127.0.0.1:56368 (4 connections now open)
+Mon Apr 15 07:26:58 [conn82] end connection 127.0.0.1:56369 (4 connections now open)
+Mon Apr 15 07:27:06 [initandlisten] connection accepted from 127.0.0.1:56535 #86 (1 connection now open)
+Mon Apr 15 07:27:06 [initandlisten] connection accepted from 127.0.0.1:56536 #87 (2 connections now open)
+Mon Apr 15 07:27:06 [initandlisten] connection accepted from 127.0.0.1:56537 #88 (3 connections now open)
+Mon Apr 15 07:27:06 [initandlisten] connection accepted from 127.0.0.1:56538 #89 (4 connections now open)
+Mon Apr 15 07:27:06 [initandlisten] connection accepted from 127.0.0.1:56539 #90 (5 connections now open)
+Mon Apr 15 07:27:29 [conn89] warning: can't find plugin [asc]
+Mon Apr 15 07:33:32 [conn86] warning: can't find plugin [asc]
+Mon Apr 15 07:34:57 [conn90] warning: can't find plugin [asc]
+Mon Apr 15 07:38:27 [conn90] end connection 127.0.0.1:56539 (4 connections now open)
+Mon Apr 15 07:38:27 [conn88] end connection 127.0.0.1:56537 (4 connections now open)
+Mon Apr 15 07:38:27 [conn86] end connection 127.0.0.1:56535 (3 connections now open)
+Mon Apr 15 07:38:27 [conn87] end connection 127.0.0.1:56536 (3 connections now open)
+Mon Apr 15 07:38:27 [conn89] end connection 127.0.0.1:56538 (3 connections now open)
+Mon Apr 15 07:39:08 [initandlisten] connection accepted from 127.0.0.1:59767 #91 (1 connection now open)
+Mon Apr 15 07:39:08 [initandlisten] connection accepted from 127.0.0.1:59768 #92 (2 connections now open)
+Mon Apr 15 07:39:08 [initandlisten] connection accepted from 127.0.0.1:59769 #93 (3 connections now open)
+Mon Apr 15 07:39:08 [initandlisten] connection accepted from 127.0.0.1:59770 #94 (4 connections now open)
+Mon Apr 15 07:39:08 [initandlisten] connection accepted from 127.0.0.1:59771 #95 (5 connections now open)
+Mon Apr 15 07:41:11 [conn95] end connection 127.0.0.1:59771 (4 connections now open)
+Mon Apr 15 07:41:11 [conn94] end connection 127.0.0.1:59770 (4 connections now open)
+Mon Apr 15 07:41:11 [conn93] end connection 127.0.0.1:59769 (4 connections now open)
+Mon Apr 15 07:41:11 [conn91] end connection 127.0.0.1:59767 (4 connections now open)
+Mon Apr 15 07:41:11 [conn92] end connection 127.0.0.1:59768 (4 connections now open)
+Mon Apr 15 07:41:19 [initandlisten] connection accepted from 127.0.0.1:60374 #96 (1 connection now open)
+Mon Apr 15 07:41:19 [initandlisten] connection accepted from 127.0.0.1:60375 #97 (2 connections now open)
+Mon Apr 15 07:41:19 [initandlisten] connection accepted from 127.0.0.1:60376 #98 (3 connections now open)
+Mon Apr 15 07:41:19 [initandlisten] connection accepted from 127.0.0.1:60377 #99 (4 connections now open)
+Mon Apr 15 07:41:19 [initandlisten] connection accepted from 127.0.0.1:60378 #100 (5 connections now open)
+Mon Apr 15 07:43:11 [conn100] end connection 127.0.0.1:60378 (4 connections now open)
+Mon Apr 15 07:43:11 [conn99] end connection 127.0.0.1:60377 (3 connections now open)
+Mon Apr 15 07:43:11 [conn98] end connection 127.0.0.1:60376 (2 connections now open)
+Mon Apr 15 07:43:11 [conn97] end connection 127.0.0.1:60375 (2 connections now open)
+Mon Apr 15 07:43:11 [conn96] end connection 127.0.0.1:60374 (1 connection now open)
+Mon Apr 15 07:43:19 [initandlisten] connection accepted from 127.0.0.1:60961 #101 (1 connection now open)
+Mon Apr 15 07:43:19 [initandlisten] connection accepted from 127.0.0.1:60962 #102 (2 connections now open)
+Mon Apr 15 07:43:19 [initandlisten] connection accepted from 127.0.0.1:60963 #103 (3 connections now open)
+Mon Apr 15 07:43:19 [initandlisten] connection accepted from 127.0.0.1:60964 #104 (4 connections now open)
+Mon Apr 15 07:43:19 [initandlisten] connection accepted from 127.0.0.1:60965 #105 (5 connections now open)
+Mon Apr 15 07:44:25 [conn105] end connection 127.0.0.1:60965 (4 connections now open)
+Mon Apr 15 07:44:25 [conn102] end connection 127.0.0.1:60962 (3 connections now open)
+Mon Apr 15 07:44:25 [conn103] end connection 127.0.0.1:60963 (3 connections now open)
+Mon Apr 15 07:44:25 [conn101] end connection 127.0.0.1:60961 (3 connections now open)
+Mon Apr 15 07:44:25 [conn104] end connection 127.0.0.1:60964 (3 connections now open)
+Mon Apr 15 07:44:42 [initandlisten] connection accepted from 127.0.0.1:61345 #106 (1 connection now open)
+Mon Apr 15 07:44:42 [initandlisten] connection accepted from 127.0.0.1:61346 #107 (2 connections now open)
+Mon Apr 15 07:44:42 [initandlisten] connection accepted from 127.0.0.1:61347 #108 (3 connections now open)
+Mon Apr 15 07:44:42 [initandlisten] connection accepted from 127.0.0.1:61348 #109 (4 connections now open)
+Mon Apr 15 07:44:42 [initandlisten] connection accepted from 127.0.0.1:61349 #110 (5 connections now open)
+Mon Apr 15 07:46:01 [conn110] end connection 127.0.0.1:61349 (4 connections now open)
+Mon Apr 15 07:46:01 [conn109] end connection 127.0.0.1:61348 (4 connections now open)
+Mon Apr 15 07:46:01 [conn108] end connection 127.0.0.1:61347 (4 connections now open)
+Mon Apr 15 07:46:01 [conn106] end connection 127.0.0.1:61345 (4 connections now open)
+Mon Apr 15 07:46:01 [conn107] end connection 127.0.0.1:61346 (4 connections now open)
+Mon Apr 15 07:46:12 [initandlisten] connection accepted from 127.0.0.1:61758 #111 (1 connection now open)
+Mon Apr 15 07:46:12 [initandlisten] connection accepted from 127.0.0.1:61759 #112 (2 connections now open)
+Mon Apr 15 07:46:12 [initandlisten] connection accepted from 127.0.0.1:61760 #113 (3 connections now open)
+Mon Apr 15 07:46:12 [initandlisten] connection accepted from 127.0.0.1:61761 #114 (4 connections now open)
+Mon Apr 15 07:46:12 [initandlisten] connection accepted from 127.0.0.1:61762 #115 (5 connections now open)
+Mon Apr 15 07:48:57 [conn115] end connection 127.0.0.1:61762 (4 connections now open)
+Mon Apr 15 07:48:57 [conn111] end connection 127.0.0.1:61758 (3 connections now open)
+Mon Apr 15 07:48:57 [conn113] end connection 127.0.0.1:61760 (4 connections now open)
+Mon Apr 15 07:48:57 [conn112] end connection 127.0.0.1:61759 (3 connections now open)
+Mon Apr 15 07:48:57 [conn114] end connection 127.0.0.1:61761 (4 connections now open)
+Mon Apr 15 07:49:05 [initandlisten] connection accepted from 127.0.0.1:62560 #116 (1 connection now open)
+Mon Apr 15 07:49:05 [initandlisten] connection accepted from 127.0.0.1:62561 #117 (2 connections now open)
+Mon Apr 15 07:49:05 [initandlisten] connection accepted from 127.0.0.1:62562 #118 (3 connections now open)
+Mon Apr 15 07:49:05 [initandlisten] connection accepted from 127.0.0.1:62563 #119 (4 connections now open)
+Mon Apr 15 07:49:05 [initandlisten] connection accepted from 127.0.0.1:62564 #120 (5 connections now open)
+Mon Apr 15 07:49:12 [conn116] warning: can't find plugin [asc]
+Mon Apr 15 07:50:46 [conn120] end connection 127.0.0.1:62564 (4 connections now open)
+Mon Apr 15 07:50:46 [conn119] end connection 127.0.0.1:62563 (3 connections now open)
+Mon Apr 15 07:50:46 [conn116] end connection 127.0.0.1:62560 (3 connections now open)
+Mon Apr 15 07:50:46 [conn118] end connection 127.0.0.1:62562 (3 connections now open)
+Mon Apr 15 07:50:46 [conn117] end connection 127.0.0.1:62561 (3 connections now open)
+Mon Apr 15 07:51:02 [initandlisten] connection accepted from 127.0.0.1:63087 #121 (1 connection now open)
+Mon Apr 15 07:51:02 [initandlisten] connection accepted from 127.0.0.1:63088 #122 (2 connections now open)
+Mon Apr 15 07:51:02 [initandlisten] connection accepted from 127.0.0.1:63089 #123 (3 connections now open)
+Mon Apr 15 07:51:02 [initandlisten] connection accepted from 127.0.0.1:63090 #124 (4 connections now open)
+Mon Apr 15 07:51:02 [initandlisten] connection accepted from 127.0.0.1:63091 #125 (5 connections now open)
+Mon Apr 15 07:54:24 [conn124] end connection 127.0.0.1:63090 (4 connections now open)
+Mon Apr 15 07:54:24 [conn122] end connection 127.0.0.1:63088 (4 connections now open)
+Mon Apr 15 07:54:24 [conn125] end connection 127.0.0.1:63091 (4 connections now open)
+Mon Apr 15 07:54:24 [conn121] end connection 127.0.0.1:63087 (4 connections now open)
+Mon Apr 15 07:54:24 [conn123] end connection 127.0.0.1:63089 (4 connections now open)
+Mon Apr 15 07:54:33 [initandlisten] connection accepted from 127.0.0.1:64050 #126 (1 connection now open)
+Mon Apr 15 07:54:33 [initandlisten] connection accepted from 127.0.0.1:64051 #127 (2 connections now open)
+Mon Apr 15 07:54:33 [initandlisten] connection accepted from 127.0.0.1:64052 #128 (3 connections now open)
+Mon Apr 15 07:54:33 [initandlisten] connection accepted from 127.0.0.1:64053 #129 (4 connections now open)
+Mon Apr 15 07:54:33 [initandlisten] connection accepted from 127.0.0.1:64054 #130 (5 connections now open)
+Mon Apr 15 07:54:39 [conn126] warning: can't find plugin [asc]
+Mon Apr 15 07:55:50 [conn130] end connection 127.0.0.1:64054 (4 connections now open)
+Mon Apr 15 07:55:50 [conn128] end connection 127.0.0.1:64052 (3 connections now open)
+Mon Apr 15 07:55:50 [conn129] end connection 127.0.0.1:64053 (2 connections now open)
+Mon Apr 15 07:55:50 [conn126] end connection 127.0.0.1:64050 (2 connections now open)
+Mon Apr 15 07:55:50 [conn127] end connection 127.0.0.1:64051 (2 connections now open)
+Mon Apr 15 07:55:59 [initandlisten] connection accepted from 127.0.0.1:64446 #131 (1 connection now open)
+Mon Apr 15 07:55:59 [initandlisten] connection accepted from 127.0.0.1:64447 #132 (2 connections now open)
+Mon Apr 15 07:55:59 [initandlisten] connection accepted from 127.0.0.1:64448 #133 (3 connections now open)
+Mon Apr 15 07:55:59 [initandlisten] connection accepted from 127.0.0.1:64449 #134 (4 connections now open)
+Mon Apr 15 07:55:59 [initandlisten] connection accepted from 127.0.0.1:64450 #135 (5 connections now open)
+Mon Apr 15 07:56:03 [conn132] warning: can't find plugin [asc]
+Mon Apr 15 08:06:16 [conn132] end connection 127.0.0.1:64447 (4 connections now open)
+Mon Apr 15 08:06:16 [conn135] end connection 127.0.0.1:64450 (4 connections now open)
+Mon Apr 15 08:06:16 [conn131] end connection 127.0.0.1:64446 (4 connections now open)
+Mon Apr 15 08:06:16 [conn133] end connection 127.0.0.1:64448 (4 connections now open)
+Mon Apr 15 08:06:16 [conn134] end connection 127.0.0.1:64449 (4 connections now open)
+Mon Apr 15 08:15:00 [initandlisten] connection accepted from 127.0.0.1:53263 #136 (1 connection now open)
+Mon Apr 15 08:15:00 [initandlisten] connection accepted from 127.0.0.1:53264 #137 (2 connections now open)
+Mon Apr 15 08:15:00 [initandlisten] connection accepted from 127.0.0.1:53265 #138 (3 connections now open)
+Mon Apr 15 08:15:00 [initandlisten] connection accepted from 127.0.0.1:53266 #139 (4 connections now open)
+Mon Apr 15 08:15:00 [initandlisten] connection accepted from 127.0.0.1:53267 #140 (5 connections now open)
+Mon Apr 15 08:15:53 [conn139] end connection 127.0.0.1:53266 (4 connections now open)
+Mon Apr 15 08:15:53 [conn140] end connection 127.0.0.1:53267 (4 connections now open)
+Mon Apr 15 08:15:53 [conn138] end connection 127.0.0.1:53265 (4 connections now open)
+Mon Apr 15 08:15:53 [conn136] end connection 127.0.0.1:53263 (3 connections now open)
+Mon Apr 15 08:15:53 [conn137] end connection 127.0.0.1:53264 (3 connections now open)
+Mon Apr 15 08:16:06 [initandlisten] connection accepted from 127.0.0.1:53585 #141 (1 connection now open)
+Mon Apr 15 08:16:06 [initandlisten] connection accepted from 127.0.0.1:53586 #142 (2 connections now open)
+Mon Apr 15 08:16:06 [initandlisten] connection accepted from 127.0.0.1:53587 #143 (3 connections now open)
+Mon Apr 15 08:16:06 [initandlisten] connection accepted from 127.0.0.1:53588 #144 (4 connections now open)
+Mon Apr 15 08:16:06 [initandlisten] connection accepted from 127.0.0.1:53589 #145 (5 connections now open)
+Mon Apr 15 08:16:32 [conn145] end connection 127.0.0.1:53589 (4 connections now open)
+Mon Apr 15 08:16:32 [conn144] end connection 127.0.0.1:53588 (4 connections now open)
+Mon Apr 15 08:16:32 [conn141] end connection 127.0.0.1:53585 (4 connections now open)
+Mon Apr 15 08:16:32 [conn142] end connection 127.0.0.1:53586 (4 connections now open)
+Mon Apr 15 08:16:32 [conn143] end connection 127.0.0.1:53587 (4 connections now open)
+Mon Apr 15 08:16:43 [initandlisten] connection accepted from 127.0.0.1:53765 #146 (1 connection now open)
+Mon Apr 15 08:16:43 [initandlisten] connection accepted from 127.0.0.1:53766 #147 (2 connections now open)
+Mon Apr 15 08:16:43 [initandlisten] connection accepted from 127.0.0.1:53767 #148 (3 connections now open)
+Mon Apr 15 08:16:43 [initandlisten] connection accepted from 127.0.0.1:53768 #149 (4 connections now open)
+Mon Apr 15 08:16:43 [initandlisten] connection accepted from 127.0.0.1:53769 #150 (5 connections now open)
+Mon Apr 15 08:17:08 [conn150] end connection 127.0.0.1:53769 (4 connections now open)
+Mon Apr 15 08:17:08 [conn148] end connection 127.0.0.1:53767 (4 connections now open)
+Mon Apr 15 08:17:08 [conn149] end connection 127.0.0.1:53768 (3 connections now open)
+Mon Apr 15 08:17:08 [conn146] end connection 127.0.0.1:53765 (3 connections now open)
+Mon Apr 15 08:17:08 [conn147] end connection 127.0.0.1:53766 (3 connections now open)
+Mon Apr 15 08:17:33 [initandlisten] connection accepted from 127.0.0.1:54003 #151 (1 connection now open)
+Mon Apr 15 08:17:33 [initandlisten] connection accepted from 127.0.0.1:54004 #152 (2 connections now open)
+Mon Apr 15 08:17:33 [initandlisten] connection accepted from 127.0.0.1:54005 #153 (3 connections now open)
+Mon Apr 15 08:17:33 [initandlisten] connection accepted from 127.0.0.1:54006 #154 (4 connections now open)
+Mon Apr 15 08:17:33 [initandlisten] connection accepted from 127.0.0.1:54007 #155 (5 connections now open)
+Mon Apr 15 08:26:06 [conn155] end connection 127.0.0.1:54007 (4 connections now open)
+Mon Apr 15 08:26:06 [conn152] end connection 127.0.0.1:54004 (4 connections now open)
+Mon Apr 15 08:26:06 [conn153] end connection 127.0.0.1:54005 (4 connections now open)
+Mon Apr 15 08:26:06 [conn154] end connection 127.0.0.1:54006 (4 connections now open)
+Mon Apr 15 08:26:06 [conn151] end connection 127.0.0.1:54003 (4 connections now open)
+Mon Apr 15 08:26:17 [initandlisten] connection accepted from 127.0.0.1:56413 #156 (1 connection now open)
+Mon Apr 15 08:26:17 [initandlisten] connection accepted from 127.0.0.1:56414 #157 (2 connections now open)
+Mon Apr 15 08:26:17 [initandlisten] connection accepted from 127.0.0.1:56415 #158 (3 connections now open)
+Mon Apr 15 08:26:17 [initandlisten] connection accepted from 127.0.0.1:56416 #159 (4 connections now open)
+Mon Apr 15 08:26:17 [initandlisten] connection accepted from 127.0.0.1:56417 #160 (5 connections now open)
+Mon Apr 15 08:26:24 [conn156] warning: can't find plugin [asc]
+Mon Apr 15 08:27:16 [conn157] warning: can't find plugin [asc]
+Mon Apr 15 08:31:54 [conn159] warning: can't find plugin [asc]
+Mon Apr 15 08:40:04 [conn160] end connection 127.0.0.1:56417 (4 connections now open)
+Mon Apr 15 08:40:04 [conn159] end connection 127.0.0.1:56416 (4 connections now open)
+Mon Apr 15 08:40:04 [conn156] end connection 127.0.0.1:56413 (4 connections now open)
+Mon Apr 15 08:40:04 [conn157] end connection 127.0.0.1:56414 (4 connections now open)
+Mon Apr 15 08:40:04 [conn158] end connection 127.0.0.1:56415 (4 connections now open)
+Mon Apr 15 08:40:17 [initandlisten] connection accepted from 127.0.0.1:60240 #161 (1 connection now open)
+Mon Apr 15 08:40:17 [initandlisten] connection accepted from 127.0.0.1:60241 #162 (2 connections now open)
+Mon Apr 15 08:40:17 [initandlisten] connection accepted from 127.0.0.1:60242 #163 (3 connections now open)
+Mon Apr 15 08:40:17 [initandlisten] connection accepted from 127.0.0.1:60243 #164 (4 connections now open)
+Mon Apr 15 08:40:17 [initandlisten] connection accepted from 127.0.0.1:60244 #165 (5 connections now open)
+Mon Apr 15 08:41:59 [conn164] end connection 127.0.0.1:60243 (4 connections now open)
+Mon Apr 15 08:41:59 [conn165] end connection 127.0.0.1:60244 (4 connections now open)
+Mon Apr 15 08:41:59 [conn163] end connection 127.0.0.1:60242 (4 connections now open)
+Mon Apr 15 08:41:59 [conn162] end connection 127.0.0.1:60241 (4 connections now open)
+Mon Apr 15 08:41:59 [conn161] end connection 127.0.0.1:60240 (4 connections now open)
+Mon Apr 15 08:42:09 [initandlisten] connection accepted from 127.0.0.1:60767 #166 (1 connection now open)
+Mon Apr 15 08:42:09 [initandlisten] connection accepted from 127.0.0.1:60768 #167 (2 connections now open)
+Mon Apr 15 08:42:09 [initandlisten] connection accepted from 127.0.0.1:60769 #168 (3 connections now open)
+Mon Apr 15 08:42:09 [initandlisten] connection accepted from 127.0.0.1:60770 #169 (4 connections now open)
+Mon Apr 15 08:42:09 [initandlisten] connection accepted from 127.0.0.1:60771 #170 (5 connections now open)
+Mon Apr 15 08:42:55 [conn170] end connection 127.0.0.1:60771 (4 connections now open)
+Mon Apr 15 08:42:55 [conn166] end connection 127.0.0.1:60767 (4 connections now open)
+Mon Apr 15 08:42:55 [conn169] end connection 127.0.0.1:60770 (2 connections now open)
+Mon Apr 15 08:42:55 [conn167] end connection 127.0.0.1:60768 (2 connections now open)
+Mon Apr 15 08:42:55 [conn168] end connection 127.0.0.1:60769 (2 connections now open)
+Mon Apr 15 08:43:03 [initandlisten] connection accepted from 127.0.0.1:61020 #171 (1 connection now open)
+Mon Apr 15 08:43:03 [initandlisten] connection accepted from 127.0.0.1:61021 #172 (2 connections now open)
+Mon Apr 15 08:43:03 [initandlisten] connection accepted from 127.0.0.1:61022 #173 (3 connections now open)
+Mon Apr 15 08:43:03 [initandlisten] connection accepted from 127.0.0.1:61023 #174 (4 connections now open)
+Mon Apr 15 08:43:03 [initandlisten] connection accepted from 127.0.0.1:61024 #175 (5 connections now open)
+Mon Apr 15 08:43:51 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 08:43:53 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 08:44:55 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 08:45:30 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 08:51:35 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 08:52:14 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 08:53:00 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 08:53:27 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 08:53:37 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 08:53:45 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 08:54:10 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 08:54:16 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 08:54:23 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 08:54:48 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 08:54:56 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 08:55:10 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 08:55:13 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 08:55:33 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 08:55:49 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 08:57:11 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:00:14 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:00:18 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:00:23 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 09:13:12 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:13:28 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:13:41 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:14:45 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 09:15:11 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:15:27 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 09:15:31 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 09:15:35 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:16:17 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:16:21 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 09:16:46 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 09:19:25 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:19:29 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 09:19:37 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 09:19:41 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 09:19:42 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 09:19:46 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 09:19:48 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:19:54 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:20:02 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 09:20:10 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 09:46:46 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:29:47 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:29:50 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:30:51 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:30:52 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:31:03 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:31:06 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:31:43 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:34:13 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:34:30 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:34:35 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:35:38 [initandlisten] connection accepted from 127.0.0.1:53294 #176 (6 connections now open)
+Mon Apr 15 12:36:23 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:36:33 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:39:35 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:39:42 [conn171] build index erp.customer { _id: 1 }
+Mon Apr 15 12:39:42 [conn171] build index done.  scanned 0 total records. 0.018 secs
+Mon Apr 15 12:39:44 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:40:31 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:41:20 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:42:02 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:42:14 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:42:28 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:42:36 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:43:34 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:43:59 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:44:14 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:44:17 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:44:35 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:45:10 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:45:29 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:45:38 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:48:12 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:49:18 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:50:09 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:50:51 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:51:45 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:53:34 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:53:55 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:54:04 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:54:14 [conn172] warning: can't find plugin [asc]
+Mon Apr 15 12:54:18 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:54:34 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 12:54:43 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:55:02 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:56:52 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 12:56:59 [conn171] warning: can't find plugin [asc]
+Mon Apr 15 12:57:17 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 12:58:41 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 13:02:54 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 13:03:09 [conn174] warning: can't find plugin [asc]
+Mon Apr 15 13:03:25 [conn175] warning: can't find plugin [asc]
+Mon Apr 15 13:03:36 [conn173] warning: can't find plugin [asc]
+Mon Apr 15 13:05:59 [conn176] end connection 127.0.0.1:53294 (5 connections now open)
+Mon Apr 15 13:06:01 [initandlisten] connection accepted from 127.0.0.1:59682 #177 (6 connections now open)
+Mon Apr 15 13:06:04 [conn175] end connection 127.0.0.1:61024 (5 connections now open)
+Mon Apr 15 13:06:04 [conn174] end connection 127.0.0.1:61023 (5 connections now open)
+Mon Apr 15 13:06:04 [conn173] end connection 127.0.0.1:61022 (3 connections now open)
+Mon Apr 15 13:06:04 [conn171] end connection 127.0.0.1:61020 (3 connections now open)
+Mon Apr 15 13:06:04 [conn172] end connection 127.0.0.1:61021 (3 connections now open)
+Mon Apr 15 13:06:20 [initandlisten] connection accepted from 127.0.0.1:59783 #178 (2 connections now open)
+Mon Apr 15 13:06:20 [initandlisten] connection accepted from 127.0.0.1:59784 #179 (3 connections now open)
+Mon Apr 15 13:06:20 [initandlisten] connection accepted from 127.0.0.1:59785 #180 (4 connections now open)
+Mon Apr 15 13:06:20 [initandlisten] connection accepted from 127.0.0.1:59786 #181 (5 connections now open)
+Mon Apr 15 13:06:20 [initandlisten] connection accepted from 127.0.0.1:59787 #182 (6 connections now open)
+Mon Apr 15 13:06:52 [conn180] warning: can't find plugin [asc]
+Mon Apr 15 13:07:50 [conn181] warning: can't find plugin [asc]
+Mon Apr 15 13:09:52 [conn182] end connection 127.0.0.1:59787 (5 connections now open)
+Mon Apr 15 13:09:52 [conn181] end connection 127.0.0.1:59786 (5 connections now open)
+Mon Apr 15 13:09:52 [conn178] end connection 127.0.0.1:59783 (5 connections now open)
+Mon Apr 15 13:09:52 [conn180] end connection 127.0.0.1:59785 (5 connections now open)
+Mon Apr 15 13:09:52 [conn179] end connection 127.0.0.1:59784 (5 connections now open)
+Mon Apr 15 13:10:04 [initandlisten] connection accepted from 127.0.0.1:60799 #183 (2 connections now open)
+Mon Apr 15 13:10:04 [initandlisten] connection accepted from 127.0.0.1:60800 #184 (3 connections now open)
+Mon Apr 15 13:10:04 [initandlisten] connection accepted from 127.0.0.1:60801 #185 (4 connections now open)
+Mon Apr 15 13:10:04 [initandlisten] connection accepted from 127.0.0.1:60802 #186 (5 connections now open)
+Mon Apr 15 13:10:04 [initandlisten] connection accepted from 127.0.0.1:60803 #187 (6 connections now open)
+Mon Apr 15 13:12:53 [conn187] warning: can't find plugin [asc]
+Mon Apr 15 13:14:40 [conn186] warning: can't find plugin [asc]
+Mon Apr 15 13:15:10 [conn184] warning: can't find plugin [asc]
+Mon Apr 15 13:16:10 [conn183] warning: can't find plugin [asc]
+Mon Apr 15 13:16:50 [conn184] warning: can't find plugin [asc]
+Mon Apr 15 13:17:53 [conn183] warning: can't find plugin [asc]
+Mon Apr 15 13:18:09 [conn186] warning: can't find plugin [asc]
+Mon Apr 15 13:18:27 [conn185] warning: can't find plugin [asc]
+Mon Apr 15 13:19:08 [conn184] warning: can't find plugin [asc]
+Mon Apr 15 13:20:09 [conn183] warning: can't find plugin [asc]
+Mon Apr 15 13:21:09 [conn186] warning: can't find plugin [asc]
+Mon Apr 15 13:21:39 [conn187] warning: can't find plugin [asc]
+Mon Apr 15 13:21:42 [conn184] warning: can't find plugin [asc]
+Mon Apr 15 13:52:30 [conn187] warning: can't find plugin [asc]
+Mon Apr 15 13:57:34 [conn185] warning: can't find plugin [asc]
+Mon Apr 15 13:57:38 [conn187] warning: can't find plugin [asc]
+Mon Apr 15 14:21:20 [conn186] end connection 127.0.0.1:60802 (5 connections now open)
+Mon Apr 15 14:21:20 [conn187] end connection 127.0.0.1:60803 (5 connections now open)
+Mon Apr 15 14:21:20 [conn185] end connection 127.0.0.1:60801 (4 connections now open)
+Mon Apr 15 14:21:20 [conn184] end connection 127.0.0.1:60800 (4 connections now open)
+Mon Apr 15 14:21:20 [conn183] end connection 127.0.0.1:60799 (4 connections now open)
+Mon Apr 15 14:21:36 [initandlisten] connection accepted from 127.0.0.1:63677 #188 (2 connections now open)
+Mon Apr 15 14:21:36 [initandlisten] connection accepted from 127.0.0.1:63678 #189 (3 connections now open)
+Mon Apr 15 14:21:36 [initandlisten] connection accepted from 127.0.0.1:63679 #190 (4 connections now open)
+Mon Apr 15 14:21:36 [initandlisten] connection accepted from 127.0.0.1:63680 #191 (5 connections now open)
+Mon Apr 15 14:21:36 [initandlisten] connection accepted from 127.0.0.1:63681 #192 (6 connections now open)
+Mon Apr 15 14:21:47 [conn188] warning: can't find plugin [asc]
+Mon Apr 15 14:22:01 [conn192] warning: can't find plugin [asc]
+Mon Apr 15 14:28:00 [conn192] end connection 127.0.0.1:63681 (5 connections now open)
+Mon Apr 15 14:28:00 [conn189] end connection 127.0.0.1:63678 (5 connections now open)
+Mon Apr 15 14:28:00 [conn191] end connection 127.0.0.1:63680 (5 connections now open)
+Mon Apr 15 14:28:00 [conn190] end connection 127.0.0.1:63679 (5 connections now open)
+Mon Apr 15 14:28:00 [conn188] end connection 127.0.0.1:63677 (5 connections now open)
+Mon Apr 15 14:28:12 [initandlisten] connection accepted from 127.0.0.1:65491 #193 (2 connections now open)
+Mon Apr 15 14:28:12 [initandlisten] connection accepted from 127.0.0.1:65492 #194 (3 connections now open)
+Mon Apr 15 14:28:12 [initandlisten] connection accepted from 127.0.0.1:65493 #195 (4 connections now open)
+Mon Apr 15 14:28:12 [initandlisten] connection accepted from 127.0.0.1:65494 #196 (5 connections now open)
+Mon Apr 15 14:28:12 [initandlisten] connection accepted from 127.0.0.1:65495 #197 (6 connections now open)
+Mon Apr 15 14:29:06 [conn194] warning: can't find plugin [asc]
+Mon Apr 15 14:30:01 [conn197] warning: can't find plugin [asc]
+Mon Apr 15 14:30:15 [conn195] warning: can't find plugin [asc]
+Mon Apr 15 14:36:23 [conn196] end connection 127.0.0.1:65494 (5 connections now open)
+Mon Apr 15 14:36:23 [conn197] end connection 127.0.0.1:65495 (5 connections now open)
+Mon Apr 15 14:36:23 [conn194] end connection 127.0.0.1:65492 (5 connections now open)
+Mon Apr 15 14:36:23 [conn195] end connection 127.0.0.1:65493 (5 connections now open)
+Mon Apr 15 14:36:23 [conn193] end connection 127.0.0.1:65491 (5 connections now open)
+Mon Apr 15 14:36:36 [initandlisten] connection accepted from 127.0.0.1:51446 #198 (2 connections now open)
+Mon Apr 15 14:36:36 [initandlisten] connection accepted from 127.0.0.1:51447 #199 (3 connections now open)
+Mon Apr 15 14:36:36 [initandlisten] connection accepted from 127.0.0.1:51448 #200 (4 connections now open)
+Mon Apr 15 14:36:36 [initandlisten] connection accepted from 127.0.0.1:51449 #201 (5 connections now open)
+Mon Apr 15 14:36:36 [initandlisten] connection accepted from 127.0.0.1:51450 #202 (6 connections now open)
+Mon Apr 15 14:37:11 [conn200] end connection 127.0.0.1:51448 (5 connections now open)
+Mon Apr 15 14:37:11 [conn198] end connection 127.0.0.1:51446 (5 connections now open)
+Mon Apr 15 14:37:11 [conn199] end connection 127.0.0.1:51447 (4 connections now open)
+Mon Apr 15 14:37:11 [conn202] end connection 127.0.0.1:51450 (5 connections now open)
+Mon Apr 15 14:37:11 [conn201] end connection 127.0.0.1:51449 (4 connections now open)
+Mon Apr 15 14:37:20 [initandlisten] connection accepted from 127.0.0.1:51653 #203 (2 connections now open)
+Mon Apr 15 14:37:20 [initandlisten] connection accepted from 127.0.0.1:51654 #204 (3 connections now open)
+Mon Apr 15 14:37:20 [initandlisten] connection accepted from 127.0.0.1:51655 #205 (4 connections now open)
+Mon Apr 15 14:37:20 [initandlisten] connection accepted from 127.0.0.1:51656 #206 (5 connections now open)
+Mon Apr 15 14:37:20 [initandlisten] connection accepted from 127.0.0.1:51657 #207 (6 connections now open)
+Mon Apr 15 14:42:58 [conn206] end connection 127.0.0.1:51656 (5 connections now open)
+Mon Apr 15 14:42:58 [conn207] end connection 127.0.0.1:51657 (5 connections now open)
+Mon Apr 15 14:42:58 [conn203] end connection 127.0.0.1:51653 (5 connections now open)
+Mon Apr 15 14:42:58 [conn205] end connection 127.0.0.1:51655 (5 connections now open)
+Mon Apr 15 14:42:58 [conn204] end connection 127.0.0.1:51654 (5 connections now open)
+Mon Apr 15 14:43:11 [initandlisten] connection accepted from 127.0.0.1:53310 #208 (2 connections now open)
+Mon Apr 15 14:43:11 [initandlisten] connection accepted from 127.0.0.1:53311 #209 (3 connections now open)
+Mon Apr 15 14:43:11 [initandlisten] connection accepted from 127.0.0.1:53312 #210 (4 connections now open)
+Mon Apr 15 14:43:11 [initandlisten] connection accepted from 127.0.0.1:53313 #211 (5 connections now open)
+Mon Apr 15 14:43:11 [initandlisten] connection accepted from 127.0.0.1:53314 #212 (6 connections now open)
+Mon Apr 15 14:43:44 [conn212] end connection 127.0.0.1:53314 (5 connections now open)
+Mon Apr 15 14:43:44 [conn210] end connection 127.0.0.1:53312 (4 connections now open)
+Mon Apr 15 14:43:44 [conn211] end connection 127.0.0.1:53313 (4 connections now open)
+Mon Apr 15 14:43:44 [conn209] end connection 127.0.0.1:53311 (2 connections now open)
+Mon Apr 15 14:43:44 [conn208] end connection 127.0.0.1:53310 (1 connection now open)
+Mon Apr 15 14:43:58 [initandlisten] connection accepted from 127.0.0.1:53554 #213 (2 connections now open)
+Mon Apr 15 14:43:58 [initandlisten] connection accepted from 127.0.0.1:53555 #214 (3 connections now open)
+Mon Apr 15 14:43:58 [initandlisten] connection accepted from 127.0.0.1:53556 #215 (4 connections now open)
+Mon Apr 15 14:43:58 [initandlisten] connection accepted from 127.0.0.1:53557 #216 (5 connections now open)
+Mon Apr 15 14:43:58 [initandlisten] connection accepted from 127.0.0.1:53558 #217 (6 connections now open)
+Mon Apr 15 15:19:13 [conn215] warning: can't find plugin [asc]
+Mon Apr 15 15:19:24 [conn217] warning: can't find plugin [asc]
+Mon Apr 15 15:19:28 [conn217] warning: can't find plugin [asc]
+Mon Apr 15 15:21:38 [conn215] warning: can't find plugin [asc]
+Mon Apr 15 15:21:52 [conn214] warning: can't find plugin [asc]
+Mon Apr 15 15:22:25 [conn213] warning: can't find plugin [asc]
+Mon Apr 15 15:23:26 [conn215] warning: can't find plugin [asc]
+Mon Apr 15 15:31:48 [conn217] end connection 127.0.0.1:53558 (5 connections now open)
+Mon Apr 15 15:31:48 [conn216] end connection 127.0.0.1:53557 (5 connections now open)
+Mon Apr 15 15:31:48 [conn214] end connection 127.0.0.1:53555 (5 connections now open)
+Mon Apr 15 15:31:48 [conn215] end connection 127.0.0.1:53556 (5 connections now open)
+Mon Apr 15 15:31:48 [conn213] end connection 127.0.0.1:53554 (4 connections now open)
+Mon Apr 15 15:32:03 [initandlisten] connection accepted from 127.0.0.1:49260 #218 (2 connections now open)
+Mon Apr 15 15:32:03 [initandlisten] connection accepted from 127.0.0.1:49261 #219 (3 connections now open)
+Mon Apr 15 15:32:03 [initandlisten] connection accepted from 127.0.0.1:49262 #220 (4 connections now open)
+Mon Apr 15 15:32:03 [initandlisten] connection accepted from 127.0.0.1:49263 #221 (5 connections now open)
+Mon Apr 15 15:32:03 [initandlisten] connection accepted from 127.0.0.1:49264 #222 (6 connections now open)
+Mon Apr 15 15:32:09 [conn222] end connection 127.0.0.1:49264 (5 connections now open)
+Mon Apr 15 15:32:09 [conn221] end connection 127.0.0.1:49263 (5 connections now open)
+Mon Apr 15 15:32:09 [conn220] end connection 127.0.0.1:49262 (5 connections now open)
+Mon Apr 15 15:32:09 [conn218] end connection 127.0.0.1:49260 (5 connections now open)
+Mon Apr 15 15:32:09 [conn219] end connection 127.0.0.1:49261 (5 connections now open)
+Mon Apr 15 15:32:44 [initandlisten] connection accepted from 127.0.0.1:49458 #223 (2 connections now open)
+Mon Apr 15 15:32:44 [initandlisten] connection accepted from 127.0.0.1:49459 #224 (3 connections now open)
+Mon Apr 15 15:32:44 [initandlisten] connection accepted from 127.0.0.1:49460 #225 (4 connections now open)
+Mon Apr 15 15:32:44 [initandlisten] connection accepted from 127.0.0.1:49461 #226 (5 connections now open)
+Mon Apr 15 15:32:44 [initandlisten] connection accepted from 127.0.0.1:49462 #227 (6 connections now open)
+Mon Apr 15 15:34:16 [conn227] end connection 127.0.0.1:49462 (5 connections now open)
+Mon Apr 15 15:34:16 [conn226] end connection 127.0.0.1:49461 (5 connections now open)
+Mon Apr 15 15:34:16 [conn224] end connection 127.0.0.1:49459 (5 connections now open)
+Mon Apr 15 15:34:16 [conn223] end connection 127.0.0.1:49458 (4 connections now open)
+Mon Apr 15 15:34:16 [conn225] end connection 127.0.0.1:49460 (5 connections now open)
+Mon Apr 15 15:35:22 [initandlisten] connection accepted from 127.0.0.1:50215 #228 (2 connections now open)
+Mon Apr 15 15:35:22 [initandlisten] connection accepted from 127.0.0.1:50216 #229 (3 connections now open)
+Mon Apr 15 15:35:22 [initandlisten] connection accepted from 127.0.0.1:50217 #230 (4 connections now open)
+Mon Apr 15 15:35:22 [initandlisten] connection accepted from 127.0.0.1:50218 #231 (5 connections now open)
+Mon Apr 15 15:35:22 [initandlisten] connection accepted from 127.0.0.1:50219 #232 (6 connections now open)
+Mon Apr 15 15:37:38 [conn232] end connection 127.0.0.1:50219 (5 connections now open)
+Mon Apr 15 15:37:38 [conn230] end connection 127.0.0.1:50217 (4 connections now open)
+Mon Apr 15 15:37:38 [conn231] end connection 127.0.0.1:50218 (4 connections now open)
+Mon Apr 15 15:37:38 [conn229] end connection 127.0.0.1:50216 (3 connections now open)
+Mon Apr 15 15:37:38 [conn228] end connection 127.0.0.1:50215 (3 connections now open)
+Mon Apr 15 15:37:47 [initandlisten] connection accepted from 127.0.0.1:50875 #233 (2 connections now open)
+Mon Apr 15 15:37:47 [initandlisten] connection accepted from 127.0.0.1:50876 #234 (3 connections now open)
+Mon Apr 15 15:37:47 [initandlisten] connection accepted from 127.0.0.1:50877 #235 (4 connections now open)
+Mon Apr 15 15:37:47 [initandlisten] connection accepted from 127.0.0.1:50878 #236 (5 connections now open)
+Mon Apr 15 15:37:47 [initandlisten] connection accepted from 127.0.0.1:50879 #237 (6 connections now open)
+Mon Apr 15 15:39:01 [conn237] end connection 127.0.0.1:50879 (5 connections now open)
+Mon Apr 15 15:39:01 [conn235] end connection 127.0.0.1:50877 (5 connections now open)
+Mon Apr 15 15:39:01 [conn236] end connection 127.0.0.1:50878 (5 connections now open)
+Mon Apr 15 15:39:01 [conn233] end connection 127.0.0.1:50875 (5 connections now open)
+Mon Apr 15 15:39:01 [conn234] end connection 127.0.0.1:50876 (5 connections now open)
+Mon Apr 15 15:39:12 [initandlisten] connection accepted from 127.0.0.1:51265 #238 (2 connections now open)
+Mon Apr 15 15:39:12 [initandlisten] connection accepted from 127.0.0.1:51266 #239 (3 connections now open)
+Mon Apr 15 15:39:12 [initandlisten] connection accepted from 127.0.0.1:51267 #240 (4 connections now open)
+Mon Apr 15 15:39:12 [initandlisten] connection accepted from 127.0.0.1:51268 #241 (5 connections now open)
+Mon Apr 15 15:39:12 [initandlisten] connection accepted from 127.0.0.1:51269 #242 (6 connections now open)
+Mon Apr 15 15:39:52 [conn240] warning: can't find plugin [asc]
+Mon Apr 15 15:40:50 [conn238] warning: can't find plugin [asc]
+Mon Apr 15 15:40:54 [conn241] warning: can't find plugin [asc]
+Mon Apr 15 15:44:09 [conn242] warning: can't find plugin [asc]
+Mon Apr 15 15:44:10 [conn241] warning: can't find plugin [asc]
+Mon Apr 15 15:44:12 [conn239] warning: can't find plugin [asc]
+Mon Apr 15 15:45:32 [conn242] warning: can't find plugin [asc]
+Mon Apr 15 15:46:16 [conn239] warning: can't find plugin [asc]
+Mon Apr 15 15:46:19 [conn241] warning: can't find plugin [asc]
+Mon Apr 15 16:20:11 [conn241] warning: can't find plugin [asc]
+Mon Apr 15 16:20:17 [conn238] warning: can't find plugin [asc]
+Mon Apr 15 16:24:53 [conn241] warning: can't find plugin [asc]
+Mon Apr 15 16:26:58 [conn240] warning: can't find plugin [asc]
+Mon Apr 15 16:26:59 [conn239] warning: can't find plugin [asc]
+Mon Apr 15 16:27:01 [conn238] warning: can't find plugin [asc]
+Mon Apr 15 16:27:02 [conn242] warning: can't find plugin [asc]
+Mon Apr 15 16:27:32 [conn241] warning: can't find plugin [asc]
+Mon Apr 15 16:27:36 [conn238] warning: can't find plugin [asc]
+Tue Apr 16 06:41:45 [conn241] end connection 127.0.0.1:51268 (5 connections now open)
+Tue Apr 16 06:41:45 [conn238] end connection 127.0.0.1:51265 (5 connections now open)
+Tue Apr 16 06:41:45 [conn242] end connection 127.0.0.1:51269 (5 connections now open)
+Tue Apr 16 06:41:45 [conn239] end connection 127.0.0.1:51266 (5 connections now open)
+Tue Apr 16 06:41:45 [conn240] end connection 127.0.0.1:51267 (5 connections now open)
+Tue Apr 16 06:41:51 [conn177] end connection 127.0.0.1:59682 (0 connections now open)
+Tue Apr 16 06:56:11 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Tue Apr 16 06:56:11 [interruptThread] now exiting
+Tue Apr 16 06:56:11 dbexit: 
+Tue Apr 16 06:56:11 [interruptThread] shutdown: going to close listening sockets...
+Tue Apr 16 06:56:11 [interruptThread] closing listening socket: 6
+Tue Apr 16 06:56:11 [interruptThread] closing listening socket: 7
+Tue Apr 16 06:56:11 [interruptThread] closing listening socket: 8
+Tue Apr 16 06:56:11 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Tue Apr 16 06:56:11 [interruptThread] shutdown: going to flush diaglog...
+Tue Apr 16 06:56:11 [interruptThread] shutdown: going to close sockets...
+Tue Apr 16 06:56:11 [interruptThread] shutdown: waiting for fs preallocator...
+Tue Apr 16 06:56:11 [interruptThread] shutdown: lock for final commit...
+Tue Apr 16 06:56:11 [interruptThread] shutdown: final commit...
