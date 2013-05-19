@@ -64,6 +64,7 @@ module.exports = function(req,res){
 					cb(null,result.clean);
 				}],
 				inventory : ['getRecord',function(cb,result){
+					console.log("inventory");
 					async.auto({
 						GetInvLink : function(ccb){
 							var content = {};
@@ -95,7 +96,10 @@ module.exports = function(req,res){
 										},
 										ApplyBundle :['GetSource',function(gcb,gres){
 											var list = new Array();
-											var new_list = gres.GetSource;
+											var new_list = new Array();
+											for(var f in gres.GetSource){
+												new_list.push(gres.GetSource[f]);
+											}
 											async.forEach(gres.GetSource,function(gitem,gccb){
 												
 												async.auto({
@@ -121,19 +125,52 @@ module.exports = function(req,res){
 														
 													}],
 													applyBundle : ['getBundle',function(igccb,igcres){
-														if(igcres.getBundle.length > 0 ){
-															igcres.getBundle.forEach(function(data){
-																data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
-																data.condition = gitem.condition;
-																data.location = gitem.location;
-																if(Number(data[item.source.quantity]) > 0){
-																	new_list.push(data);
-																}
-															});
-															var index = new_list.indexOf(gitem);
-															new_list.splice(index, 1);
-														}
-														igccb(null,null);
+														
+															if(igcres.getBundle.length > 0 ){
+																igcres.getBundle.forEach(function(data){
+																
+																	data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
+																	data.condition = gitem.condition;
+																	data.location = gitem.location;
+																	switch(req.params.table){
+																	case 'sales':
+																		switch(req.params.process){
+																			case 'order':
+																				data.refno = gitem.sono;
+																			break;
+																			case 'delivery':
+																				data.refno = gitem.drno;
+																			break;
+																			case 'return':
+																				data.refno = gitem.rmrno;
+																			break;
+																			case 'memo':
+																				data.refno = gitem.cmno;
+																			break;
+																		}
+																		
+																		break;
+																	case 'shipment' :
+																		data.refno = gitem.shipno;
+																		
+																		break;
+																	case 'consignment' :
+																		data.refno = gitem.cono;
+																		break;
+																	}
+																	if(Number(data[item.source.quantity]) > 0){
+																		new_list.push(data);
+																	}
+																});
+																var index = new_list.indexOf(gitem);
+																new_list.splice(index, 1);
+																igccb(null,new_list);
+															}
+															else{
+																igccb(null,new_list);
+															}
+														
+														
 													}]
 													
 												},gccb);
@@ -142,6 +179,7 @@ module.exports = function(req,res){
 											});
 										}],
 										UpsertDestination : ['ApplyBundle',function(gcb,gres){
+											console.log("UpsertDestination");
 											var list = new Array();
 											for(var i = 0; i< gres.ApplyBundle.length - 1; i++){
 												for(var j = i+1; j < gres.ApplyBundle.length; j++){
@@ -210,7 +248,7 @@ module.exports = function(req,res){
 													LogHistory : ['Evaluate',function(igccb,cigres){
 														var content = {};
 														content.table = 'movement';
-														gitem.tdate = new Date().toString();
+														gitem.tdate = moment().format("YYYY-MM-DD HH:mm");
 														gitem.inv_in = gitem[item.source.quantity];
 														gitem.inv_out = 0;
 														gitem.ending = gitem.beginning + gitem.inv_in;
@@ -219,16 +257,16 @@ module.exports = function(req,res){
 														case 'sales':
 															switch(req.params.process){
 																case 'order':
-																	gitem.refno = gitem.sono;
+																	gitem.refno = gitem.refno || gitem.sono;
 																break;
 																case 'delivery':
-																	gitem.refno = gitem.drno;
+																	gitem.refno = gitem.refno || gitem.drno;
 																break;
 																case 'return':
-																	gitem.refno = gitem.rmrno;
+																	gitem.refno = gitem.refno || gitem.rmrno;
 																break;
 																case 'memo':
-																	gitem.refno = gitem.cmno;
+																	gitem.refno = gitem.refno || gitem.cmno;
 																break;
 															}
 															gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
@@ -236,7 +274,13 @@ module.exports = function(req,res){
 															gitem.field = item.destination.quantity;
 															break;
 														case 'shipment' :
-															gitem.refno = gitem.shipno;
+															gitem.refno = gitem.refno || gitem.shipno;
+															gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
+															gitem.destination = gitem.location;
+															gitem.field = item.destination.quantity;
+															break;
+														case 'consignment' :
+															gitem.refno = gitem.refno || gitem.cono;
 															gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
 															gitem.destination = gitem.location;
 															gitem.field = item.destination.quantity;
@@ -270,7 +314,10 @@ module.exports = function(req,res){
 										},
 										ApplyBundle :['GetSource',function(gcb,gres){
 											var list = new Array();
-											var new_list = gres.GetSource;
+											var new_list = new Array();
+											for(var f in gres.GetSource){
+												new_list.push(gres.GetSource[f]);
+											}
 											async.forEach(gres.GetSource,function(gitem,gccb){
 												
 												async.auto({
@@ -301,6 +348,32 @@ module.exports = function(req,res){
 																data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
 																data.condition = gitem.condition;
 																data.location = gitem.location;
+																switch(req.params.table){
+																case 'sales':
+																	switch(req.params.process){
+																		case 'order':
+																			data.refno = gitem.sono;
+																		break;
+																		case 'delivery':
+																			data.refno = gitem.drno;
+																		break;
+																		case 'return':
+																			data.refno = gitem.rmrno;
+																		break;
+																		case 'memo':
+																			data.refno = gitem.cmno;
+																		break;
+																	}
+																	
+																	break;
+																case 'shipment' :
+																	data.refno = gitem.shipno;
+																	
+																	break;
+																case 'consignment' :
+																	data.refno = gitem.cono;
+																	break;
+																}
 																if(Number(data[item.source.quantity]) > 0){
 																	new_list.push(data);
 																}
@@ -363,22 +436,22 @@ module.exports = function(req,res){
 										}],
 										UpsertDestination : ['ValidateEachAvailability',function(gcb,gres){
 												var list = new Array();
-												for(var i in gres.GetSource){
+												for(var i in gres.ApplyBundle){
 													if(list.length){
 														var flag = false;
 														for(var j in list){
-															if(list[j][item.source.ukey] == gres.GetSource[i][item.source.ukey]){
+															if(list[j][item.source.ukey] == gres.ApplyBundle[i][item.source.ukey]){
 																flag = true;
-																list[j][item.source.quantity] = Number(list[j][item.source.quantity]) + gres.GetSource[i][item.source.quantity];
+																list[j][item.source.quantity] = Number(list[j][item.source.quantity]) + gres.ApplyBundle[i][item.source.quantity];
 																
 															}
 														}
 														if(!flag){
-															list.push(gres.GetSource[i]);
+															list.push(gres.ApplyBundle[i]);
 														}
 													}
 													else{
-														list.push(gres.GetSource[i]);
+														list.push(gres.ApplyBundle[i]);
 													}
 												}
 												async.forEach(list,function(gitem,gccb){
@@ -435,7 +508,7 @@ module.exports = function(req,res){
 														LogHistory : ['Evaluate',function(igccb,cigres){
 															var content = {};
 															content.table = 'movement';
-															gitem.tdate = new Date().toString();
+															gitem.tdate = moment().format("YYYY-MM-DD HH:mm");
 															gitem.inv_in = 0;
 															gitem.inv_out = gitem[item.source.quantity];
 															gitem.ending = gitem.beginning - gitem.inv_out;
@@ -444,16 +517,16 @@ module.exports = function(req,res){
 															case 'sales':
 																switch(req.params.process){
 																	case 'order':
-																		gitem.refno = gitem.sono;
+																		gitem.refno = gitem.refno || gitem.sono;
 																	break;
 																	case 'delivery':
-																		gitem.refno = gitem.drno || gitem.sono;
+																		gitem.refno = gitem.refno || gitem.drno || gitem.sono;
 																	break;
 																	case 'return':
-																		gitem.refno = gitem.rmrno || gitem.sono;
+																		gitem.refno = gitem.refno || gitem.rmrno;
 																	break;
 																	case 'memo':
-																		gitem.refno = gitem.cmno;
+																		gitem.refno = gitem.refno || gitem.cmno;
 																	break;
 																}
 																gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
@@ -461,9 +534,15 @@ module.exports = function(req,res){
 																gitem.field = item.destination.quantity;
 																break;
 															case 'shipment' :
-																gitem.refno = gitem.shipno;
+																gitem.refno = gitem.refno || gitem.shipno;
 																gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
 																gitem.destination = gitem.location;
+																gitem.field = item.destination.quantity;
+																break;
+															case 'consignment' :
+																gitem.refno = gitem.refno || gitem.cono;
+																gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
+																gitem.destination = gitem.customer;
 																gitem.field = item.destination.quantity;
 																break;
 															}
@@ -474,6 +553,918 @@ module.exports = function(req,res){
 													},gccb);
 													
 												},gcb);
+										}]
+									},iccb);
+								}
+								else if(item.action == "CONSIGN OUT"){
+									async.auto({
+										outTheItemFromLocation : function(childcb){
+											async.auto({
+												GetSource : function(gcb){
+													var content = {};
+													content.table = item.source.table;
+													content.condition = {};
+													if(item.source.relationship == "_id"){
+														content.condition[item.source.relationship] = req.model.ObjectID.createFromHexString(req.body.id);
+													}
+													else{
+														content.condition[item.source.relationship] = req.body.id;
+													}
+													content.sorting = {};
+													content.sorting[item.source.ukey] = 'asc';
+													req.model.list(content,gcb);
+												},
+												ApplyBundle :['GetSource',function(gcb,gres){
+													var list = new Array();
+													var new_list = new Array();
+													for(var f in gres.GetSource){
+														new_list.push(gres.GetSource[f]);
+													}
+													async.forEach(gres.GetSource,function(gitem,gccb){
+														
+														async.auto({
+															getProductInfo : function(igccb){
+																var content = {};
+																content.table = 'product';
+																content.condition = {};
+																content.condition[item.source.ukey] = gitem[item.source.ukey];
+																req.model.item(content,igccb);
+															},
+															getBundle : ['getProductInfo',function(igccb,igcres){
+																if(igcres.getProductInfo){
+																	var content = {};
+																	content.table = 'bundle_item';
+																	content.condition = {
+																			bundle_item_id : igcres.getProductInfo._id.toString()
+																	};
+																	req.model.list(content,igccb);
+																}
+																else{
+																	igccb(null,null);
+																}
+																
+															}],
+															applyBundle : ['getBundle',function(igccb,igcres){
+																if(igcres.getBundle.length > 0 ){
+																	igcres.getBundle.forEach(function(data){
+																		data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
+																		data.condition = gitem.condition;
+																		data.location = gitem.location;
+																		data.destination = gitem.destination;
+																		switch(req.params.table){
+																		case 'sales':
+																			switch(req.params.process){
+																				case 'order':
+																					data.refno = gitem.sono;
+																				break;
+																				case 'delivery':
+																					data.refno = gitem.drno;
+																				break;
+																				case 'return':
+																					data.refno = gitem.rmrno;
+																				break;
+																				case 'memo':
+																					data.refno = gitem.cmno;
+																				break;
+																			}
+																			
+																			break;
+																		case 'shipment' :
+																			data.refno = gitem.shipno;
+																			
+																			break;
+																		case 'consignment' :
+																			switch(req.params.process){
+																				case 'order':
+																					data.refno = gitem.cono;
+																				break;
+																				case 'delivery':
+																					data.refno = gitem.cdrno;
+																				break;
+																			}
+																			
+																			break;
+																		}
+																		if(Number(data[item.source.quantity]) > 0){
+																			new_list.push(data);
+																		}
+																		
+																	});
+																	var index = new_list.indexOf(gitem);
+																	new_list.splice(index, 1);
+																}
+																igccb(null,null);
+															}]
+															
+														},gccb);
+													},function(err,out){
+														gcb(null,new_list);
+													});
+												}],
+												ValidateEachAvailability : ['ApplyBundle',function(gcb,gres){
+													console.log(gres.ApplyBundle);
+													var list = new Array();
+													for(var i = 0; i< gres.ApplyBundle.length - 1; i++){
+														for(var j = i+1; j < gres.ApplyBundle.length; j++){
+															if(gres.ApplyBundle[i].pno == gres.ApplyBundle[j].pno){
+																gres.ApplyBundle[i][item.source.quantity]+=gres.ApplyBundle[j][item.source.quantity];
+																gres.ApplyBundle[j][item.source.quantity] = 0;
+															}
+														}
+													}
+													for(var i = 0; i< gres.ApplyBundle.length ; i++){
+														if(gres.ApplyBundle[i][item.source.quantity] != 0){
+															list.push(gres.ApplyBundle[i]);
+														}
+													}
+													async.forEach(list,function(gitem,gccb){
+														async.auto({
+															getStockAvailable : function(igccb){
+																var content = {};
+																content.table = item.destination.table;
+																content.condition = {};
+																content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																content.condition["condition"] = gitem.condition;
+																content.condition["location"] = gitem.location;
+																req.model.item(content,igccb);
+															},
+															compareStock : ['getStockAvailable',function(igccb,igres){
+																var stock = igres.getStockAvailable;
+																if(stock){
+																	if(Number(stock[item.destination.quantity]) >= Number(gitem[item.source.quantity] || 0)){
+																		igccb(null,null);
+																	}
+																	else{
+																		igccb("Item: "+ gitem[item.source.ukey] + " stock is not sufficient!");
+																	}
+																}
+																else{
+																	igccb("Item: "+ gitem[item.source.ukey] + " is out of stock!!");
+																}
+															}]
+														},gccb);
+														
+													},gcb);
+												}],
+												UpsertDestination : ['ValidateEachAvailability',function(gcb,gres){
+														var list = new Array();
+														for(var i in gres.ApplyBundle){
+															if(list.length){
+																var flag = false;
+																for(var j in list){
+																	if(list[j][item.source.ukey] == gres.ApplyBundle[i][item.source.ukey]){
+																		flag = true;
+																		list[j][item.source.quantity] = Number(list[j][item.source.quantity]) + gres.ApplyBundle[i][item.source.quantity];
+																		
+																	}
+																}
+																if(!flag){
+																	list.push(gres.ApplyBundle[i]);
+																}
+															}
+															else{
+																list.push(gres.ApplyBundle[i]);
+															}
+														}
+														async.forEach(list,function(gitem,gccb){
+															async.auto({
+																checkInvExistence : function(igccb){
+																	var content = {};
+																	content.table = item.destination.table;
+																	content.condition = {};
+																	content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																	content.condition["condition"] = gitem.condition;
+																	content.condition["location"] = gitem.location;
+																	req.model.item(content,igccb);
+																},
+																Evaluate : ['checkInvExistence',function(igccb,cigres){
+																	
+																	if(cigres.checkInvExistence){
+																		gitem.beginning = cigres.checkInvExistence[item.destination.quantity] || 0;
+																		if(req.utility.isNumber(gitem[item.source.quantity])){
+																			var content = {};
+																			content.table = item.destination.table;
+																			content.condition = {};
+																			content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																			content.condition["condition"] = gitem.condition;
+																			content.condition["location"] = gitem.location;
+																			content.record = {"$inc":{}};
+																			content.record["$inc"][item.destination.quantity] = (Number(gitem[item.source.quantity]) * -1);
+																			req.model.update(content,igccb);
+																		}
+																		else{
+																			igccb(null,null);
+																		}
+																	}
+																	else{
+																		gitem.beginning = 0;
+																		if(req.utility.isNumber(gitem[item.source.quantity])){
+																			var content = {};
+																			content.table = item.destination.table;
+																			content.record = {};
+																			content.record[item.destination.ukey] = gitem[item.source.ukey];
+																			for(var ctr in item.reference){
+																				content.record[item.reference[ctr]] = gitem[item.reference[ctr]];
+																			}
+																			content.record["condition"] = gitem.condition;
+																			content.record["location"] = gitem.location;
+																			content.record[item.destination.quantity] = gitem[item.source.quantity];
+																			content.record["status"] = "Instock";
+																			req.model.add(content,igccb);
+																		}
+																		else{
+																			igccb(null,null);
+																		}
+																	}
+																}],
+																LogHistory : ['Evaluate',function(igccb,cigres){
+																	var content = {};
+																	content.table = 'movement';
+																	gitem.tdate = moment().format("YYYY-MM-DD HH:mm");
+																	gitem.inv_in = 0;
+																	gitem.inv_out = gitem[item.source.quantity];
+																	gitem.ending = gitem.beginning - gitem.inv_out;
+																	gitem.status = item.status;
+																	switch(req.params.table){
+																	case 'consignment' :
+																		gitem.refno = gitem.refno || gitem.cono;
+																		gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
+																		gitem.destination = gitem.destination;
+																		gitem.field = item.destination.quantity;
+																		break;
+																	}
+																	content.record = gitem;
+																	delete gitem._id;
+																	req.model.add(content,igccb);
+																}]
+															},gccb);
+															
+														},gcb);
+												}]
+											},childcb);
+										},
+										inTheItemToDestination : ['outTheItemFromLocation', function(childcb){
+											async.auto({
+												GetSource : function(gcb){
+													var content = {};
+													content.table = item.source.table;
+													content.condition = {};
+													if(item.source.relationship == "_id"){
+														content.condition[item.source.relationship] = req.model.ObjectID.createFromHexString(req.body.id);
+													}
+													else{
+														content.condition[item.source.relationship] = req.body.id;
+													}
+													content.sorting = {};
+													content.sorting[item.source.ukey] = 'asc';
+													req.model.list(content,gcb);
+												},
+												ApplyBundle :['GetSource',function(gcb,gres){
+													var list = new Array();
+													var new_list = new Array();
+													for(var f in gres.GetSource){
+														new_list.push(gres.GetSource[f]);
+													}
+													async.forEach(gres.GetSource,function(gitem,gccb){
+														
+														async.auto({
+															getProductInfo : function(igccb){
+																var content = {};
+																content.table = 'product';
+																content.condition = {};
+																content.condition[item.source.ukey] = gitem[item.source.ukey];
+																req.model.item(content,igccb);
+															},
+															getBundle : ['getProductInfo',function(igccb,igcres){
+																if(igcres.getProductInfo){
+																	var content = {};
+																	content.table = 'bundle_item';
+																	content.condition = {
+																			bundle_item_id : igcres.getProductInfo._id.toString()
+																	};
+																	req.model.list(content,igccb);
+																}
+																else{
+																	igccb(null,null);
+																}
+																
+															}],
+															applyBundle : ['getBundle',function(igccb,igcres){
+																
+																	if(igcres.getBundle.length > 0 ){
+																		igcres.getBundle.forEach(function(data){
+																		
+																			data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
+																			data.condition = gitem.condition;
+																			data.location = gitem.location;
+																			data.destination = gitem.destination;
+																			switch(req.params.table){
+																			case 'sales':
+																				switch(req.params.process){
+																					case 'order':
+																						data.refno = gitem.sono;
+																					break;
+																					case 'delivery':
+																						data.refno = gitem.drno;
+																					break;
+																					case 'return':
+																						data.refno = gitem.rmrno;
+																					break;
+																					case 'memo':
+																						data.refno = gitem.cmno;
+																					break;
+																				}
+																				
+																				break;
+																			case 'shipment' :
+																				data.refno = gitem.shipno;
+																				
+																				break;
+																			case 'consignment' :
+																				switch(req.params.process){
+																					case 'order':
+																						data.refno = gitem.cono;
+																					break;
+																					case 'delivery':
+																						data.refno = gitem.cdrno;
+																					break;
+																				}
+																				
+																				break;
+																			}
+																			if(Number(data[item.source.quantity]) > 0){
+																				new_list.push(data);
+																			}
+																		});
+																		var index = new_list.indexOf(gitem);
+																		new_list.splice(index, 1);
+																		igccb(null,new_list);
+																	}
+																	else{
+																		igccb(null,new_list);
+																	}
+																
+																
+															}]
+															
+														},gccb);
+													},function(err,out){
+														gcb(null,new_list);
+													});
+												}],
+												UpsertDestination : ['ApplyBundle',function(gcb,gres){
+													console.log("UpsertDestination");
+													var list = new Array();
+													for(var i = 0; i< gres.ApplyBundle.length - 1; i++){
+														for(var j = i+1; j < gres.ApplyBundle.length; j++){
+															if(gres.ApplyBundle[i].pno == gres.ApplyBundle[j].pno){
+																gres.ApplyBundle[i][item.source.quantity]+=gres.ApplyBundle[j][item.source.quantity];
+																gres.ApplyBundle[j][item.source.quantity] = 0;
+															}
+														}
+													}
+													for(var i = 0; i< gres.ApplyBundle.length ; i++){
+														if(gres.ApplyBundle[i][item.source.quantity] != 0){
+															list.push(gres.ApplyBundle[i]);
+														}
+													}
+													async.forEach(list,function(gitem,gccb){
+														async.auto({
+															checkInvExistence : function(igccb){
+																var content = {};
+																content.table = item.destination.table;
+																content.condition = {};
+																content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																content.condition["condition"] = gitem.condition;
+																content.condition["location"] = gitem.destination;
+																req.model.item(content,igccb);
+															},
+															Evaluate : ['checkInvExistence',function(igccb,cigres){
+																
+																if(cigres.checkInvExistence){
+																	gitem.beginning = cigres.checkInvExistence[item.destination.quantity] || 0;
+																	if(req.utility.isNumber(gitem[item.source.quantity]) && gitem[item.source.quantity] > 0){
+																		var content = {};
+																		content.table = item.destination.table;
+																		content.condition = {};
+																		content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																		content.condition["condition"] = gitem.condition;
+																		content.condition["location"] = gitem.destination;
+																		content.record = {"$inc":{}};
+																		content.record["$inc"][item.destination.quantity] = gitem[item.source.quantity];
+																		req.model.update(content,igccb);
+																	}
+																    else{
+																    	igccb(null,null);
+																    }
+																}
+																else{
+																	gitem.beginning = 0;
+																	if(req.utility.isNumber(gitem[item.source.quantity]) && gitem[item.source.quantity] > 0){
+																		var content = {};
+																		content.table = item.destination.table;
+																		content.record = {};
+																		content.record[item.destination.ukey] = gitem[item.source.ukey];
+																		for(var ctr in item.reference){
+																			content.record[item.reference[ctr]] = gitem[item.reference[ctr]];
+																		}
+																		content.record["condition"] = gitem.condition;
+																		content.record["location"] = gitem.destination;
+																		content.record[item.destination.quantity] = gitem[item.source.quantity];
+																		content.record["status"] = "Instock";
+																		req.model.add(content,igccb);
+																	}
+																	else{
+																	    	igccb(null,null);
+																	}
+																}
+															}],
+															LogHistory : ['Evaluate',function(igccb,cigres){
+																var content = {};
+																content.table = 'movement';
+																gitem.tdate = moment().format("YYYY-MM-DD HH:mm");
+																gitem.inv_in = gitem[item.source.quantity];
+																gitem.inv_out = 0;
+																gitem.ending = gitem.beginning + gitem.inv_in;
+																gitem.status = item.status;
+																switch(req.params.table){
+																case 'consignment' :
+																	gitem.refno = gitem.refno || gitem.cono;
+																	gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
+																	gitem.location = gitem.destination;
+																	gitem.destination = gitem.destination;
+																	gitem.field = item.destination.quantity;
+																	break;
+																}
+																content.record = gitem;
+																delete gitem._id;
+																req.model.add(content,igccb);
+															}]
+														},gccb);
+														
+													},gcb);
+												}]
+											},childcb);
+										}]
+										
+									},iccb);
+								}
+								else if(item.action == "CONSIGN IN"){
+									async.auto({
+										outTheItemFromDestination : function(childcb){
+											async.auto({
+												GetSource : function(gcb){
+													var content = {};
+													content.table = item.source.table;
+													content.condition = {};
+													if(item.source.relationship == "_id"){
+														content.condition[item.source.relationship] = req.model.ObjectID.createFromHexString(req.body.id);
+													}
+													else{
+														content.condition[item.source.relationship] = req.body.id;
+													}
+													content.sorting = {};
+													content.sorting[item.source.ukey] = 'asc';
+													req.model.list(content,gcb);
+												},
+												ApplyBundle :['GetSource',function(gcb,gres){
+													var list = new Array();
+													var new_list = new Array();
+													for(var f in gres.GetSource){
+														new_list.push(gres.GetSource[f]);
+													}
+													async.forEach(gres.GetSource,function(gitem,gccb){
+														
+														async.auto({
+															getProductInfo : function(igccb){
+																var content = {};
+																content.table = 'product';
+																content.condition = {};
+																content.condition[item.source.ukey] = gitem[item.source.ukey];
+																req.model.item(content,igccb);
+															},
+															getBundle : ['getProductInfo',function(igccb,igcres){
+																if(igcres.getProductInfo){
+																	var content = {};
+																	content.table = 'bundle_item';
+																	content.condition = {
+																			bundle_item_id : igcres.getProductInfo._id.toString()
+																	};
+																	req.model.list(content,igccb);
+																}
+																else{
+																	igccb(null,null);
+																}
+																
+															}],
+															applyBundle : ['getBundle',function(igccb,igcres){
+																if(igcres.getBundle.length > 0 ){
+																	igcres.getBundle.forEach(function(data){
+																		data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
+																		data.condition = gitem.condition;
+																		data.location = gitem.location;
+																		data.destination = gitem.destination;
+																		switch(req.params.table){
+																		case 'sales':
+																			switch(req.params.process){
+																				case 'order':
+																					data.refno = gitem.sono;
+																				break;
+																				case 'delivery':
+																					data.refno = gitem.drno;
+																				break;
+																				case 'return':
+																					data.refno = gitem.rmrno;
+																				break;
+																				case 'memo':
+																					data.refno = gitem.cmno;
+																				break;
+																			}
+																			
+																			break;
+																		case 'shipment' :
+																			data.refno = gitem.shipno;
+																			
+																			break;
+																		case 'consignment' :
+																			switch(req.params.process){
+																				case 'order':
+																					data.refno = gitem.cono;
+																				break;
+																				case 'delivery':
+																					data.refno = gitem.cdrno;
+																				break;
+																			}
+																			
+																			break;
+																		}
+																		if(Number(data[item.source.quantity]) > 0){
+																			new_list.push(data);
+																		}
+																		
+																	});
+																	var index = new_list.indexOf(gitem);
+																	new_list.splice(index, 1);
+																}
+																igccb(null,null);
+															}]
+															
+														},gccb);
+													},function(err,out){
+														gcb(null,new_list);
+													});
+												}],
+												ValidateEachAvailability : ['ApplyBundle',function(gcb,gres){
+													var list = new Array();
+													for(var i = 0; i< gres.ApplyBundle.length - 1; i++){
+														for(var j = i+1; j < gres.ApplyBundle.length; j++){
+															if(gres.ApplyBundle[i].pno == gres.ApplyBundle[j].pno){
+																gres.ApplyBundle[i][item.source.quantity]+=gres.ApplyBundle[j][item.source.quantity];
+																gres.ApplyBundle[j][item.source.quantity] = 0;
+															}
+														}
+													}
+													for(var i = 0; i< gres.ApplyBundle.length ; i++){
+														if(gres.ApplyBundle[i][item.source.quantity] != 0){
+															list.push(gres.ApplyBundle[i]);
+														}
+													}
+													async.forEach(list,function(gitem,gccb){
+														async.auto({
+															getStockAvailable : function(igccb){
+																var content = {};
+																content.table = item.destination.table;
+																content.condition = {};
+																content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																content.condition["condition"] = gitem.condition;
+																content.condition["location"] = gitem.destination;
+																req.model.item(content,igccb);
+															},
+															compareStock : ['getStockAvailable',function(igccb,igres){
+																var stock = igres.getStockAvailable;
+																if(stock){
+																	if(Number(stock[item.destination.quantity]) >= Number(gitem[item.source.quantity] || 0)){
+																		igccb(null,null);
+																	}
+																	else{
+																		igccb("Item: "+ gitem[item.source.ukey] + " stock is not sufficient!");
+																	}
+																}
+																else{
+																	igccb("Item: "+ gitem[item.source.ukey] + " is out of stock!!");
+																}
+															}]
+														},gccb);
+														
+													},gcb);
+												}],
+												UpsertDestination : ['ValidateEachAvailability',function(gcb,gres){
+														var list = new Array();
+														for(var i in gres.ApplyBundle){
+															if(list.length){
+																var flag = false;
+																for(var j in list){
+																	if(list[j][item.source.ukey] == gres.ApplyBundle[i][item.source.ukey]){
+																		flag = true;
+																		list[j][item.source.quantity] = Number(list[j][item.source.quantity]) + gres.ApplyBundle[i][item.source.quantity];
+																		
+																	}
+																}
+																if(!flag){
+																	list.push(gres.ApplyBundle[i]);
+																}
+															}
+															else{
+																list.push(gres.ApplyBundle[i]);
+															}
+														}
+														async.forEach(list,function(gitem,gccb){
+															async.auto({
+																checkInvExistence : function(igccb){
+																	var content = {};
+																	content.table = item.destination.table;
+																	content.condition = {};
+																	content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																	content.condition["condition"] = gitem.condition;
+																	content.condition["location"] = gitem.destination;
+																	req.model.item(content,igccb);
+																},
+																Evaluate : ['checkInvExistence',function(igccb,cigres){
+																	
+																	if(cigres.checkInvExistence){
+																		gitem.beginning = cigres.checkInvExistence[item.destination.quantity] || 0;
+																		if(req.utility.isNumber(gitem[item.source.quantity])){
+																			var content = {};
+																			content.table = item.destination.table;
+																			content.condition = {};
+																			content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																			content.condition["condition"] = gitem.condition;
+																			content.condition["location"] = gitem.destination;
+																			content.record = {"$inc":{}};
+																			content.record["$inc"][item.destination.quantity] = (Number(gitem[item.source.quantity]) * -1);
+																			req.model.update(content,igccb);
+																		}
+																		else{
+																			igccb(null,null);
+																		}
+																	}
+																	else{
+																		gitem.beginning = 0;
+																		if(req.utility.isNumber(gitem[item.source.quantity])){
+																			var content = {};
+																			content.table = item.destination.table;
+																			content.record = {};
+																			content.record[item.destination.ukey] = gitem[item.source.ukey];
+																			for(var ctr in item.reference){
+																				content.record[item.reference[ctr]] = gitem[item.reference[ctr]];
+																			}
+																			content.record["condition"] = gitem.condition;
+																			content.record["location"] = gitem.destination;
+																			content.record[item.destination.quantity] = gitem[item.source.quantity];
+																			content.record["status"] = "Instock";
+																			req.model.add(content,igccb);
+																		}
+																		else{
+																			igccb(null,null);
+																		}
+																	}
+																}],
+																LogHistory : ['Evaluate',function(igccb,cigres){
+																	var content = {};
+																	content.table = 'movement';
+																	gitem.tdate = moment().format("YYYY-MM-DD HH:mm");
+																	gitem.inv_in = 0;
+																	gitem.inv_out = gitem[item.source.quantity];
+																	gitem.ending = gitem.beginning - gitem.inv_out;
+																	gitem.status = item.status;
+																	switch(req.params.table){
+																	case 'consignment' :
+																		gitem.refno = gitem.refno || gitem.cono;
+																		gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
+																		var loc = gitem.location;
+																		var des = gitem.destination;
+																		gitem.location = des;
+																		gitem.destination = loc;
+																		
+																		gitem.field = item.destination.quantity;
+																		break;
+																	}
+																	content.record = gitem;
+																	delete gitem._id;
+																	req.model.add(content,igccb);
+																}]
+															},gccb);
+															
+														},gcb);
+												}]
+											},childcb);
+										},
+										inTheItemToLocation : ['outTheItemFromDestination', function(childcb){
+											async.auto({
+												GetSource : function(gcb){
+													var content = {};
+													content.table = item.source.table;
+													content.condition = {};
+													if(item.source.relationship == "_id"){
+														content.condition[item.source.relationship] = req.model.ObjectID.createFromHexString(req.body.id);
+													}
+													else{
+														content.condition[item.source.relationship] = req.body.id;
+													}
+													content.sorting = {};
+													content.sorting[item.source.ukey] = 'asc';
+													req.model.list(content,gcb);
+												},
+												ApplyBundle :['GetSource',function(gcb,gres){
+													var list = new Array();
+													var new_list = new Array();
+													for(var f in gres.GetSource){
+														new_list.push(gres.GetSource[f]);
+													}
+													async.forEach(gres.GetSource,function(gitem,gccb){
+														
+														async.auto({
+															getProductInfo : function(igccb){
+																var content = {};
+																content.table = 'product';
+																content.condition = {};
+																content.condition[item.source.ukey] = gitem[item.source.ukey];
+																req.model.item(content,igccb);
+															},
+															getBundle : ['getProductInfo',function(igccb,igcres){
+																if(igcres.getProductInfo){
+																	var content = {};
+																	content.table = 'bundle_item';
+																	content.condition = {
+																			bundle_item_id : igcres.getProductInfo._id.toString()
+																	};
+																	req.model.list(content,igccb);
+																}
+																else{
+																	igccb(null,null);
+																}
+																
+															}],
+															applyBundle : ['getBundle',function(igccb,igcres){
+																
+																	if(igcres.getBundle.length > 0 ){
+																		igcres.getBundle.forEach(function(data){
+																		
+																			data[item.source.quantity] = Number(data.quantity) * Number(gitem[item.source.quantity]);
+																			data.condition = gitem.condition;
+																			data.location = gitem.location;
+																			data.destination = gitem.destination;
+																			switch(req.params.table){
+																			case 'sales':
+																				switch(req.params.process){
+																					case 'order':
+																						data.refno = gitem.sono;
+																					break;
+																					case 'delivery':
+																						data.refno = gitem.drno;
+																					break;
+																					case 'return':
+																						data.refno = gitem.rmrno;
+																					break;
+																					case 'memo':
+																						data.refno = gitem.cmno;
+																					break;
+																				}
+																				
+																				break;
+																			case 'shipment' :
+																				data.refno = gitem.shipno;
+																				
+																				break;
+																			case 'consignment' :
+																				switch(req.params.process){
+																					case 'order':
+																						data.refno = gitem.cono;
+																					break;
+																					case 'delivery':
+																						data.refno = gitem.cdrno;
+																					break;
+																				}
+																				
+																				break;
+																			}
+																			if(Number(data[item.source.quantity]) > 0){
+																				new_list.push(data);
+																			}
+																		});
+																		var index = new_list.indexOf(gitem);
+																		new_list.splice(index, 1);
+																		igccb(null,new_list);
+																	}
+																	else{
+																		igccb(null,new_list);
+																	}
+																
+																
+															}]
+															
+														},gccb);
+													},function(err,out){
+														gcb(null,new_list);
+													});
+												}],
+												UpsertDestination : ['ApplyBundle',function(gcb,gres){
+													console.log("UpsertDestination");
+													var list = new Array();
+													for(var i = 0; i< gres.ApplyBundle.length - 1; i++){
+														for(var j = i+1; j < gres.ApplyBundle.length; j++){
+															if(gres.ApplyBundle[i].pno == gres.ApplyBundle[j].pno){
+																gres.ApplyBundle[i][item.source.quantity]+=gres.ApplyBundle[j][item.source.quantity];
+																gres.ApplyBundle[j][item.source.quantity] = 0;
+															}
+														}
+													}
+													for(var i = 0; i< gres.ApplyBundle.length ; i++){
+														if(gres.ApplyBundle[i][item.source.quantity] != 0){
+															list.push(gres.ApplyBundle[i]);
+														}
+													}
+													async.forEach(list,function(gitem,gccb){
+														async.auto({
+															checkInvExistence : function(igccb){
+																var content = {};
+																content.table = item.destination.table;
+																content.condition = {};
+																content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																content.condition["condition"] = gitem.condition;
+																content.condition["location"] = gitem.location;
+																req.model.item(content,igccb);
+															},
+															Evaluate : ['checkInvExistence',function(igccb,cigres){
+																
+																if(cigres.checkInvExistence){
+																	gitem.beginning = cigres.checkInvExistence[item.destination.quantity] || 0;
+																	if(req.utility.isNumber(gitem[item.source.quantity]) && gitem[item.source.quantity] > 0){
+																		var content = {};
+																		content.table = item.destination.table;
+																		content.condition = {};
+																		content.condition[item.destination.ukey] = gitem[item.source.ukey];
+																		content.condition["condition"] = gitem.condition;
+																		content.condition["location"] = gitem.location;
+																		content.record = {"$inc":{}};
+																		content.record["$inc"][item.destination.quantity] = gitem[item.source.quantity];
+																		req.model.update(content,igccb);
+																	}
+																    else{
+																    	igccb(null,null);
+																    }
+																}
+																else{
+																	gitem.beginning = 0;
+																	if(req.utility.isNumber(gitem[item.source.quantity]) && gitem[item.source.quantity] > 0){
+																		var content = {};
+																		content.table = item.destination.table;
+																		content.record = {};
+																		content.record[item.destination.ukey] = gitem[item.source.ukey];
+																		for(var ctr in item.reference){
+																			content.record[item.reference[ctr]] = gitem[item.reference[ctr]];
+																		}
+																		content.record["condition"] = gitem.condition;
+																		content.record["location"] = gitem.location;
+																		content.record[item.destination.quantity] = gitem[item.source.quantity];
+																		content.record["status"] = "Instock";
+																		req.model.add(content,igccb);
+																	}
+																	else{
+																	    	igccb(null,null);
+																	}
+																}
+															}],
+															LogHistory : ['Evaluate',function(igccb,cigres){
+																var content = {};
+																content.table = 'movement';
+																gitem.tdate = moment().format("YYYY-MM-DD HH:mm");
+																gitem.inv_in = gitem[item.source.quantity];
+																gitem.inv_out = 0;
+																gitem.ending = gitem.beginning + gitem.inv_in;
+																gitem.status = item.status;
+																switch(req.params.table){
+																case 'consignment' :
+																	gitem.refno = gitem.refno || gitem.cono;
+																	gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
+																	
+																	var loc = gitem.location;
+																	var des = gitem.destination;
+																	gitem.location = loc;
+																	gitem.destination = loc;
+																	
+																	gitem.field = item.destination.quantity;
+																	break;
+																}
+																content.record = gitem;
+																delete gitem._id;
+																req.model.add(content,igccb);
+															}]
+														},gccb);
+														
+													},gcb);
+												}]
+											},childcb);
 										}]
 									},iccb);
 								}

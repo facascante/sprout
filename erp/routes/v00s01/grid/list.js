@@ -1,17 +1,28 @@
 var async = require('async');
+var moment = require('moment');
+
 module.exports = function(req,res){
 	async.auto({
 		
 		filter : function(cb){
 			req.body.condition = req.body.fcond || {};
 			if(req.query){
+				var f =0;
 				for(var i in req.query){
 					if(i == 'id'){
 						req.body.condition._id = req.model.ObjectID.createFromHexString(req.query[i]);
 					}
 					else{
+						req.query[i] = req.utility.parseNumber(req.query[i]);
+						req.query[i] = req.utility.parseBoolean(req.query[i]);
+						req.query[i] = req.utility.parseJSON(req.query[i]);
 						req.body.condition[i] = req.query[i];
 					}
+					f++;
+				}
+				console.log('feffefef : '+f);
+				if(f>1){
+					delete req.body.condition[req.params.table+"_id"];
 				}
 			}
 			if(req.body._search == "true"){
@@ -21,6 +32,9 @@ module.exports = function(req,res){
 					var value = req.body.searchString;
 					var filter = req.utility.transformSearch(oper,field,value);
 					for(var i in filter){
+						filter[i] = req.utility.parseNumber(filter[i]);
+						filter[i] = req.utility.parseBoolean(filter[i]);
+						filter[i] = req.utility.parseJSON(filter[i]);
 						req.body.condition[i] = filter[i];
 					}
 				}
@@ -87,6 +101,7 @@ module.exports = function(req,res){
 			content.sorting = req.utility.transformSort(req.body.sidx,req.body.sord);
 			content.page = result.paging.start || 0;
 			content.rows = result.paging.limit || 100;
+			console.log(content);
 			req.model.list(content,function(err,result){
 				if(result){
 					cb(null,result);

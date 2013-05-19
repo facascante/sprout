@@ -170,6 +170,7 @@ module.exports = {
 							del : req.user.permission['del_'+req.params.table+'_'+req.params.process] || false,
 							view : req.user.permission['view_'+req.params.table+'_'+req.params.process] || false,
 							excel : req.user.permission['excel_'+req.params.table+'_'+req.params.process] || false,
+							print : req.user.permission['print_'+req.params.table+'_'+req.params.process] || false,
 					});
 					if(sub_table){
 						subgridPermission = JSON.stringify({
@@ -177,7 +178,7 @@ module.exports = {
 							edit : req.user.permission['edit_'+sub_table.table+'_'+sub_table.process] || false,
 							del : req.user.permission['del_'+sub_table.table+'_'+sub_table.process] || false,
 							view : req.user.permission['view_'+sub_table.table+'_'+sub_table.process] || false,
-							excel : req.user.permission['excel_'+sub_table.table+'_'+sub_table.process] || false,
+							print : req.user.permission['print_'+sub_table.table+'_'+sub_table.process] || false,
 					    });
 					}
 				}

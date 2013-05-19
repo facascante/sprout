@@ -2,7 +2,10 @@ var async = require('async');
 var json2csv = require('json2csv');
 
 module.exports = function(req,res){
-	req.params.query = req.query;
+	req.params.query = {};
+	for(var i in req.query){
+		req.params.query[i] = req.query[i];
+	}
 	delete req.query.nd;
 	delete req.query._search;
 	delete req.query.page;
@@ -27,17 +30,21 @@ module.exports = function(req,res){
 						condition._id = req.model.ObjectID.createFromHexString(req.body[i]);
 					}
 					else{
+						req.body[i] = req.utility.parseNumber(req.body[i]);
+						req.body[i] = req.utility.parseBoolean(req.body[i]);
+						req.body[i] = req.utility.parseJSON(req.body[i]);
 						condition[i] = req.body[i];
 					}
 				}
 			}
 			if(req.params.query._search == "true"){
-				if(!req.body.filters){
+				if(!req.params.query.filters){
 					var field = req.params.query.searchField;
 					var oper = req.params.query.searchOper;
 					var value = req.params.query.searchString;
 					var filter = req.utility.transformSearch(oper,field,value);
 					for(var i in filter){
+						
 						condition[i] = filter[i];
 					}
 				}
@@ -61,6 +68,7 @@ module.exports = function(req,res){
 			}
 			var content = {};
 			content.table = req.params.table;
+			delete condition.status;
 			content.condition = condition || {};
 			req.model.count(content,function(err,result){
 				if(result){
@@ -86,7 +94,7 @@ module.exports = function(req,res){
 			content.sorting = req.utility.transformSort('sequence','asc');
 			req.model.list(content,function(err,result){
 				if(result){
-					var columns = {};
+					var columns = {_id:true};
 					var labels = new Array();
 					for(var i in result){
 						columns[result[i].index] = true;
@@ -107,6 +115,16 @@ module.exports = function(req,res){
 				}
 			});
 		}],
+		getProcessInfo : ['filter',function(cb,result){
+			
+			var content = {};
+			content.table = 'process';
+			content.condition = {
+					table : req.params.table,
+					process : req.params.process
+			};
+			req.model.item(content,cb);
+		}],
 		list : ['getProcessField',function(cb,result){
 			
 			var content = {};
@@ -123,40 +141,123 @@ module.exports = function(req,res){
 				}
 			});
 		}],
-		menuFilter :['list',function(cb,result){
-			if(req.params.table == 'menu'){
-				var list = result.list;
-				var new_list = new Array();
-				for(var i in list){
-					if(list[i].table && list[i].process){
-						if(req.user.permission['view_'+list[i].table+'_'+list[i].process]){
-							new_list.push(list[i]);
+		getChildProcessField : ['getProcessInfo',function(cb,result){
+			if(result.getProcessInfo.subGrid){
+				var content = {};
+				content.table = 'parameter';
+				content.condition = {
+						table : result.getProcessInfo.subconfig.table,
+						process : result.getProcessInfo.subconfig.process
+				};
+				content.columns = {
+						index:1,
+						label:1
+				};
+				content.sorting = req.utility.transformSort('sequence','asc');
+				req.model.list(content,function(err,cres){
+					if(cres){
+						var columns = {};
+						var labels = new Array();
+						for(var i in cres){
+							columns[cres[i].index] = true;
+							labels.push(cres[i].label);
 						}
+						columns[result.getProcessInfo.subconfig.process + "_created_by"] = true;
+						labels.push(result.getProcessInfo.subconfig.process + "_created_by");
+						columns[result.getProcessInfo.subconfig.process + "_created_at"] = true;
+						labels.push(result.getProcessInfo.subconfig.process + "_created_at");
+						columns[result.getProcessInfo.subconfig.process + "_updated_by"] = true;
+						labels.push(result.getProcessInfo.subconfig.process + "_updated_by");
+						columns[result.getProcessInfo.subconfig.process + "_updated_at"] = true;
+						labels.push(result.getProcessInfo.subconfig.process + "_updated_at");
+						cb(null,{columns:columns,labels:labels});
 					}
 					else{
-						new_list.push(list[i]);
+						cb(err);
 					}
+				});
+			}
+			else{
+				cb(null,null);
+			}
+		}],
+		getChildList : ['list','getProcessInfo','getChildProcessField',function(cb,result){
+			if(result.getProcessInfo.subGrid){
+				var new_list = new Array();
+				async.forEach(result.list,function(item,ccb){
+					
+					var content = {};
+					content.table = result.getProcessInfo.subconfig.table;
+					content.condition = {};
+					var ctr = 0;
+					for(var i in result.getProcessInfo.subconfig.link){
+						content.condition[result.getProcessInfo.subconfig.link[i]] = item[result.getProcessInfo.subconfig.link[i]];
+						ctr++;
+					}
+					if(ctr < 1){
+						content.condition[cres.getProcessInfo.subconfig.table+"_id"] = item._id;
+					}
+					
+					content.columns = result.getChildProcessField.columns;
+					content.sorting = {};
+					content.sorting.brand = 1;
+					req.model.list(content,function(err,result){
+						delete item._id;
+						if(err){
+							ccb(err);
+							
+						}
+						else{
+							if(result){
+								new_list.push({"parent":item,"child":result});
+								ccb(null,null);
+							}
+							else{
+								new_list.push({"parent":item});
+							}
+						}
+					});
+				},function(err,results){
+					if(err){
+						cb(err);
+					}
+					else{
+						cb(null,new_list);
+					}
+					
+				});
+			}
+			else{
+				var new_list = new Array();
+				for(var i in result.list){
+					delete result.list[i]._id;
+					new_list.push({"parent":result.list[i]});
 				}
 				cb(null,new_list);
 			}
-			else{
-				cb(null,result.list);
-			}
-			
 		}],
-		transform : ['menuFilter',function(cb,result){
+		transform : ['getChildList',function(cb,result){
 			
-			var list = result.menuFilter;
+			var list = result.getChildList;
 			var collection = new Array();
 			list.forEach(function(row){
-				var new_row = {};
+				var new_row = {parent:{},child:new Array()};
+				delete result.getProcessField.columns._id;
 				for(var j in result.getProcessField.columns){
 					if(j!='id')
-					new_row[j] = req.utility.stringToJSON(row[j] || "");
+					new_row.parent[j] = req.utility.stringToJSON(row.parent[j] || "");
 				}
+				row.child.forEach(function(child_row){
+					var new_child_row = {};
+					for(var j in result.getChildProcessField.columns){
+						if(j!='id')
+							new_child_row[j] = req.utility.stringToJSON(child_row[j] || "");
+					}
+					new_row.child.push(new_child_row);
+				})
 				collection.push(new_row);
 			});
-			
+			console.log(collection);
 			cb(null,collection);
 		}],
 		exportToFile : ['transform',function(cb,result){
@@ -171,17 +272,35 @@ module.exports = function(req,res){
 					cb(err,csv);
 				});
 */				html+="<thead>";
-				for(var i in result.getProcessField.columns){
-					html+="<th>"+i+"</th>";
+				for(var i in result.getProcessField.labels){
+					html+="<th>"+result.getProcessField.labels[i]+"</th>";
 				}
 				html+="</thead>";
 				
 				for(var i in result.transform){
+					var col_ctr = 0;
 					html+="<tr>";
-					for(var j in result.transform[i]){
-						html+="<td>"+result.transform[i][j]+"</td>";
+					for(var j in result.transform[i].parent){
+						html+="<td>"+result.transform[i].parent[j]+"</td>";
+						col_ctr++;
 					}
 					html+="</tr>";
+					if(result.transform[i].child){
+						html+="<tr><td>&nbsp;</td><td colspan = "+col_ctr+"><table>";
+						html+="<tr>";
+						for(var m in result.getChildProcessField.labels){
+							html+="<th>"+result.getChildProcessField.labels[m]+"</th>";
+						}
+						html+="</tr>";
+						for(var k in result.transform[i].child){
+							html+="<tr>";
+							for(var l in result.transform[i].child[k]){
+								html+="<td>"+result.transform[i].child[k][l]+"</td>";
+							}
+							html+="</tr>";
+						}
+						html+="</table></td></tr>";
+					}
 				}
 				
 				html+="</table>";
@@ -195,7 +314,7 @@ module.exports = function(req,res){
 		if(result){
 			res.contentType('xls');
 			var time = new Date().getTime();
-			res.attachment(req.params.process + '_' + time + '.xls');
+			res.attachment(req.params.table +"_"+req.params.process + '_' + time + '.xls');
 			res.send(result.exportToFile);
 		}
 		else{

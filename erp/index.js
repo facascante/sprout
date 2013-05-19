@@ -77,7 +77,7 @@ app.post('/grid/prov/:table/:process/:version',auth,isAllowed,autoload.grid.prov
 app.post('/grid/:table/:process/:version',auth,isAllowed,autoload.grid.list);
 app.get('/grid/:table/:process/:version',auth,isAllowed,autoload.grid.download);
 app.post('/api/grid/upload/:table/:process/:field/:id',auth,autoload.grid.upload);
-app.get('/grid/print/:document/:refno',auth,autoload.grid.print);
+app.get('/grid/print/:document/:process/:refno',auth,autoload.grid.print);
 
 /*
  * API Objects

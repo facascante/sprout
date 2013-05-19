@@ -23,6 +23,15 @@
 |            return "Yes";
 |         }
 |    }
+|    function getColumnIndexByName(grid, columnName) {
+|        var cm = grid.jqGrid('getGridParam', 'colModel'), i, l = cm.length;
+|        for (i = 0; i < l; i++) {
+|           if (cm[i].name === columnName) {
+|               return i; // return the index
+|           }
+|        }
+|        return -1;
+|    }
 |    function acadd(elem, url) {
 |        setTimeout(function () {
 |            $(elem).autocomplete({
@@ -362,7 +371,23 @@
 |            title: "Click Here to Download Selection",
 |            buttonicon: "ui-icon-circle-arrow-s",
 |            onClickButton : function () { 
-|              jQuery("#grid_table").jqGrid('excelExport',{"url":"/grid/"+collection.table+"/"+collection.process+"/v00s01","method":"POST"});
+|              jQuery("#grid_table").jqGrid('excelExport',{"url":"/grid/"+collection.table+"/"+collection.process+"/v00s01"});
+|            } 
+|       });
+|    }
+|    if(permission.print == true){
+|       jQuery("#grid_table").jqGrid('navButtonAdd','#grid_pager',{
+|            caption: "",
+|            title: "Click Here to Print Selection",
+|            buttonicon: "ui-icon-print",
+|            onClickButton : function () { 
+|              var rids = jQuery("#grid_table").jqGrid('getGridParam','selarrrow');
+|              if(rids.length > 0){
+|                  jQuery("#grid_table").jqGrid('excelExport',{"url":"/grid/print/"+collection.table+"/"+collection.process+"/"+rids[0]});
+|              }
+|              else{
+|                  alert("Please check the record!");
+|              }
 |            } 
 |       });
 |    }

@@ -11,14 +11,14 @@ var utility = {
 				sord = Number(sord.replace('desc',-1).replace('asc',1));
 			}
 			else{
-				sord = "asc";
+				sord = 1;
 			}
 			var nsidx = sidx.split(', ');
 			if(nsidx.length > 1){
 				for(var i in nsidx){
 					var ninsidx = nsidx[i].split(' ');
 					if(ninsidx.length == 2){
-						sort[ninsidx[0]] = ninsidx[1];
+						sort[ninsidx[0]] = Number(ninsidx[1].replace('desc',-1).replace('asc',1));
 					}
 					else{
 						sort[ninsidx[0]] = sord;
@@ -93,7 +93,7 @@ var utility = {
 				case 'le' : result[field] = {$lte : value}; break;
 				case 'gt' : result[field] = {$gt : value}; break;
 				case 'ge' : result[field] = {$gte : value}; break;
-				case 'bw' : 
+				case 'bw' : result[field] = (!isNaN(parseFloat(value)) && isFinite(value)) ? parseFloat(value) : new RegExp('^'+value); break; 
 				case 'ew' :
 				case 'cn' :
 				case 'in' : result[field] = (!isNaN(parseFloat(value)) && isFinite(value)) ? parseFloat(value) : new RegExp(value); break; 
