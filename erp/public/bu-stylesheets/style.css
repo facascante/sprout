@@ -1,0 +1,169 @@
+.login-bg {
+	background: url("/images/transparent-image.png") repeat scroll 0 0 transparent;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    height: 302px;
+    padding: 6px;
+    width: 540px;
+}
+
+.container {
+    min-width: 316px;
+    padding-top: 30px;
+    width: auto;
+}
+
+.module-container {
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+    width: 554px;
+}
+
+.form-content input {
+	background: none repeat scroll 0 0 #F5F5F5;
+    border: 0.15em solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 14px;
+    height: 22px;
+     padding: 4px 24px 10px 10px;
+    margin: 8px;
+    width: 270px;
+    float:right;
+}
+
+.form-content label {
+    color: #666666;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 9px 7px 6px 10px;
+    margin: 8px;
+    text-shadow: 0 1px #FFFFFF;
+    float:left;
+}
+
+.message {
+    color: #666666;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    padding: 9px 7px 6px 200px;
+    margin: 8px;
+    text-shadow: 0 1px #FFFFFF;
+    float:left;
+}
+
+.form-content {
+    height: 330px;
+    padding: 50px;
+}
+
+.button-login {
+    background: url("/images/login_button.png") no-repeat scroll 0 0 transparent;
+    height: 41px;
+    margin: 142px 0 0 166px;
+    width: 106px;
+}
+
+.breaker {
+    height: 17px;
+}
+
+body {
+    background: url("/images/gen-bg.jpg") repeat scroll 0 0 #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+#header_wrapper {
+    background: url("/images/template_header_bg.jpg") repeat-x scroll 0 0 transparent;
+    height: 70px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top:13px;
+}
+
+#header { 
+     background: url("/images/blpilogo.jpg") no-repeat 0 center transparent; 
+    background-size: contain;
+    height: 67px;
+    margin: 0 auto 10px 1%;
+    width: 99%;
+}
+
+#header #search_section {
+     float: right;
+    margin-right: 0;
+    margin-top: 18px;
+}
+
+#search_section form {
+    margin: 0;
+    padding: 0;
+    min-width:300px;
+}
+
+#searchfield {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #b5b9b1;
+    color: #000000;
+    font-size: 11px;
+    font-variant: normal;
+    height: 12px;
+    line-height: normal;
+    padding: 5px;
+    width: 150px;
+}
+
+#logout-button {
+    background: url("/images/logout_button.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 34px;
+    width: 69px;
+}
+
+#searchbutton {
+    background: url("/images/search_button.png") repeat scroll 0 0 transparent;
+    background-size: contain;
+    border: medium none;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    height: 25px;
+    margin: 0 0 0 7px;
+    padding: 0 16px;
+    text-align: center;
+    vertical-align: bottom;
+    white-space: pre;
+    width: 74px;
+}
+#content {
+		padding: 1%;
+		height: auto;
+		width: auto;
+}
+
+#menu-sub {
+	float : left;
+	padding-right:20px;
+	padding-bottom:20px;
+	width:auto;
+	height:auto;
+}
+#page-sub {
+  float : left;
+  width:auto;
+  height:auto;
+  
+}
+
+#menu-sub .ui-jqgrid tr.jqgrow td { border-right: 0px none; border-bottom: 0px none; font-size: 13; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+.ui-jqgrid tr.jqgrow td {
+  white-space: normal !important;
+  height:auto;
+  valign:top;
+  padding-top:2px;
+}

@@ -92,16 +92,51 @@ module.exports.print = function(siinfo,result){
 	doc.y = 275;
 	for(var i in siinfo.detail){
 		var y= doc.y;
+		var highy = doc.y;
+		doc.moveDown(0.5);
 		doc.font('Courier');
 		doc.text(siinfo.detail[i].code,40,y,{width:70});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].name,115,y,{width:80});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].description,200,y,{width:115});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].quantity,325,y,{width:35});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].uom,365,y,{width:50});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].pprice,415,y,{width:40});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].tdiscount,465,y,{width:60});
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
 		doc.text(siinfo.detail[i].total,530,y,{width:60});
-		doc.moveDown(0.5);
+		if(doc.y > highy){
+			highy = doc.y;
+		}
+		console.log(doc.y);
+		doc.y = highy;
+		
 		if(doc.y >= 640){
 			doc.addPage();
 			doc = pdf.pageHeader(doc,siinfo);

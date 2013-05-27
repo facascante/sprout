@@ -195,7 +195,7 @@ module.exports = function(req,res){
 						ctr++;
 					}
 					if(ctr < 1){
-						content.condition[cres.getProcessInfo.subconfig.table+"_id"] = item._id;
+						content.condition[result.getProcessInfo.subconfig.table+"_id"] = item._id;
 					}
 					
 					content.columns = result.getChildProcessField.columns;

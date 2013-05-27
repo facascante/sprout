@@ -1,0 +1,71 @@
+Mon May 20 06:13:47 [initandlisten] MongoDB starting : pid=526 port=27017 dbpath=/Users/chito/Google Drive/code/sprout/erp-may/data 64-bit host=chitombp
+Mon May 20 06:13:47 [initandlisten] 
+Mon May 20 06:13:47 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Mon May 20 06:13:47 [initandlisten] db version v2.2.0, pdfile version 4.5
+Mon May 20 06:13:47 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Mon May 20 06:13:47 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Mon May 20 06:13:47 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Mon May 20 06:13:47 [initandlisten] journal dir=/Users/chito/Google Drive/code/sprout/erp-may/data/journal
+Mon May 20 06:13:47 [initandlisten] recover begin
+Mon May 20 06:13:47 [initandlisten] recover lsn: 12590729
+Mon May 20 06:13:47 [initandlisten] recover /Users/chito/Google Drive/code/sprout/erp-may/data/journal/j._0
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:54320 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:165065 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:329965 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:384905 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:439985 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:494985 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:549905 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:604825 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section seq:659835 < lsn:12590729
+Mon May 20 06:13:47 [initandlisten] recover skipping application of section more...
+Mon May 20 06:13:47 [initandlisten] recover cleaning up
+Mon May 20 06:13:47 [initandlisten] removeJournalFiles
+Mon May 20 06:13:47 [initandlisten] recover done
+Mon May 20 06:13:47 [websvr] admin web console waiting for connections on port 28017
+Mon May 20 06:13:47 [initandlisten] waiting for connections on port 27017
+Mon May 20 06:14:09 [initandlisten] connection accepted from 127.0.0.1:50999 #1 (1 connection now open)
+Mon May 20 06:14:09 [initandlisten] connection accepted from 127.0.0.1:51000 #2 (2 connections now open)
+Mon May 20 06:14:09 [initandlisten] connection accepted from 127.0.0.1:51001 #3 (3 connections now open)
+Mon May 20 06:14:09 [initandlisten] connection accepted from 127.0.0.1:51002 #4 (4 connections now open)
+Mon May 20 06:14:09 [initandlisten] connection accepted from 127.0.0.1:51003 #5 (5 connections now open)
+Mon May 20 06:14:20 [conn3] query erp.movement query: { $query: { location: "BeautyLaneMainwarehouse", name: 2030, pno: 838, code: 70419, condition: "Good" }, orderby: { _id: 1 } } cursorid:7966432079717830986 ntoreturn:10 ntoskip:0 nscanned:128 keyUpdates:0 locks(micros) r:253007 nreturned:10 reslen:7397 253ms
+Mon May 20 06:15:14 [conn2] warning: can't find plugin [asc]
+Mon May 20 06:15:22 [conn2] warning: can't find plugin [asc]
+Mon May 20 06:15:22 [conn4] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Mon May 20 06:16:03 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Mon May 20 06:16:30 [conn5] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Mon May 20 06:17:56 [conn3] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Mon May 20 06:18:51 [conn5] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51003 (4 connections now open)
+Mon May 20 06:18:51 [conn4] end connection 127.0.0.1:51002 (4 connections now open)
+Mon May 20 06:18:51 [conn3] end connection 127.0.0.1:51001 (4 connections now open)
+Mon May 20 06:18:51 [conn2] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:51000 (4 connections now open)
+Mon May 20 06:18:51 [conn1] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:50999 (4 connections now open)
+Mon May 20 06:19:12 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Mon May 20 06:19:12 [interruptThread] now exiting
+Mon May 20 06:19:12 dbexit: 
+Mon May 20 06:19:12 [interruptThread] shutdown: going to close listening sockets...
+Mon May 20 06:19:12 [interruptThread] closing listening socket: 6
+Mon May 20 06:19:12 [interruptThread] closing listening socket: 7
+Mon May 20 06:19:12 [interruptThread] closing listening socket: 8
+Mon May 20 06:19:12 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Mon May 20 06:19:12 [interruptThread] shutdown: going to flush diaglog...
+Mon May 20 06:19:12 [interruptThread] shutdown: going to close sockets...
+Mon May 20 06:19:12 [interruptThread] shutdown: waiting for fs preallocator...
+Mon May 20 06:19:12 [interruptThread] shutdown: lock for final commit...
+Mon May 20 06:19:12 [interruptThread] shutdown: final commit...
+Mon May 20 06:19:12 [interruptThread] shutdown: closing all files...
+Mon May 20 06:19:12 [interruptThread] closeAllFiles() finished
+Mon May 20 06:19:12 [interruptThread] journalCleanup...
+Mon May 20 06:19:12 [interruptThread] removeJournalFiles
+Mon May 20 06:19:12 [interruptThread] shutdown: removing fs lock...
+Mon May 20 06:19:12 dbexit: really exiting now

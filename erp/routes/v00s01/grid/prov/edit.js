@@ -144,8 +144,11 @@ module.exports = function(req,res){
 																			case 'return':
 																				data.refno = gitem.rmrno;
 																			break;
+																			case 'invoice':
+																				data.refno = gitem.drno;
+																			break;
 																			case 'memo':
-																				data.refno = gitem.cmno;
+																				data.refno = gitem.rmrno;
 																			break;
 																		}
 																		
@@ -266,7 +269,10 @@ module.exports = function(req,res){
 																	gitem.refno = gitem.refno || gitem.rmrno;
 																break;
 																case 'memo':
-																	gitem.refno = gitem.refno || gitem.cmno;
+																	gitem.refno = gitem.refno || gitem.rmrno;
+																break;
+																case 'invoice':
+																	gitem.refno = gitem.refno || gitem.drno;
 																break;
 															}
 															gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
@@ -361,7 +367,10 @@ module.exports = function(req,res){
 																			data.refno = gitem.rmrno;
 																		break;
 																		case 'memo':
-																			data.refno = gitem.cmno;
+																			data.refno = gitem.rmrno;
+																		break;
+																		case 'invoice':
+																			data.refno = gitem.drno;
 																		break;
 																	}
 																	
@@ -526,7 +535,10 @@ module.exports = function(req,res){
 																		gitem.refno = gitem.refno || gitem.rmrno;
 																	break;
 																	case 'memo':
-																		gitem.refno = gitem.refno || gitem.cmno;
+																		gitem.refno = gitem.refno || gitem.rmrno;
+																	break;
+																	case 'invoice':
+																		gitem.refno = gitem.refno || gitem.drno;
 																	break;
 																}
 																gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
@@ -624,7 +636,10 @@ module.exports = function(req,res){
 																					data.refno = gitem.rmrno;
 																				break;
 																				case 'memo':
-																					data.refno = gitem.cmno;
+																					data.refno = gitem.rmrno;
+																				break;
+																				case 'invoice':
+																					data.refno = gitem.drno;
 																				break;
 																			}
 																			
