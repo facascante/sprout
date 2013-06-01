@@ -132,7 +132,17 @@ module.exports = function(req,res){
 			}
 			
 		}],
-		transform : ['menuFilter',function(cb,result){
+		getParameters : function(cb){
+			var content = {};
+			content.table = 'parameter',
+			content.condition = {
+				table : req.params.table,
+				process:req.params.process
+			};
+			content.columns = {index:1,_id:0};
+			req.model.list(content,cb);
+		},
+		transform : ['menuFilter','getParameters',function(cb,result){
 			
 			var list = result.menuFilter;
 			var collection = {};
@@ -147,7 +157,21 @@ module.exports = function(req,res){
 				}
 				row.id = row._id;
 				delete row._id;
-				collection.rows.push(row);
+				var parameters = result.getParameters;
+				var new_row = {};
+				console.log("chito");
+				console.log(parameters);
+				if(parameters.length && req.params.table != 'menu'){
+					for(var i in parameters){
+						new_row[parameters[i].index] = row[parameters[i].index] || "";
+					}
+					new_row.id = row.id;
+					collection.rows.push(new_row);
+				}
+				else{
+					collection.rows.push(row);
+				}
+				
 			});
 			cb(null,collection);
 		}]

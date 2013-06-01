@@ -160,6 +160,7 @@ function applyGrid(req,res,render_page){
 					view : req.user.permission['view_'+req.params.table+'_'+req.params.process] || false,
 					excel : req.user.permission['excel_'+req.params.table+'_'+req.params.process] || false,
 					print : req.user.permission['print_'+req.params.table+'_'+req.params.process] || false,
+					copy : req.user.permission['copy_'+req.params.table+'_'+req.params.process] || false,
 			});
 			if(sub_table){
 				subgridPermission = JSON.stringify({
@@ -168,6 +169,7 @@ function applyGrid(req,res,render_page){
 					del : req.user.permission['del_'+sub_table.table+'_'+sub_table.process] || false,
 					view : req.user.permission['view_'+sub_table.table+'_'+sub_table.process] || false,
 					print : req.user.permission['print_'+sub_table.table+'_'+sub_table.process] || false,
+					copy : req.user.permission['copy_'+sub_table.table+'_'+sub_table.process] || false,
 			    });
 			}
 		}

@@ -1,0 +1,54 @@
+Tue May 21 14:46:41 [initandlisten] MongoDB starting : pid=1233 port=27017 dbpath=/Users/chito/Google Drive/code/sprout/erp-may/data 64-bit host=chitombp
+Tue May 21 14:46:41 [initandlisten] 
+Tue May 21 14:46:41 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Tue May 21 14:46:41 [initandlisten] db version v2.2.0, pdfile version 4.5
+Tue May 21 14:46:41 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Tue May 21 14:46:41 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Tue May 21 14:46:41 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Tue May 21 14:46:41 [initandlisten] journal dir=/Users/chito/Google Drive/code/sprout/erp-may/data/journal
+Tue May 21 14:46:41 [initandlisten] recover : no journal files present, no recovery needed
+Tue May 21 14:46:42 [websvr] admin web console waiting for connections on port 28017
+Tue May 21 14:46:42 [initandlisten] waiting for connections on port 27017
+Tue May 21 14:46:43 [initandlisten] connection accepted from 127.0.0.1:57640 #1 (1 connection now open)
+Tue May 21 14:46:43 [initandlisten] connection accepted from 127.0.0.1:57641 #2 (2 connections now open)
+Tue May 21 14:46:43 [initandlisten] connection accepted from 127.0.0.1:57642 #3 (3 connections now open)
+Tue May 21 14:46:43 [initandlisten] connection accepted from 127.0.0.1:57643 #4 (4 connections now open)
+Tue May 21 14:46:43 [initandlisten] connection accepted from 127.0.0.1:57644 #5 (5 connections now open)
+Tue May 21 14:46:45 [initandlisten] connection accepted from 127.0.0.1:57656 #6 (6 connections now open)
+Tue May 21 14:50:28 [conn6] end connection 127.0.0.1:57656 (5 connections now open)
+Tue May 21 14:52:35 [initandlisten] connection accepted from 127.0.0.1:59372 #7 (6 connections now open)
+Tue May 21 14:52:35 [conn7] end connection 127.0.0.1:59372 (5 connections now open)
+Tue May 21 14:52:52 [initandlisten] connection accepted from 127.0.0.1:59452 #8 (6 connections now open)
+Tue May 21 14:52:52 [conn8] end connection 127.0.0.1:59452 (5 connections now open)
+Tue May 21 15:01:03 [initandlisten] connection accepted from 127.0.0.1:61752 #9 (6 connections now open)
+Tue May 21 15:01:03 [conn9] end connection 127.0.0.1:61752 (5 connections now open)
+Tue May 21 15:01:29 [initandlisten] connection accepted from 127.0.0.1:61874 #10 (6 connections now open)
+Tue May 21 15:01:29 [conn10] end connection 127.0.0.1:61874 (5 connections now open)
+Tue May 21 15:01:41 [initandlisten] connection accepted from 127.0.0.1:61935 #11 (6 connections now open)
+Tue May 21 15:01:41 [conn11] end connection 127.0.0.1:61935 (5 connections now open)
+Tue May 21 15:02:06 [initandlisten] connection accepted from 127.0.0.1:62060 #12 (6 connections now open)
+Tue May 21 15:02:06 [conn12] end connection 127.0.0.1:62060 (5 connections now open)
+Tue May 21 15:07:49 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Tue May 21 15:07:49 [interruptThread] now exiting
+Tue May 21 15:07:49 dbexit: 
+Tue May 21 15:07:49 [interruptThread] shutdown: going to close listening sockets...
+Tue May 21 15:07:49 [interruptThread] closing listening socket: 6
+Tue May 21 15:07:49 [interruptThread] closing listening socket: 7
+Tue May 21 15:07:49 [interruptThread] closing listening socket: 8
+Tue May 21 15:07:49 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Tue May 21 15:07:49 [interruptThread] shutdown: going to flush diaglog...
+Tue May 21 15:07:49 [interruptThread] shutdown: going to close sockets...
+Tue May 21 15:07:49 [interruptThread] shutdown: waiting for fs preallocator...
+Tue May 21 15:07:49 [conn1] end connection 127.0.0.1:57640 (4 connections now open)
+Tue May 21 15:07:49 [interruptThread] shutdown: lock for final commit...
+Tue May 21 15:07:49 [conn2] end connection 127.0.0.1:57641 (4 connections now open)
+Tue May 21 15:07:49 [interruptThread] shutdown: final commit...
+Tue May 21 15:07:49 [conn3] end connection 127.0.0.1:57642 (4 connections now open)
+Tue May 21 15:07:49 [conn4] end connection 127.0.0.1:57643 (4 connections now open)
+Tue May 21 15:07:49 [conn5] end connection 127.0.0.1:57644 (4 connections now open)
+Tue May 21 15:07:49 [interruptThread] shutdown: closing all files...
+Tue May 21 15:07:49 [interruptThread] closeAllFiles() finished
+Tue May 21 15:07:49 [interruptThread] journalCleanup...
+Tue May 21 15:07:49 [interruptThread] removeJournalFiles
+Tue May 21 15:07:49 [interruptThread] shutdown: removing fs lock...
+Tue May 21 15:07:49 dbexit: really exiting now

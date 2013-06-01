@@ -82,6 +82,13 @@ module.exports = {
 				}
 				var instance = version[req.params.version];
 				execute(instance,res,instance.grid.print(req,res));
+			},
+			copy : function(req,res){
+				if((typeof req.params.version == 'undefined')){
+					req.params.version = "v00s01";
+				}
+				var instance = version[req.params.version];
+				execute(instance,res,instance.grid.copy(req,res));
 			}
 		},
 		api : {

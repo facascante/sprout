@@ -95,7 +95,7 @@
 |                    editCaption: subcol.caption,
 |                    recreateForm:true,
 |                    savekey:[true,13],
-|                    closeAfterEdit:true,
+|                    closeAfterEdit:false,
 |                    closeAfterAdd:true,
 |                    navkeys:true,
 |                    closeOnEscape:true,
@@ -150,7 +150,7 @@
 |                    recreateForm:true,
 |                    addCaption: subcol.caption,
 |                    savekey:[true,13],
-|                    closeAfterEdit:true,
+|                    closeAfterEdit:false,
 |                    closeAfterAdd:true,
 |                    navkeys:true,
 |                    closeOnEscape:true,
@@ -234,7 +234,7 @@
 |                    reloadAfterSubmit:true,
 |                    recreateForm:true,
 |                    savekey:[true,13],
-|                    closeAfterEdit:true,
+|                    closeAfterEdit:false,
 |                    closeAfterAdd:true,
 |                    navkeys:true,
 |                    closeOnEscape:true,
@@ -289,7 +289,7 @@
 |                    addCaption: collection.caption,
 |                    recreateForm:true,
 |                    savekey:[true,13],
-|                    closeAfterEdit:true,
+|                    closeAfterEdit:false,
 |                    closeAfterAdd:true,
 |                    navkeys:true,
 |                    closeOnEscape:true,
@@ -388,6 +388,28 @@
 |              var rids = jQuery("#grid_table").jqGrid('getGridParam','selarrrow');
 |              if(rids.length > 0){
 |                  jQuery("#grid_table").jqGrid('excelExport',{"url":"/grid/print/"+collection.table+"/"+collection.process+"/"+rids[0]});
+|              }
+|              else{
+|                  alert("Please check the record!");
+|              }
+|            } 
+|       });
+|    }
+|    if(permission.copy == true){
+|       jQuery("#grid_table").jqGrid('navButtonAdd','#grid_pager',{
+|            caption: "",
+|            title: "Click Here to Copy Selection",
+|            buttonicon: "ui-icon-copy",
+|            onClickButton : function () { 
+|              var rids = jQuery("#grid_table").jqGrid('getGridParam','selarrrow');
+|              if(rids.length > 0){
+|                    jQuery("#grid_table").jqGrid('editGridRow',rids[0],{
+|                        onClose : function(){
+|                           jQuery("#grid_table").trigger("reloadGrid")
+|                           return true;
+|                        },
+|                        "url":"/grid/copy/"+collection.table+"/"+collection.process+"/"+rids
+|                    });
 |              }
 |              else{
 |                  alert("Please check the record!");
