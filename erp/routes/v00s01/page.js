@@ -13,14 +13,12 @@ function applyGrid(req,res,render_page){
 				if(result){
 					for(var i in result){
 						if(result[i].editrules && result[i].editrules.required && !result[i].formoptions){
-							result[i].formoptions = {"elmprefix":"(*)"};
-							
+							result[i].formoptions = {"elmsuffix":"<span class='required-field'>&nbsp;&nbsp;* Required</span><img class='help-field', src='/images/help.jpg' title='"+(result[i].description || "No descirption available")+"'/>"};
 						}
 						else{
-							if(!result[i].formoptions){
-								result[i].formoptions = {"elmprefix":"&nbsp;&nbsp;&nbsp;&nbsp;"};
-							}
+							result[i].formoptions = {"elmsuffix":"<img class='help-field', src='/images/help.jpg' title='"+(result[i].description || "No description available")+"'/>"};
 						}
+						
 
 					}
 				}
@@ -78,13 +76,10 @@ function applyGrid(req,res,render_page){
 					if(result){
 						for(var i in result){
 							if(result[i].editrules && result[i].editrules.required && !result[i].formoptions){
-								result[i].formoptions = {"elmprefix":"(*)"};
-								
+								result[i].formoptions = {"elmsuffix":"<span class='required-field'>&nbsp;&nbsp;* Required</span><img class='help-field', src='/images/help.jpg' title='"+(result[i].description || "No description available")+"'/>"};
 							}
 							else{
-								if(!result[i].formoptions){
-									result[i].formoptions = {"elmprefix":"&nbsp;&nbsp;&nbsp;&nbsp;"};
-								}
+								result[i].formoptions = {"elmsuffix":"<img class='help-field', src='/images/help.jpg' title='"+(result[i].description || "No description available")+"'/>"};
 							}
 
 						}

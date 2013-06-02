@@ -1,0 +1,12 @@
+Sat Jun  1 15:25:06 [initandlisten] MongoDB starting : pid=466 port=27017 dbpath=/Users/chito/Google Drive/code/sprout/erp-june/data 64-bit host=chitombp
+Sat Jun  1 15:25:06 [initandlisten] 
+Sat Jun  1 15:25:06 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sat Jun  1 15:25:06 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sat Jun  1 15:25:06 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sat Jun  1 15:25:06 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Sat Jun  1 15:25:06 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Sat Jun  1 15:25:06 [initandlisten] journal dir=/Users/chito/Google Drive/code/sprout/erp-june/data/journal
+Sat Jun  1 15:25:06 [initandlisten] recover : no journal files present, no recovery needed
+Sat Jun  1 15:25:06 [websvr] admin web console waiting for connections on port 28017
+Sat Jun  1 15:25:06 [initandlisten] waiting for connections on port 27017
+Sun Jun  2 05:59:21 got signal 15 (Terminated: 15), will terminate after current cmd ends

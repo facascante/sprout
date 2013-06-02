@@ -1,3 +1,23 @@
+.tooltip {
+    display:none;
+    background:transparent url(/images/black_arrow.png);
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    color:#eee;
+ }
+ .help-field {
+    float: right;
+    height: 20px;
+    padding-right: 10%;
+    width: 20px;
+ }
+ 
+  .required-field {
+    color:#2E6E9E;
+ }
+  
 .login-bg {
 	background: url("/images/transparent-image.png") repeat scroll 0 0 transparent;
     border-radius: 6px 6px 6px 6px;
