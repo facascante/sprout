@@ -360,11 +360,14 @@
 |                  dropbyname:true,
 |                  ondrop: function (ev, ui, getdata) {
 |                    var rids = $('#grid_table').jqGrid('getDataIDs');
-|                    jQuery("#grid_table").jqGrid('editGridRow',rids[0],{onClose : function(){
-|                        jQuery("#grid_table").trigger("reloadGrid")
-|                        return true;
-|                    
-|                    }}); 
+|                    jQuery("#grid_table").jqGrid('editGridRow',rids[0],{
+|                        onClose : function(){
+|                            jQuery("#grid_table").trigger("reloadGrid")
+|                            return true;
+|                        },
+|                        closeAfterEdit:true,
+|                        editCaption:"Copy To New Record"
+|                    }); 
 |                  },
 |                  drag_opts:{stop:null}
 |              }
