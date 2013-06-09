@@ -1,0 +1,45 @@
+Sat Jun  8 17:53:57 [initandlisten] MongoDB starting : pid=380 port=27017 dbpath=/Users/chito/Google Drive/code/sprout/erp-june/data 64-bit host=chitombp
+Sat Jun  8 17:53:57 [initandlisten] 
+Sat Jun  8 17:53:57 [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+Sat Jun  8 17:53:57 [initandlisten] db version v2.2.0, pdfile version 4.5
+Sat Jun  8 17:53:57 [initandlisten] git version: f5e83eae9cfbec7fb7a071321928f00d1b0c5207
+Sat Jun  8 17:53:57 [initandlisten] build info: Darwin bs-osx-106-x86-64-1.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386 i386 BOOST_LIB_VERSION=1_49
+Sat Jun  8 17:53:57 [initandlisten] options: { config: "erp.conf", dbpath: "data", fork: true, logpath: "logs/erp.log" }
+Sat Jun  8 17:53:57 [initandlisten] journal dir=/Users/chito/Google Drive/code/sprout/erp-june/data/journal
+Sat Jun  8 17:53:57 [initandlisten] recover begin
+Sat Jun  8 17:53:57 [initandlisten] recover lsn: 11123050
+Sat Jun  8 17:53:57 [initandlisten] recover /Users/chito/Google Drive/code/sprout/erp-june/data/journal/j._0
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:273965 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:493615 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:548565 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:603545 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:658505 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:768225 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:823185 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:878135 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section seq:933135 < lsn:11123050
+Sat Jun  8 17:53:57 [initandlisten] recover skipping application of section more...
+Sat Jun  8 17:53:58 [initandlisten] recover cleaning up
+Sat Jun  8 17:53:58 [initandlisten] removeJournalFiles
+Sat Jun  8 17:53:58 [initandlisten] recover done
+Sat Jun  8 17:54:02 [initandlisten] waiting for connections on port 27017
+Sat Jun  8 17:54:02 [websvr] admin web console waiting for connections on port 28017
+Sun Jun  9 09:48:31 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Sun Jun  9 09:48:31 [interruptThread] now exiting
+Sun Jun  9 09:48:31 dbexit: 
+Sun Jun  9 09:48:31 [interruptThread] shutdown: going to close listening sockets...
+Sun Jun  9 09:48:31 [interruptThread] closing listening socket: 6
+Sun Jun  9 09:48:31 [interruptThread] closing listening socket: 7
+Sun Jun  9 09:48:31 [interruptThread] closing listening socket: 8
+Sun Jun  9 09:48:31 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Sun Jun  9 09:48:31 [interruptThread] shutdown: going to flush diaglog...
+Sun Jun  9 09:48:31 [interruptThread] shutdown: going to close sockets...
+Sun Jun  9 09:48:31 [interruptThread] shutdown: waiting for fs preallocator...
+Sun Jun  9 09:48:31 [interruptThread] shutdown: lock for final commit...
+Sun Jun  9 09:48:31 [interruptThread] shutdown: final commit...
+Sun Jun  9 09:48:31 [interruptThread] shutdown: closing all files...
+Sun Jun  9 09:48:31 [interruptThread] closeAllFiles() finished
+Sun Jun  9 09:48:31 [interruptThread] journalCleanup...
+Sun Jun  9 09:48:31 [interruptThread] removeJournalFiles
+Sun Jun  9 09:48:31 [interruptThread] shutdown: removing fs lock...
+Sun Jun  9 09:48:31 dbexit: really exiting now

@@ -344,7 +344,7 @@ module.exports = function(req,res){
 															req.model.list(content,igccb);
 														}
 														else{
-															igccb(null,null);
+															igccb(null,[]);
 														}
 														
 													}],
