@@ -253,3 +253,193 @@ ClientCursor::find(): cursor not found in map -1 (ok after a drop)
 ClientCursor::find(): cursor not found in map -1 (ok after a drop)
 ClientCursor::find(): cursor not found in map -1 (ok after a drop)
 end connection 127.0.0.1:57309 (5 connections now open)
+Sun Jun  9 14:18:39 [initandlisten] connection accepted from 127.0.0.1:49299 #13 (2 connections now open)
+Sun Jun  9 14:18:39 [initandlisten] connection accepted from 127.0.0.1:49300 #14 (3 connections now open)
+Sun Jun  9 14:18:39 [initandlisten] connection accepted from 127.0.0.1:49301 #15 (4 connections now open)
+Sun Jun  9 14:18:39 [initandlisten] connection accepted from 127.0.0.1:49302 #16 (5 connections now open)
+Sun Jun  9 14:18:39 [initandlisten] connection accepted from 127.0.0.1:49303 #17 (6 connections now open)
+Sun Jun  9 14:22:14 [conn15] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.sales { _id: 1 }
+Sun Jun  9 14:22:14 [conn15] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:22:20 [conn17] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 14:22:20 [conn15] build index erp.shipment { _id: 1 }
+Sun Jun  9 14:22:20 [conn15] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:22:28 [conn14] build index erp.movement { _id: 1 }
+Sun Jun  9 14:22:28 [conn14] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:22:30 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.sales_item { _id: 1 }
+Sun Jun  9 14:22:30 [conn16] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:22:33 [conn13] build index erp.shipment_item { _id: 1 }
+Sun Jun  9 14:22:33 [conn13] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:23:05 [conn13] build index erp.customer_term { _id: 1 }
+Sun Jun  9 14:23:05 [conn13] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:23:05 [conn14] build index erp.customer { _id: 1 }
+Sun Jun  9 14:23:05 [conn14] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:26:42 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.discount { _id: 1 }
+Sun Jun  9 14:26:42 [conn16] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:34:29 [conn17] info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Sun Jun  9 14:34:47 [conn14] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.product { _id: 1 }
+Sun Jun  9 14:34:47 [conn14] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:40:46 [conn17] end connection 127.0.0.1:49303 (5 connections now open)
+Sun Jun  9 14:40:46 [conn13] end connection 127.0.0.1:49299 (5 connections now open)
+Sun Jun  9 14:40:46 [conn16] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49302 (5 connections now open)
+Sun Jun  9 14:40:46 [conn15] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49301 (5 connections now open)
+Sun Jun  9 14:40:46 [conn14] end connection 127.0.0.1:49300 (5 connections now open)
+Sun Jun  9 14:40:54 [initandlisten] connection accepted from 127.0.0.1:58178 #18 (2 connections now open)
+Sun Jun  9 14:40:54 [initandlisten] connection accepted from 127.0.0.1:58179 #19 (3 connections now open)
+Sun Jun  9 14:40:54 [initandlisten] connection accepted from 127.0.0.1:58180 #20 (4 connections now open)
+Sun Jun  9 14:40:54 [initandlisten] connection accepted from 127.0.0.1:58181 #21 (5 connections now open)
+Sun Jun  9 14:40:54 [initandlisten] connection accepted from 127.0.0.1:58182 #22 (6 connections now open)
+Sun Jun  9 14:40:54 [conn20] info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 14:45:27 [conn21] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 14:50:12 [conn20] info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 14:52:02 [conn19] build index erp.inventory { _id: 1 }
+Sun Jun  9 14:52:02 [conn19] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 14:52:45 [conn22] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 14:53:03 [conn20] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Sun Jun  9 14:58:48 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:00:21 [conn19] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Sun Jun  9 15:00:21 [conn21] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:58181 (5 connections now open)
+Sun Jun  9 15:00:21 [conn18] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:58178 (5 connections now open)
+Sun Jun  9 15:00:21 [conn19] end connection 127.0.0.1:58179 (5 connections now open)
+Sun Jun  9 15:00:21 [conn20] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:58180 (5 connections now open)
+Sun Jun  9 15:00:21 [conn22] end connection 127.0.0.1:58182 (5 connections now open)
+Sun Jun  9 15:00:44 [initandlisten] connection accepted from 127.0.0.1:49752 #23 (2 connections now open)
+Sun Jun  9 15:00:44 [initandlisten] connection accepted from 127.0.0.1:49753 #24 (3 connections now open)
+Sun Jun  9 15:00:44 [initandlisten] connection accepted from 127.0.0.1:49754 #25 (4 connections now open)
+Sun Jun  9 15:00:44 [initandlisten] connection accepted from 127.0.0.1:49755 #26 (5 connections now open)
+Sun Jun  9 15:00:44 [initandlisten] connection accepted from 127.0.0.1:49756 #27 (6 connections now open)
+Sun Jun  9 15:02:13 [conn24] info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:10:47 [conn7] CMD: drop erp.movement
+Sun Jun  9 15:10:51 [conn7] CMD: drop erp.inventory
+Sun Jun  9 15:10:56 [conn7] CMD: drop erp.shipment_item
+Sun Jun  9 15:11:01 [conn7] CMD: drop erp.shipment
+Sun Jun  9 15:11:06 [conn25] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:11:22 [conn25] build index erp.shipment { _id: 1 }
+Sun Jun  9 15:11:22 [conn25] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 15:11:32 [conn26] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.shipment_item { _id: 1 }
+Sun Jun  9 15:11:32 [conn26] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 15:11:53 [conn27] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Sun Jun  9 15:11:53 [conn27] build index erp.inventory { _id: 1 }
+Sun Jun  9 15:11:53 [conn27] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 15:11:53 [conn23] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.movement { _id: 1 }
+Sun Jun  9 15:11:53 [conn23] build index done.  scanned 0 total records. 0 secs
+Sun Jun  9 15:12:05 [conn26] warning: can't find plugin [asc]
+Sun Jun  9 15:14:44 [conn24] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:19:31 [conn27] info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:20:00 [conn23] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.price { _id: 1 }
+Sun Jun  9 15:20:00 [conn23] build index done.  scanned 0 total records. 0.001 secs
+Sun Jun  9 15:33:47 [conn23] info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:35:56 [conn26] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:30000 was empty, skipping ahead. ns:erp.parameter
+Sun Jun  9 15:36:38 [conn7] CMD: drop erp.sales_item
+Sun Jun  9 15:36:42 [conn7] CMD: drop erp.sales
+Sun Jun  9 15:40:59 [conn26] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.sales { _id: 1 }
+Sun Jun  9 15:40:59 [conn26] build index done.  scanned 0 total records. 0.001 secs
+Sun Jun  9 15:41:12 [conn25] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:41:53 [conn26] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+build index erp.sales_item { _id: 1 }
+Sun Jun  9 15:41:53 [conn26] build index done.  scanned 0 total records. 0.001 secs
+Sun Jun  9 15:45:04 [conn25] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+warning: can't find plugin [asc]
+Sun Jun  9 15:48:12 [conn24] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+info DFM::findAll(): extent 0:7a000 was empty, skipping ahead. ns:erp.grant
+Sun Jun  9 15:51:13 [conn7] end connection 127.0.0.1:56362 (5 connections now open)
+Sun Jun  9 15:51:16 [conn26] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49755 (4 connections now open)
+Sun Jun  9 15:51:16 [conn27] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49756 (4 connections now open)
+Sun Jun  9 15:51:16 [conn25] end connection 127.0.0.1:49754 (4 connections now open)
+Sun Jun  9 15:51:16 [conn23] ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+ClientCursor::find(): cursor not found in map -1 (ok after a drop)
+end connection 127.0.0.1:49752 (4 connections now open)
+Sun Jun  9 15:51:16 [conn24] end connection 127.0.0.1:49753 (4 connections now open)
+Sun Jun  9 15:51:54 got signal 15 (Terminated: 15), will terminate after current cmd ends
+Sun Jun  9 15:51:54 [interruptThread] now exiting
+Sun Jun  9 15:51:54 dbexit: 
+Sun Jun  9 15:51:54 [interruptThread] shutdown: going to close listening sockets...
+Sun Jun  9 15:51:54 [interruptThread] closing listening socket: 6
+Sun Jun  9 15:51:54 [interruptThread] closing listening socket: 7
+Sun Jun  9 15:51:54 [interruptThread] closing listening socket: 8
+Sun Jun  9 15:51:54 [interruptThread] removing socket file: /tmp/mongodb-27017.sock
+Sun Jun  9 15:51:54 [interruptThread] shutdown: going to flush diaglog...
+Sun Jun  9 15:51:54 [interruptThread] shutdown: going to close sockets...
+Sun Jun  9 15:51:54 [interruptThread] shutdown: waiting for fs preallocator...
+Sun Jun  9 15:51:54 [interruptThread] shutdown: lock for final commit...
+Sun Jun  9 15:51:54 [interruptThread] shutdown: final commit...

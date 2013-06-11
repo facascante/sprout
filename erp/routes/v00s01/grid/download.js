@@ -285,7 +285,7 @@ module.exports = function(req,res){
 						col_ctr++;
 					}
 					html+="</tr>";
-					if(result.transform[i].child){
+					if(result.transform[i].child.length){
 						html+="<tr><td>&nbsp;</td><td colspan = "+col_ctr+"><table>";
 						html+="<tr>";
 						for(var m in result.getChildProcessField.labels){
