@@ -1762,6 +1762,62 @@ module.exports = function(req,res){
 						}]
 					},cb);
 				},
+				SyncRecord : function(cb){
+					async.auto({
+						getSyncInfo : function(ccb){
+							var content = {};
+							content.table = 'synchronization';
+							content.condition = {
+									table : req.params.table,
+									process : req.params.process
+							};
+							req.model.list(content,ccb);
+						},
+						applySync : ['getSyncInfo',function(ccb,ccres){
+							var syncList = ccres.getSyncInfo;
+							async.forEach(syncList,function(item,iccb){
+								async.auto({
+									getMainRecord : function(gcb){
+										var content = {};
+										content.table = req.params.table;
+										content.condition = {
+												_id : req.model.ObjectID.createFromHexString(req.params.id)
+										};
+										req.model.item(content,gcb);
+									},
+									getSourceRecord : ['getMainRecord',function(gcb,gres){
+										var content = {};
+										content.table = item.stable;
+										content.condition = {};
+										content.condition[item.link] = gres.getMainRecord[item.link];
+										req.model.item(content,gcb);
+									}],
+									getDestinationRecord : ['getMainRecord',function(gcb,gres){
+										var content = {};
+										content.table = item.dtable;
+										content.condition = {};
+										content.condition[item.link] = gres.getMainRecord[item.link];
+										req.model.list(content,gcb);
+									}],
+									syncRecord : ['getSourceRecord','getDestinationRecord',function(gcb,gres){
+										async.forEach(gres.getDestinationRecord,function(gitem,gccb){
+											var content = {};
+											content.table = item.dtable;
+											content.condition = {
+												_id : gitem._id
+											};
+											content.record = {"$set":{}};
+											content.record["$set"][item.destination] = gres.getSourceRecord[item.source];
+											
+											req.model.update(content,gccb);
+										},gcb);
+									}]
+								},iccb);
+							},ccb);
+						}]
+					},cb);
+				}
+				/*,
 				autoSync : function(cb){
 					async.auto({
 						getSyncInfo : function(ccb){
@@ -1814,6 +1870,7 @@ module.exports = function(req,res){
 						}]
 					},cb);
 				}
+				*/
 			},callback);
 		}]
 	},function(error,results){
