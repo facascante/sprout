@@ -125,13 +125,17 @@ module.exports = function(req,res){
 					if(list[i].table && list[i].process){
 						if(req.user.permission['view_'+list[i].table+'_'+list[i].process]){
 							new_list.push(list[i]);
-							check_list.push(list[i].parent);
+							if(list[i].parent){
+								check_list.push(list[i].parent);
+							}
 						}
 					}
 					else{
 						if(check_list.indexOf(list[i]._id.toString()) != -1){
 							new_list.push(list[i]);
-							check_list.push(list[i].parent);
+							if(list[i].parent){
+								check_list.push(list[i].parent);
+							}
 						}
 						
 					}

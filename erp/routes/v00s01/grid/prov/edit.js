@@ -542,7 +542,7 @@ module.exports = function(req,res){
 																	break;
 																}
 																gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
-																gitem.destination = gitem.customer;
+																gitem.destination = gitem.company_name;
 																gitem.field = item.destination.quantity;
 																break;
 															case 'shipment' :
@@ -554,7 +554,7 @@ module.exports = function(req,res){
 															case 'consignment' :
 																gitem.refno = gitem.refno || gitem.cono;
 																gitem.reftype = req.params.table.toUpperCase() + ' ' + req.params.process.toUpperCase() + ' ' + item.action;
-																gitem.destination = gitem.customer;
+																gitem.destination = gitem.company_name;
 																gitem.field = item.destination.quantity;
 																break;
 															}
@@ -1538,10 +1538,12 @@ module.exports = function(req,res){
 									table : req.params.table,
 									process : req.params.process
 							};
+							content.sorting = req.utility.transformSort('sequence','asc');
 							req.model.list(content,ccb);
 						},
 						getDataSource : ['getComputation',function(ccb,cres){
-							async.forEach(cres.getComputation,function(item,iccb){
+							
+							async.eachSeries(cres.getComputation,function(item,iccb){
 								async.auto({
 									NoDependencies : function(iiccb){
 										async.auto({
