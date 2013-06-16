@@ -98,9 +98,14 @@ module.exports = function(req,res){
 			content.table = req.params.table;
 			content.condition = req.body.condition || {};
 			content.columns = JSON.parse(req.body.columns || "{}");
-			content.sorting = req.utility.transformSort(req.body.sidx,req.body.sord);
+			if(req.params.table == 'menu'){
+				content.sorting = req.utility.transformSort('index','desc');
+			}
+			else{
+				content.sorting = req.utility.transformSort(req.body.sidx,req.body.sord);
+			}
 			content.page = result.paging.start || 0;
-			content.rows = result.paging.limit || 100;
+			content.rows = result.paging.limit || 300;
 			console.log(content);
 			req.model.list(content,function(err,result){
 				if(result){
@@ -115,16 +120,23 @@ module.exports = function(req,res){
 			if(req.params.table == 'menu'){
 				var list = result.list;
 				var new_list = new Array();
+				var check_list = new Array(0)
 				for(var i in list){
 					if(list[i].table && list[i].process){
 						if(req.user.permission['view_'+list[i].table+'_'+list[i].process]){
 							new_list.push(list[i]);
+							check_list.push(list[i].parent);
 						}
 					}
 					else{
-						new_list.push(list[i]);
+						if(check_list.indexOf(list[i]._id.toString()) != -1){
+							new_list.push(list[i]);
+							check_list.push(list[i].parent);
+						}
+						
 					}
 				}
+				new_list.reverse();
 				cb(null,new_list);
 			}
 			else{
@@ -163,7 +175,7 @@ module.exports = function(req,res){
 				console.log(parameters);
 				if(parameters.length && req.params.table != 'menu'){
 					for(var i in parameters){
-						new_row[parameters[i].index] = row[parameters[i].index] || "";
+						new_row[parameters[i].index] = (typeof row[parameters[i].index] === 'undefined')? "" : row[parameters[i].index];
 					}
 					new_row.id = row.id;
 					collection.rows.push(new_row);
